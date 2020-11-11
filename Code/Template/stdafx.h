@@ -20,6 +20,13 @@
 #define SAFE_DELETE(p) {if(p) {delete (p); (p) = nullptr;}}
 #define SAFE_DELETE_ARRAY(p) {if(p){delete [](p); (p) = nullptr;}}
 
+
+
+// DirectX Header
+#include <d3d9.h>
+#include <d3dx9.h>
+#include <dsound.h>
+
 // Window Header
 #include <Windows.h>
 #include <mmsystem.h>
@@ -27,11 +34,6 @@
 #include <malloc.h>
 #include <memory.h>
 #include <tchar.h>
-
-// DirectX Header
-#include <d3d9.h>
-#include <d3dx9.h>
-#include <dsound.h>
 
 // Debug Header
 #include <iostream>
