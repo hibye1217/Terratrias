@@ -3,6 +3,9 @@
 #include "Application.h"
 #include "MainScene.h"
 
+#include "skTest_Scene.h"
+#include "Object.h"
+
 INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdShow) {
 	srand(GetTickCount());
 
@@ -20,5 +23,9 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 	app.InitManager();
 
 
-	return app.DoMainLoop(new MainScene());
+	//return app.DoMainLoop(new MainScene());
+	skTest_Scene * skTelekom = new skTest_Scene();
+	Object * HeavyObject = new Object();
+
+	return app.DoMainLoop(skTelekom);
 }

@@ -49,6 +49,12 @@
     <Filter Include="헤더 파일\Main\MainScene">
       <UniqueIdentifier>{ab031ca1-e84a-4e43-8203-23649963c08c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\SeiKou">
+      <UniqueIdentifier>{554a605d-91c8-46f0-aa8f-e3bbd495700e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\SeiKou">
+      <UniqueIdentifier>{7ddf8b29-bbef-4417-8d8d-b5febfc8aadf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -93,6 +99,9 @@
     <ClCompile Include="MainScene.cpp">
       <Filter>소스 파일\Main\MainScene</Filter>
     </ClCompile>
+    <ClCompile Include="skTest_Scene.cpp">
+      <Filter>소스 파일\SeiKou</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -133,6 +142,9 @@
     </ClInclude>
     <ClInclude Include="MainScene.h">
       <Filter>헤더 파일\Main\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="skTest_Scene.h">
+      <Filter>헤더 파일\SeiKou</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
