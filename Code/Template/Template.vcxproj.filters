@@ -55,6 +55,18 @@
     <Filter Include="헤더 파일\SeiKou">
       <UniqueIdentifier>{7ddf8b29-bbef-4417-8d8d-b5febfc8aadf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Stage">
+      <UniqueIdentifier>{b83384c5-1aeb-4c09-a3fd-e7b38e7a3c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Stage">
+      <UniqueIdentifier>{42829058-3427-41f5-85ab-427ec179930a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\InGameObject">
+      <UniqueIdentifier>{db3a5e02-a913-4edb-8dd5-926848e98725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\InGameObject">
+      <UniqueIdentifier>{68d17c2b-cbc5-439d-a578-d21a410eae2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -102,6 +114,9 @@
     <ClCompile Include="skTest_Scene.cpp">
       <Filter>소스 파일\SeiKou</Filter>
     </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>소스 파일\InGameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -145,6 +160,9 @@
     </ClInclude>
     <ClInclude Include="skTest_Scene.h">
       <Filter>헤더 파일\SeiKou</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>헤더 파일\InGameObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

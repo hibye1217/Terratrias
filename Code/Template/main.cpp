@@ -25,7 +25,6 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 
 	//return app.DoMainLoop(new MainScene());
 	skTest_Scene * skTelekom = new skTest_Scene();
-	Object * HeavyObject = new Object();
 
 	return app.DoMainLoop(skTelekom);
 }
