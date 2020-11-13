@@ -157,6 +157,7 @@
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="BaseScene.cpp" />
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Font.cpp" />
@@ -180,6 +181,7 @@
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Application.h" />
+    <ClInclude Include="BaseScene.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="Font.h" />

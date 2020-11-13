@@ -117,6 +117,9 @@
     <ClCompile Include="Button.cpp">
       <Filter>소스 파일\InGameObject</Filter>
     </ClCompile>
+    <ClCompile Include="BaseScene.cpp">
+      <Filter>소스 파일\Stage</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -163,6 +166,9 @@
     </ClInclude>
     <ClInclude Include="Button.h">
       <Filter>헤더 파일\InGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseScene.h">
+      <Filter>헤더 파일\Stage</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
