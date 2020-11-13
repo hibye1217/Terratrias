@@ -120,6 +120,15 @@
     <ClCompile Include="BaseScene.cpp">
       <Filter>소스 파일\Stage</Filter>
     </ClCompile>
+    <ClCompile Include="ButtonFunction.cpp">
+      <Filter>소스 파일\InGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="BFChangeScene.cpp">
+      <Filter>소스 파일\InGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="BFAdDelSprite.cpp">
+      <Filter>소스 파일\InGameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -169,6 +178,15 @@
     </ClInclude>
     <ClInclude Include="BaseScene.h">
       <Filter>헤더 파일\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="ButtonFunction.h">
+      <Filter>헤더 파일\InGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="BFChangeScene.h">
+      <Filter>헤더 파일\InGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="BFAdDelSprite.h">
+      <Filter>헤더 파일\InGameObject</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -26,4 +26,5 @@ void skTest_Scene::Render()
 void skTest_Scene::Update(float dTime)
 {
 	Scene::Update(dTime);
+	
 }
