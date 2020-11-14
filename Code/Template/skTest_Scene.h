@@ -3,13 +3,16 @@
 #include "Object.h"
 #include "Sprite.h"
 #include "Button.h"
+#include "BFAdDelSprite.h"
+#include "BFChangeScene.h"
+#include "MainScene.h"
 
 class skTest_Scene :
     public Scene
 {
 public:
 	Sprite* spr;
-	Button* button;
+	Sprite* Sun;
 
 	std::list<Button*> buttonList;
 
