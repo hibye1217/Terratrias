@@ -56,10 +56,10 @@ void Application::InitWindow(HINSTANCE hInstance) {
 }
 
 void Application::InitManager() {
-	sceneManager = new SceneManager();
 	textureManager = new TextureManager();
 	inputManager = new InputManager();
 	soundManager = new SoundManager();
+	sceneManager = new SceneManager();
 }
 
 void Application::InitDeltaTime() {
