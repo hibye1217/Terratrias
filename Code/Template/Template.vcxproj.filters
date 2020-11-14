@@ -55,6 +55,12 @@
     <Filter Include="헤더 파일\SeiKou">
       <UniqueIdentifier>{7ddf8b29-bbef-4417-8d8d-b5febfc8aadf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\JoKan">
+      <UniqueIdentifier>{794796b8-2bc8-4340-b97c-77736ea5fff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\JoKan">
+      <UniqueIdentifier>{7ac5a4f9-f5f5-4345-9842-d3d006ffa691}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -102,6 +108,12 @@
     <ClCompile Include="skTest_Scene.cpp">
       <Filter>소스 파일\SeiKou</Filter>
     </ClCompile>
+    <ClCompile Include="jkTest_Scene.cpp">
+      <Filter>소스 파일\JoKan</Filter>
+    </ClCompile>
+    <ClCompile Include="FadeBackground.cpp">
+      <Filter>소스 파일\JoKan</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -145,6 +157,12 @@
     </ClInclude>
     <ClInclude Include="skTest_Scene.h">
       <Filter>헤더 파일\SeiKou</Filter>
+    </ClInclude>
+    <ClInclude Include="jkTest_Scene.h">
+      <Filter>헤더 파일\JoKan</Filter>
+    </ClInclude>
+    <ClInclude Include="FadeBackground.h">
+      <Filter>헤더 파일\JoKan</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

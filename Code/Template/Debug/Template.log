@@ -1,45 +1,22 @@
-﻿  stdafx.cpp
-  Animation.cpp
-  Application.cpp
-  Console.cpp
-  Font.cpp
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Font.cpp(49,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Font.cpp(50,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  InputManager.cpp
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\InputManager.cpp(42,27): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\InputManager.cpp(42,22): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  main.cpp
-  MainScene.cpp
-  Object.cpp
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.cpp(59,18): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.cpp(60,19): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.cpp(61,17): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.cpp(62,20): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.cpp(64,30): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.cpp(65,31): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.cpp(66,29): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.cpp(67,32): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Scene.cpp
-  SceneManager.cpp
-  skTest_Scene.cpp
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.h(53,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  jkTest_Scene.cpp
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\jkTest_Scene.h(13,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\Object.h(53,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PX=int
           ]
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\skTest_Scene.cpp(9): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\jkTest_Scene.cpp(6): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
           with
           [
               PX=int,
               PY=int
           ]
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Object.h(54,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\Object.h(54,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PY=int
           ]
-  SoundManager.cpp
-  Sprite.cpp
-  TextureManager.cpp
+  main.cpp
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\jkTest_Scene.h(13,18): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   코드를 생성하고 있습니다...
-  Template.vcxproj -> C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Debug\Template.exe
+  Template.vcxproj -> C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Debug\Template.exe

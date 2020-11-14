@@ -3,7 +3,7 @@
 #include "Application.h"
 #include "MainScene.h"
 
-#include "skTest_Scene.h"
+#include "jkTest_Scene.h"
 #include "Object.h"
 
 INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdShow) {
@@ -22,10 +22,5 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 	app.InitDeltaTime();
 	app.InitManager();
 
-
-	//return app.DoMainLoop(new MainScene());
-	skTest_Scene * skTelekom = new skTest_Scene();
-	Object * HeavyObject = new Object();
-
-	return app.DoMainLoop(skTelekom);
+	return app.DoMainLoop(new jkTest_Scene());
 }
