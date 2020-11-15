@@ -7,14 +7,21 @@
 #define WIDTH 1008
 #define HEIGHT 729
 #define BG_COLOR D3DCOLOR_ARGB(255,255,255,255)
-#define PROGRAM_NAME TEXT("Engine")
-#define CONSOLE_NAME TEXT("Console")
+#define PROGRAM_NAME TEXT("Terratrias")
+#define CONSOLE_NAME TEXT("Debug Console")
 #define _WIN32_WINNT 0x0600
 
 #define KEY_NONE 0
 #define KEY_UP 1
 #define KEY_DOWN 2
 #define KEY_ON 3
+
+#define BORDERLESS false
+#define IHAT 50
+#define JHAT 50
+#define MARGIN_TOPDOWN HEIGHT%JHAT
+#define MARGIN_SIDE WIDTH%IHAT
+// 원래 /2 해야지 공정한데, height가 안맞아서 나눌 수가 없음. 어카지?
 
 #define SAFE_RELEASE(p) {if(p) {p->Release(); (p) = NULL;}}
 #define SAFE_DELETE(p) {if(p) {delete (p); (p) = nullptr;}}

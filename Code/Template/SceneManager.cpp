@@ -23,12 +23,12 @@ void SceneManager::Render() {
 	currentScene->Render();
 
 	for (int i = 1; i <= count; i++) {
-		std::cout << show[i] << ' ';
+		//std::cout << show[i] << ' ';
 		if (show[i]) {
 			fade[i]->Render();
 		}
 	}
-	std::cout << std::endl;
+	//std::cout << std::endl;
 }
 
 void SceneManager::Update(float dTime) {
