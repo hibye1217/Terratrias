@@ -48,7 +48,7 @@ skTest_Scene::skTest_Scene()
 	// 2. 버튼 설정
 	Button* changingButton;
 	changingButton = new Button("Resources/UnitSquare.png");
-	changingButton->setPos(0, 200);
+	changingButton->setPos(SCREEN_WIDTH - 100, SCREEN_HEIGHT - 100);
 	changingButton->setDpos(100, 100);
 	AddObject(changingButton);
 
