@@ -16,7 +16,10 @@ To Do:
     - Pade In 같은건 반투명한 판 잔뜩 깔아두고 하나씩 제거하는 방식으로 구현 가능 하다고 생각 됨.  
     - 슬라이딩 문이 닫히는건 그림만 있으면 ㄱㄴ함   
 7. 경계없는 창모드 만들기  
-    - https://mrhook.co.kr/m/154  
+    - https://mrhook.co.kr/m/154   
     - 상술한 내용을 참고할 것  
 8. 사운드매니저 쓰는법 알아내기  
+9. 전체화면 크기 찾는 방법 알아내기  
+    - http://www.directxtutorial.com/Lesson.aspx?lessonid=9-4-2  
+    - 성현이가 할거임
 <br>

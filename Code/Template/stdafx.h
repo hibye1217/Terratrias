@@ -2,8 +2,8 @@
 
 // Setting Program
 #define CONSOLE_ON true
-#define SCREEN_WIDTH 1024
-#define SCREEN_HEIGHT 768
+#define SCREEN_WIDTH 1280
+#define SCREEN_HEIGHT 720
 #define WIDTH 1008
 #define HEIGHT 729
 #define BG_COLOR D3DCOLOR_ARGB(255,255,255,255)
@@ -17,8 +17,8 @@
 #define KEY_ON 3
 
 #define BORDERLESS false
-#define IHAT 50
-#define JHAT 50
+#define I_HAT 50
+#define J_HAT 50
 #define MARGIN_TOPDOWN HEIGHT%JHAT
 #define MARGIN_SIDE WIDTH%IHAT
 // 원래 /2 해야지 공정한데, height가 안맞아서 나눌 수가 없음. 어카지?
