@@ -16,7 +16,7 @@
 #define KEY_DOWN 2
 #define KEY_ON 3
 
-#define BORDERLESS false
+#define BORDERLESS true
 #define I_HAT 50
 #define J_HAT 50
 #define MARGIN_TOPDOWN HEIGHT%JHAT
