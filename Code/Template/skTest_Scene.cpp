@@ -48,13 +48,18 @@ skTest_Scene::skTest_Scene()
 	// 2. 버튼 설정
 	Button* changingButton;
 	changingButton = new Button("Resources/UnitSquare.png");
-	changingButton->setPos(SCREEN_WIDTH - 100, SCREEN_HEIGHT - 100);
+	changingButton->setPos(0, 200);
 	changingButton->setDpos(100, 100);
 	AddObject(changingButton);
 
 	// 3. 연결
 	changingButton->bfList.push_back(changingBF);
 	buttonList.push_back(changingButton);
+
+	Object Item;
+
+
+	std::cout << J_HAT << std::endl;
 }
 
 skTest_Scene::~skTest_Scene()

@@ -1,9 +1,10 @@
 #pragma once
 
+//int OOF = 1280;
+//int LUL = 720;
+
 // Setting Program
 #define CONSOLE_ON true
-#define SCREEN_WIDTH 1280
-#define SCREEN_HEIGHT 720
 #define BG_COLOR D3DCOLOR_ARGB(255,255,255,255)
 #define PROGRAM_NAME TEXT("Terratrias")
 #define CONSOLE_NAME TEXT("Debug Console")
@@ -15,11 +16,6 @@
 #define KEY_ON 3
 
 #define BORDERLESS true
-#define I_HAT 50
-#define J_HAT 50
-#define MARGIN_TOPDOWN HEIGHT%JHAT
-#define MARGIN_SIDE WIDTH%IHAT
-// 원래 /2 해야지 공정한데, height가 안맞아서 나눌 수가 없음. 어카지?
 
 #define SAFE_RELEASE(p) {if(p) {p->Release(); (p) = NULL;}}
 #define SAFE_DELETE(p) {if(p) {delete (p); (p) = nullptr;}}
@@ -55,6 +51,24 @@
 #pragma comment (lib, "winmm.lib")
 #pragma comment (lib, "dsound.lib")
 #pragma comment (lib, "dxguid.lib")
+
+#if BORDERLESS
+
+#define SCREEN_WIDTH GetSystemMetrics(SM_CXSCREEN)
+#define SCREEN_HEIGHT GetSystemMetrics(SM_CYSCREEN)
+
+#else
+
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
+
+#endif // BORDERLESS
+
+#define I_HAT J_HAT
+#define J_HAT min( (SCREEN_HEIGHT - (SCREEN_HEIGHT%20)) / 20, 50 )
+
+#define MARGIN_OF_LEFT SCREEN_WIDTH - I_HAT * 20
+#define MARGIN_OF_TOP SCREEN_HEIGHT - J_HAT * 20
 
 // Constant
 
