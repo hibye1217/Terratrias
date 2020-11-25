@@ -1,7 +1,12 @@
 3 3 5
+...
+...
+...
+
+
+
 H * W
 None Space
-
 
 
 H W limitCnt
