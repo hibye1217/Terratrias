@@ -3,13 +3,14 @@
 #include "Scene.h"
 #include "Object.h"
 #include "Sprite.h"
+#include "Button.h"
 #include "Application.h"
 
 class SceneManager : public Object {
 private:
 	Application* application;
 	Scene* currentScene;
-	Object* object;
+	std::list<Button*> buttonList;
 	
 	const int count = 30;
 	const float changeRate = 1.0 / 30;
@@ -30,4 +31,7 @@ public:
 
 	void FadeIn();
 	void FadeOut();
+
+	void AppendButtonList(Button*);
+	void ClearButtonList();
 };

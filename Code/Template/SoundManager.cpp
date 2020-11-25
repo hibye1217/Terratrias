@@ -178,7 +178,6 @@ bool SoundManager::LoadWaveFile(const char* path, const char* soundName) {
 	}
 
 	SAFE_DELETE_ARRAY(waveData);
-
 	return true;
 }
 

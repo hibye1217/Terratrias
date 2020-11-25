@@ -3,7 +3,6 @@
 
 SceneManager::SceneManager() {
 	application = new Application();
-	object = new Object();
 
 	currentScene = nullptr;
 	for (int i = 1; i <= count; i++) {
@@ -17,6 +16,8 @@ SceneManager::SceneManager() {
 
 SceneManager::~SceneManager() {
 	SAFE_DELETE(currentScene);
+	for (auto& button : buttonList)
+		SAFE_DELETE(button);
 }
 
 void SceneManager::Render() {
@@ -33,6 +34,12 @@ void SceneManager::Render() {
 
 void SceneManager::Update(float dTime) {
 	// 여따 버튼 확인 넣을까?
+	if (inputManager->GetKeyState(VK_LBUTTON) == KEY_DOWN)
+		for (auto& button : buttonList)
+			button->Check(inputManager->GetMousePos());
+	for (auto& button : buttonList)
+		button->hoveringCheck(inputManager->GetMousePos());
+
 	currentScene->Update(dTime);
 	timer += dTime;
 }
@@ -89,4 +96,15 @@ void SceneManager::FadeOut() {
 		pd3dDevice->EndScene();
 		pd3dDevice->Present(0, 0, 0, 0);
 	}
+}
+
+void SceneManager::AppendButtonList(Button* button)
+{
+	buttonList.push_back(button);
+}
+
+void SceneManager::ClearButtonList()
+{
+	for (auto& button : buttonList)
+		SAFE_DELETE(button);
 }

@@ -8,6 +8,18 @@ skTest_Scene::skTest_Scene()
 	AddObject(spr);
 	spr->setPos(200, 200);
 	
+
+
+
+
+
+
+
+
+
+
+	// 버튼 설정 바꿨으니 다 바꿔야함
+
 	Button* button;
 
 	button = new Button("Resources/UnitSquare.png");
@@ -17,6 +29,9 @@ skTest_Scene::skTest_Scene()
 	button->bfList.push_back(new ButtonFunction());
 
 	buttonList.push_back(button);
+
+	soundManager->LoadWaveFile("Resources/test.wav", "test");
+	soundManager->PlayWaveFile("test");
 
 
 
