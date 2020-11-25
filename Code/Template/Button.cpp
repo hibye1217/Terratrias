@@ -7,12 +7,20 @@ Button::Button(const char* path) : Sprite(path){
 
 }
 
-Button::~Button() {}
+Button::~Button() {
+	for (auto& bf : bfList) {
+		SAFE_DELETE(bf);
+	}
+}
 
 void Button::Do()
 {
 	for (auto& bf : bfList) 
 		bf->Do();
+}
+
+void Button::hoveringDo()
+{
 }
 
 void Button::setDpos(D3DXVECTOR2 pos)
@@ -38,4 +46,11 @@ void Button::Check(D3DXVECTOR2 pos)
 	if (this->pos.x <= pos.x && pos.x <= this->pos.x + Dpos.x)
 		if (this->pos.y <= pos.y && pos.y <= this->pos.y + Dpos.y)
 			Do();
+}
+
+void Button::hoveringCheck(D3DXVECTOR2 pos)
+{
+	if (this->pos.x <= pos.x && pos.x <= this->pos.x + Dpos.x)
+		if (this->pos.y <= pos.y && pos.y <= this->pos.y + Dpos.y)
+			hoveringDo();
 }

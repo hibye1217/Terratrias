@@ -64,6 +64,12 @@ skTest_Scene::skTest_Scene()
 
 skTest_Scene::~skTest_Scene()
 {
+	for (auto& button : buttonList) {
+		SAFE_DELETE(button);
+	}
+	
+	SAFE_DELETE(Sun);
+	SAFE_DELETE(spr);
 }
 
 void skTest_Scene::Render()
@@ -81,4 +87,8 @@ void skTest_Scene::Update(float dTime)
 	if (inputManager->GetKeyState(VK_LBUTTON) == KEY_DOWN) 
 		for (auto& button : buttonList)
 			button->Check(inputManager->GetMousePos());
+
+	// 버튼 자체의 호버링 검사도 해야함
+	for (auto& button : buttonList)
+		button->hoveringCheck(inputManager->GetMousePos());
 }

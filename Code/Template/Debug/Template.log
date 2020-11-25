@@ -6,8 +6,8 @@ C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\SceneManager.h(15,25):
   BFChangeScene.cpp
   BaseScene.cpp
   Button.cpp
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Button.cpp(25,17): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Button.cpp(26,17): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Button.cpp(29,17): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\Button.cpp(30,17): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   ButtonFunction.cpp
   Console.cpp
   Font.cpp

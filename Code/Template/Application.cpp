@@ -26,15 +26,13 @@ void Application::InitD3D(HWND hWnd) {
 	pd3d = Direct3DCreate9(D3D_SDK_VERSION);
 	ZeroMemory(&d3dpp, sizeof(d3dpp));
 
+	d3dpp.Windowed = true;
 	if (BORDERLESS) {
-		d3dpp.Windowed = false;
 		d3dpp.hDeviceWindow = hWnd;
 		d3dpp.BackBufferFormat = D3DFMT_X8R8G8B8;
 		d3dpp.BackBufferWidth = SCREEN_WIDTH;
 		d3dpp.BackBufferHeight = SCREEN_HEIGHT;
 	}
-	else
-		d3dpp.Windowed = true;
 	d3dpp.SwapEffect = D3DSWAPEFFECT_DISCARD;
 
 	pd3d->CreateDevice(D3DADAPTER_DEFAULT,

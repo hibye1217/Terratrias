@@ -21,5 +21,8 @@ To Do:
 8. 사운드매니저 쓰는법 알아내기  
 9. 전체화면 크기 찾는 방법 알아내기  
     - http://www.directxtutorial.com/Lesson.aspx?lessonid=9-4-2  
-    - 성현이가 할거임
+    - 성현이가 할거임  
+10. 스테이지 내에서 ESC 버튼 구현  
+    - ESC를 누르면, currentScene을 파괴하지 않고  subScene을 띄우고, 다시 ESC를 누르면 currentScene을 다시 불러오는 것  
+    - menuScene에서 나가기 버튼 누르면 currentScene이랑 subScene 모두 파괴하고 
 <br>

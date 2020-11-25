@@ -32,6 +32,7 @@ void SceneManager::Render() {
 }
 
 void SceneManager::Update(float dTime) {
+	// 여따 버튼 확인 넣을까?
 	currentScene->Update(dTime);
 	timer += dTime;
 }
