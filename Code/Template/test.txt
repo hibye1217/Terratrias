@@ -1,0 +1,13 @@
+3 3 5
+H * W
+None Space
+
+
+
+H W limitCnt
+map[0][0] ... map[0][W-1]
+...
+map[H-1][0] ... map[H-1][W-1]
+
+
+
