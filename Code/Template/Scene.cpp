@@ -19,6 +19,9 @@ void Scene::Render() {
 }
 
 void Scene::Update(float dTime) {
+	if (sceneManager->getOldSceneExist())
+		sceneManager->deleteOldThings();
+
 	for (auto& object : objectList) {
 		object->Update(dTime);
 	}

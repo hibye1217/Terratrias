@@ -8,32 +8,18 @@ skTest_Scene::skTest_Scene()
 	AddObject(spr);
 	spr->setPos(200, 200);
 	
+	
+	// 어캐 쓰는지 모르는 soundManager임
+	// soundManager->LoadWaveFile("Resources/test.wav", "test");
+	// soundManager->PlayWaveFile("test");
 
-
-
-
-
-
-
-
-
-
-	// 버튼 설정 바꿨으니 다 바꿔야함
 
 	Button* button;
-
 	button = new Button("Resources/UnitSquare.png");
-	AddObject(button);
+	sceneManager->AppendButtonList(button);
 	button->setPos(0, 0);	// 좌측상단 좌표
-	button->setDpos(100,100);
+	button->setDpos(100, 100);
 	button->bfList.push_back(new ButtonFunction());
-
-	buttonList.push_back(button);
-
-	soundManager->LoadWaveFile("Resources/test.wav", "test");
-	soundManager->PlayWaveFile("test");
-
-
 
 		//// BFAdDelSprite
 	// 1. 오브젝트 설정
@@ -49,11 +35,10 @@ skTest_Scene::skTest_Scene()
 	addingButton = new Button("Resources/UnitSquare.png");
 	addingButton->setPos(0, 100);
 	addingButton->setDpos(100, 100);
-	AddObject(addingButton);
 
 	// 4. 연결
+	sceneManager->AppendButtonList(addingButton);
 	addingButton->bfList.push_back(addingBF);
-	buttonList.push_back(addingButton);
 
 		//// BFChangeScene
 	// 1. 버튼 기능 설정
@@ -65,24 +50,13 @@ skTest_Scene::skTest_Scene()
 	changingButton = new Button("Resources/UnitSquare.png");
 	changingButton->setPos(0, 200);
 	changingButton->setDpos(100, 100);
-	AddObject(changingButton);
 
 	// 3. 연결
-	changingButton->bfList.push_back(changingBF);
-	buttonList.push_back(changingButton);
-
-	Object Item;
-
-
-	std::cout << J_HAT << std::endl;
+	sceneManager->AppendButtonList(changingButton);
 }
 
 skTest_Scene::~skTest_Scene()
 {
-	for (auto& button : buttonList) {
-		SAFE_DELETE(button);
-	}
-	
 	SAFE_DELETE(Sun);
 	SAFE_DELETE(spr);
 }
@@ -98,12 +72,4 @@ void skTest_Scene::Render()
 void skTest_Scene::Update(float dTime)
 {
 	Scene::Update(dTime);
-	
-	if (inputManager->GetKeyState(VK_LBUTTON) == KEY_DOWN) 
-		for (auto& button : buttonList)
-			button->Check(inputManager->GetMousePos());
-
-	// 버튼 자체의 호버링 검사도 해야함
-	for (auto& button : buttonList)
-		button->hoveringCheck(inputManager->GetMousePos());
 }

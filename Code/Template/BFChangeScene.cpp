@@ -11,5 +11,5 @@ BFChangeScene::~BFChangeScene()
 
 void BFChangeScene::Do()
 {
-	sceneManager->FadeChangeScene(scene);
+	sceneManager->setPreparedScene(scene);
 }

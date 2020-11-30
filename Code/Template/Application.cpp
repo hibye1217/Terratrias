@@ -101,7 +101,9 @@ HWND Application::FloatWindow(HINSTANCE hInstance,
 
 int Application::DoMainLoop(Scene* firstScene) {
 
-	sceneManager->ChangeScene(firstScene);
+	sceneManager->setPreparedScene(firstScene);
+	sceneManager->ChangeScene();
+	//sceneManager->ChangeScene(firstScene);
 
 	MSG Message = { 0, };
 
@@ -123,6 +125,8 @@ int Application::DoMainLoop(Scene* firstScene) {
 
 		inputManager->UpdateKeyState();
 		sceneManager->Update(getDeltaTime());
+		if (sceneManager->getReservedChangeScene())
+			sceneManager->FadeChangeScene();
 	}
 	
 	DeleteManager();

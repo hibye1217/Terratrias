@@ -3,6 +3,8 @@
 
 SceneManager::SceneManager() {
 	application = new Application();
+	oldSceneExist = false;
+	reservedChangeScene = false;
 
 	currentScene = nullptr;
 	for (int i = 1; i <= count; i++) {
@@ -23,37 +25,43 @@ SceneManager::~SceneManager() {
 void SceneManager::Render() {
 	currentScene->Render();
 
+	for (auto& button : buttonList)
+		button->Render();
+
 	for (int i = 1; i <= count; i++) {
-		//std::cout << show[i] << ' ';
 		if (show[i]) {
 			fade[i]->Render();
 		}
 	}
-	//std::cout << std::endl;
 }
 
 void SceneManager::Update(float dTime) {
-	// 여따 버튼 확인 넣을까?
 	if (inputManager->GetKeyState(VK_LBUTTON) == KEY_DOWN)
 		for (auto& button : buttonList)
 			button->Check(inputManager->GetMousePos());
 	for (auto& button : buttonList)
 		button->hoveringCheck(inputManager->GetMousePos());
+	//
 
 	currentScene->Update(dTime);
 	timer += dTime;
 }
 
-void SceneManager::ChangeScene(Scene* scene) {
-	SAFE_DELETE(currentScene);
-	currentScene = scene;
+void SceneManager::ChangeScene() {
+	oldScene = currentScene;
+	oldSceneExist = true;
+	ChangeButtonList();
+	currentScene = preparedScene;
+	reservedChangeScene = false;
 }
-
-void SceneManager::FadeChangeScene(Scene* scene) {
+void SceneManager::FadeChangeScene() {
 	FadeIn();
-	SAFE_DELETE(currentScene);
-	currentScene = scene;
+	oldScene = currentScene;
+	oldSceneExist = true;
+	ChangeButtonList();
+	currentScene = preparedScene;
 	FadeOut();
+	reservedChangeScene = false;
 }
 
 void SceneManager::FadeIn() {
@@ -100,11 +108,38 @@ void SceneManager::FadeOut() {
 
 void SceneManager::AppendButtonList(Button* button)
 {
-	buttonList.push_back(button);
+	preparedButtonList.push_back(button);
 }
 
-void SceneManager::ClearButtonList()
+void SceneManager::ChangeButtonList()
 {
 	for (auto& button : buttonList)
+		oldButtonList.push_back(button);
+	buttonList.clear();
+	for (auto& button : preparedButtonList)
+		buttonList.push_back(button);
+	preparedButtonList.clear();
+}
+
+void SceneManager::deleteOldThings()
+{
+	for (auto& button : oldButtonList)
 		SAFE_DELETE(button);
+	SAFE_DELETE(oldScene);
+}
+
+void SceneManager::setPreparedScene(Scene* scene)
+{
+	reservedChangeScene = true;
+	preparedScene = scene;
+}
+
+bool SceneManager::getOldSceneExist()
+{
+	return oldSceneExist;
+}
+
+bool SceneManager::getReservedChangeScene()
+{
+	return reservedChangeScene;
 }

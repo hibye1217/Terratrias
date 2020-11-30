@@ -11,10 +11,13 @@ Button::~Button() {
 	for (auto& bf : bfList) {
 		SAFE_DELETE(bf);
 	}
+	bfList.clear();
 }
 
 void Button::Do()
 {
+	//
+
 	for (auto& bf : bfList) 
 		bf->Do();
 }
