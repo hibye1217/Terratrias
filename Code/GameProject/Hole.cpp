@@ -1,5 +1,4 @@
 #pragma once
-#include "Const.h"
 #include "Hole.h"
 
 Hole::Hole() : Hole(-1) {}

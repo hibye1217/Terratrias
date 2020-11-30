@@ -1,5 +1,6 @@
 #pragma once
 #include "Topography.h"
+#include "Const.h"
 
 class Hole :
     public Topography

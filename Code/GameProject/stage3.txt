@@ -1,0 +1,14 @@
+5 4 15 1
+0 0
+
+Space Space Space Space
+Wall  Wall  Wall  Space
+Hole 1 Wall  Space Space
+Space Wall  Wall  Space
+Space Space Space Space
+
+None  Bomb  Jump  None
+None  None  None  None
+None  None  Key 1  None
+None  None  None  None
+None  None  None  Boost

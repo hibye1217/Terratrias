@@ -139,8 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Bomb.cpp" />
     <ClCompile Include="Boost.cpp" />
     <ClCompile Include="Cell.cpp" />
+    <ClCompile Include="Glue.cpp" />
     <ClCompile Include="Hole.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Jump.cpp" />
@@ -154,9 +156,11 @@
     <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Bomb.h" />
     <ClInclude Include="Boost.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Const.h" />
+    <ClInclude Include="Glue.h" />
     <ClInclude Include="Hole.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Jump.h" />
@@ -171,6 +175,7 @@
   <ItemGroup>
     <Text Include="stage1.txt" />
     <Text Include="stage2.txt" />
+    <Text Include="stage3.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

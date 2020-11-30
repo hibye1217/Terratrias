@@ -1,6 +1,6 @@
+#pragma once
 #include <cstdio>
 #include "Boost.h"
-#include "Const.h"
 
 Boost::Boost() : Item(Enum::BOOST), direction(-1) {}
 

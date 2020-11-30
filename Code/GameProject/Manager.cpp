@@ -1,9 +1,9 @@
 #pragma once
+#include <iostream>
 #include <fstream>
 #include <string>
 #include "Manager.h"
 #include "Const.h"
-#include "Hole.h"
 
 Manager::Manager() {}
 
@@ -154,6 +154,7 @@ void Manager::initialize(std::string filename)
         {
             std::string item;
             in >> item;
+            //std::cout << item << ' ';
             if(item == "Key")
             {
                 int id;
@@ -166,12 +167,14 @@ void Manager::initialize(std::string filename)
                 {
                     if(item == item_name[k])
                     {
+                        //std::cout << k << ' ';
                         map[i][j].setItem(item_list[k]);
                         break;
                     }
                 }
             }
         }
+        //std::cout << std::endl;
     }
 
     in.close();
