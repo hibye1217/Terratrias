@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "Const.h"
 
 class Topography
 {
@@ -10,7 +11,7 @@ public:
 	Topography(int type);
 	virtual ~Topography();
 	int getType();
-	virtual void onArrived();
 	virtual bool canGo() = 0;
+	virtual void onArrived();
 	Topography& operator = (const Topography&) = default;
 };

@@ -1,6 +1,5 @@
 #pragma once
 #include "User.h"
-#include "Const.h"
 #include "Manager.h"
 
 User::User() {}

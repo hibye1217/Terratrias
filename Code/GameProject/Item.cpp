@@ -1,4 +1,4 @@
-#include "Const.h"
+#pragma once
 #include "Item.h"
 
 Item::Item() : Item(Enum::NONE) {}

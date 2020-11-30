@@ -1,5 +1,6 @@
 #pragma once
 #include "Topography.h"
+#include "Const.h"
 
 class Hole :
     public Topography
@@ -13,4 +14,3 @@ public:
     int getId();
     bool canGo();
 };
-

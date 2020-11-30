@@ -1,7 +1,5 @@
 #pragma once
-#include "Const.h"
 #include "Topography.h"
-#include "Space.h"
 
 Topography::Topography() : Topography(Enum::SPACE) {}
 
@@ -15,4 +13,3 @@ int Topography::getType()
 }
 
 void Topography::onArrived() {}
-

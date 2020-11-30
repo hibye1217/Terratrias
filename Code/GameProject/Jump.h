@@ -1,5 +1,6 @@
 #pragma once
 #include "Item.h"
+#include "Manager.h"
 #include "Const.h"
 
 class Jump :
@@ -13,4 +14,3 @@ public:
     void useItem();
     bool canUseItem();
 };
-

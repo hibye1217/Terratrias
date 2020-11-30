@@ -1,5 +1,6 @@
 #pragma once
 #include "Item.h"
+#include "Const.h"
 
 class User
 {
@@ -22,4 +23,3 @@ public:
 	void putItem();
 	void move(int direction);
 };
-

@@ -1,5 +1,8 @@
 #pragma once
 #include "Item.h"
+#include "Hole.h"
+#include "Manager.h"
+#include "Const.h"
 
 class Key :
     public Item
@@ -14,4 +17,3 @@ public:
     void useItem();
     bool canUseItem();
 };
-
