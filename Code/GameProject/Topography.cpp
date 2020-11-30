@@ -13,3 +13,6 @@ int Topography::getType()
 {
     return type;
 }
+
+void Topography::onArrived() {}
+

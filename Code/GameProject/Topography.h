@@ -8,8 +8,9 @@ public:
 public:
 	Topography();
 	Topography(int type);
-	int getType();
 	virtual ~Topography();
+	int getType();
+	virtual void onArrived();
 	virtual bool canGo() = 0;
 	Topography& operator = (const Topography&) = default;
 };
