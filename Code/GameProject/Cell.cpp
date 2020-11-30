@@ -1,5 +1,6 @@
 #pragma once
 #include "Cell.h"
+#include "Const.h"
 
 Cell::Cell()
 {

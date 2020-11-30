@@ -1,10 +1,12 @@
 #pragma once
 #include <string>
+#include "Manager.h"
+#include "None.h"
+#include "Key.h"
+#include "Space.h"
 
 const int dx[] = { -1, 0, 1, 0 };
 const int dy[] = { 0, 1, 0, -1 };
-const int dx8[] = { -1, -1, -1, 0, 1, 1, 1, 0 };
-const int dy8[] = { -1, 0, 1, 1, 1, 0, -1, -1 };
 
 namespace Enum
 {
@@ -21,7 +23,6 @@ namespace Enum
         NONE,
         JUMP,
         BOOST,
-        BOMB,
     };
 
     enum TopoList
@@ -29,32 +30,25 @@ namespace Enum
         HOLE,
         SPACE,
         WALL,
-        GLUE,
     };
 }
 
-const int item_num = 5;
+const int item_num = 4;
 
 const std::string item_name[item_num] {
     "Key",
     "None",
     "Jump",
     "Boost",
-    "Bomb",
 };
 
-const int topo_num = 4;
+const int topo_num = 3;
 
 const std::string topo_name[topo_num] = {
     "Hole",
     "Space",
     "Wall",
-    "GLUE",
 };
-
-class Manager;
-class Item;
-class Topography;
 
 extern Manager manager;
 

@@ -1,5 +1,9 @@
 #pragma once
+#include <typeinfo>
+#include "Const.h"
 #include "Key.h"
+#include "Manager.h"
+#include "Hole.h"
 
 Key::Key() : Key(-1) {}
 

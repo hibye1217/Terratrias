@@ -1,4 +1,5 @@
 #pragma once
+#include "Const.h"
 #include "None.h"
 
 None::None() : Item(Enum::NONE) {}

@@ -5,22 +5,17 @@
 #include "Space.h"
 #include "Hole.h"
 #include "Wall.h"
-#include "None.h"
-#include "Glue.h"
-#include "Key.h"
 #include "Jump.h"
 #include "Boost.h"
-#include "Bomb.h"
 
 Manager manager;
-Item* item_list[item_num] = { new Key(), new None(), new Jump(), new Boost(), new Bomb(), };
-Topography* topo_list[topo_num] = { new Hole(), new Space(), new Wall(), new Glue(), };
+Item* item_list[item_num] = { new Key(), new None(), new Jump(), new Boost(), };
+Topography* topo_list[topo_num] = { new Hole(), new Space(), new Wall(), };
 
 int main(void) {
 	std::cout << "Hello" << std::endl;
 
-	manager.initialize("stage3.txt");
-	getchar();
+	manager.initialize("stage2.txt");
 
 	User& user = manager.getUser();
 	while (manager.getMoveCnt() <= manager.getLimitCnt() && manager.getKeyCnt() > 0) {

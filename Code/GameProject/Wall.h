@@ -1,6 +1,5 @@
 #pragma once
 #include "Topography.h"
-#include "Const.h"
 
 class Wall :
     public Topography

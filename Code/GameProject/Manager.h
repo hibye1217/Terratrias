@@ -2,9 +2,7 @@
 #include <vector>
 #include <string>
 #include "Cell.h"
-#include "User.h"
-#include "Hole.h"
-#include "Key.h"
+#include "User.h""
 
 class Manager
 {

@@ -54,12 +54,6 @@
     <ClCompile Include="Boost.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Bomb.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Glue.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="None.h">
@@ -101,21 +95,12 @@
     <ClInclude Include="Boost.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="Bomb.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Glue.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="stage1.txt">
       <Filter>리소스 파일</Filter>
     </Text>
     <Text Include="stage2.txt">
-      <Filter>리소스 파일</Filter>
-    </Text>
-    <Text Include="stage3.txt">
       <Filter>리소스 파일</Filter>
     </Text>
   </ItemGroup>

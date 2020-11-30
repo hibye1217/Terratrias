@@ -1,4 +1,5 @@
 #pragma once
+#include "Const.h"
 #include "Space.h"
 
 Space::Space() : Topography(Enum::SPACE) {}

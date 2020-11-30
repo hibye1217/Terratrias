@@ -1,4 +1,29 @@
-﻿  Bomb.cpp
+﻿  Boost.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Cell.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Hole.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Item.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Jump.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Key.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  main.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\main.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
   Manager.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  None.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Space.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Topography.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  User.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Wall.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
   코드를 생성하고 있습니다...
   GameProject.vcxproj -> C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Debug\GameProject.exe

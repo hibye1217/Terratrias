@@ -1,7 +1,6 @@
 #pragma once
 #include "Item.h"
 #include "Topography.h"
-#include "Const.h"
 
 class Cell
 {
