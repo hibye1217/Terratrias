@@ -24,7 +24,7 @@ Jump	None	None
 Jump	None	None
 Jump	None	None
 Jump	None	None
-Jump	None	Jump
+Jump	Key 1 Jump
 None	None	None
 None	None	None
 None	Boost	None
@@ -36,5 +36,5 @@ None	Boost	None
 None	Boost	None
 None	None	None
 None	None	None
-None	Bomb	None
-None	None	None
+None	Bomb	Key 2
+Bomb  Boost Jump
