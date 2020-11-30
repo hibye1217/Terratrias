@@ -139,9 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Boost.cpp" />
     <ClCompile Include="Cell.cpp" />
     <ClCompile Include="Hole.cpp" />
     <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Jump.cpp" />
     <ClCompile Include="Key.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Manager.cpp" />
@@ -152,10 +154,12 @@
     <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Boost.h" />
     <ClInclude Include="Cell.h" />
     <ClInclude Include="Const.h" />
     <ClInclude Include="Hole.h" />
     <ClInclude Include="Item.h" />
+    <ClInclude Include="Jump.h" />
     <ClInclude Include="Key.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="None.h" />
@@ -165,7 +169,8 @@
     <ClInclude Include="Wall.h" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="test.txt" />
+    <Text Include="stage1.txt" />
+    <Text Include="stage2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

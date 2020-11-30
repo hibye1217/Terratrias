@@ -1,8 +1,12 @@
-﻿  Cell.cpp
+﻿  Boost.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Cell.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
   Hole.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
   Item.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
+  Jump.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.
   Key.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\GameProject\Manager.h(5,10): warning C4067: 전처리기 지시문 다음에 예기치 않은 토큰이 있습니다. 줄 바꿈 문자가 필요합니다.

@@ -21,6 +21,8 @@ namespace Enum
     {
         KEY,
         NONE,
+        JUMP,
+        BOOST,
     };
 
     enum TopoList
@@ -31,11 +33,13 @@ namespace Enum
     };
 }
 
-const int item_num = 2;
+const int item_num = 4;
 
 const std::string item_name[item_num] {
     "Key",
     "None",
+    "Jump",
+    "Boost",
 };
 
 const int topo_num = 3;

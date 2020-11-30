@@ -26,11 +26,12 @@ void Key::useItem()
     User& user = manager.getUser();
     delete user.getInventory();
     user.setInventory(item_list[Enum::NONE]);
-    
+
     Cell& cell = manager.getCell(user.getX(), user.getY());
     delete cell.getTopography();
     cell.setTopography(topo_list[Enum::SPACE]);
 
+    manager.setMoveCnt(manager.getMoveCnt() + 1);
     manager.setKeyCnt(manager.getKeyCnt() - 1);
 }
 

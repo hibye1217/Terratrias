@@ -1,23 +1,27 @@
 #include <iostream>
+#include <cstdio>
 #include "Const.h"
 #include "Manager.h"
 #include "Space.h"
 #include "Hole.h"
 #include "Wall.h"
+#include "Jump.h"
+#include "Boost.h"
 
 Manager manager;
-Item* item_list[item_num] = { new Key(), new None(), };
+Item* item_list[item_num] = { new Key(), new None(), new Jump(), new Boost(), };
 Topography* topo_list[topo_num] = { new Hole(), new Space(), new Wall(), };
 
 int main(void) {
 	std::cout << "Hello" << std::endl;
 
-	manager.initialize("test.txt");
+	manager.initialize("stage2.txt");
 
 	User& user = manager.getUser();
-	while (manager.getKeyCnt() > 0) {
+	while (manager.getMoveCnt() <= manager.getLimitCnt() && manager.getKeyCnt() > 0) {
 		// print
 		system("cls");
+		std::cout << "remain key: " << manager.getKeyCnt() << std::endl;
 		std::cout << "remain count: " << manager.getLimitCnt() - manager.getMoveCnt() << std::endl;
 		std::cout << "(x, y) = " << user.getX() << ' ' << user.getY() << std::endl;
 		std::cout << "inventory: " << item_name[user.getInventory()->getType()] << std::endl << std::endl;
@@ -78,7 +82,14 @@ int main(void) {
 			break;
 		}
 	}
-	std::cout << "Clear!!!" << std::endl;
+	if (manager.getKeyCnt() == 0)
+	{
+		std::cout << "Clear!!!" << std::endl;
+	}
+	else
+	{
+		std::cout << "Game Over" << std::endl;
+	}
 
 	// 해제
 	for(int i = 0; i < item_num; ++i)

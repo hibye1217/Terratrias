@@ -48,6 +48,12 @@
     <ClCompile Include="Wall.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Jump.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Boost.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="None.h">
@@ -83,9 +89,18 @@
     <ClInclude Include="Cell.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="Jump.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Boost.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="test.txt">
+    <Text Include="stage1.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+    <Text Include="stage2.txt">
       <Filter>리소스 파일</Filter>
     </Text>
   </ItemGroup>
