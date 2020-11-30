@@ -1,0 +1,34 @@
+12 3 10000 5
+0 1
+
+Space	Space	Space
+Space	Wall	Space
+Space	Space	Space
+Wall	Wall	Space
+Ice	Space	Glue
+Ice	Ice	Ice
+Ice	Wall	Space
+Ice	Ice	Space
+Ice	Gule	Wall
+Ice	Space	Space
+Ice	Wall	Glue
+Glue	Space	Space
+Wall	Wall	Space
+Hole 1	Space	Space
+Hole 5	Space	Wall
+Wall	Space	Hole 2
+Hole 4	Space	Wall
+Hole 3	Space	Space
+
+None	None	None
+None	None	None
+None	None	None
+None	None	None
+None	None	None
+None	None	None
+None	None	None
+None	Key 1	None
+None	Key 2	None
+Key 3	None	None
+Key 4	None	None
+None	None	Key 5
