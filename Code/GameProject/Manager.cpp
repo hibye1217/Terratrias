@@ -1,7 +1,6 @@
 #pragma once
 #include <fstream>
 #include <string>
-#include <algorithm>
 #include "Manager.h"
 #include "Const.h"
 #include "Hole.h"
@@ -82,7 +81,6 @@ void Manager::setKeyCnt(int keyCnt)
 }
 
 
-// to do
 void Manager::initialize(std::string filename) 
 {
     // file io
@@ -130,7 +128,7 @@ void Manager::initialize(std::string filename)
         {
             std::string topo;
             in >> topo;
-            if(topo.substr(0, std::min<size_t>(4, topo.size())) == "HOLE")
+            if(topo == "Hole")
             {
                 int id;
                 in >> id;
@@ -156,7 +154,7 @@ void Manager::initialize(std::string filename)
         {
             std::string item;
             in >> item;
-            if(item.substr(0, std::min<size_t>(3, item.size())) == "KEY")
+            if(item == "Key")
             {
                 int id;
                 in >> id;

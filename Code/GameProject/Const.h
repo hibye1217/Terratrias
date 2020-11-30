@@ -34,16 +34,16 @@ namespace Enum
 const int item_num = 2;
 
 const std::string item_name[item_num] {
-    "KEY",
-    "NONE",
+    "Key",
+    "None",
 };
 
 const int topo_num = 3;
 
 const std::string topo_name[topo_num] = {
-    "HOLE",
-    "SPACE",
-    "WALL",
+    "Hole",
+    "Space",
+    "Wall",
 };
 
 extern Manager manager;

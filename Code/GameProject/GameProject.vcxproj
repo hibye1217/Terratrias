@@ -156,15 +156,16 @@
     <ClInclude Include="Const.h" />
     <ClInclude Include="Hole.h" />
     <ClInclude Include="Item.h" />
-    <ClInclude Include="ItemList.h" />
     <ClInclude Include="Key.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="None.h" />
     <ClInclude Include="Space.h" />
     <ClInclude Include="Topography.h" />
-    <ClInclude Include="TopographyList.h" />
     <ClInclude Include="User.h" />
     <ClInclude Include="Wall.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="test.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -9,49 +9,76 @@ Manager manager;
 Item* item_list[item_num] = { new Key(), new None(), };
 Topography* topo_list[topo_num] = { new Hole(), new Space(), new Wall(), };
 
-void print();
-
-const int _h = 3;
-const int _w = 3;
-
 int main(void) {
 	std::cout << "Hello" << std::endl;
 
 	manager.initialize("test.txt");
 
-	//User& user = manager.getUser();
-	while (true) {
+	User& user = manager.getUser();
+	while (manager.getKeyCnt() > 0) {
+		// print
 		system("cls");
-		for (int i = 0; i < _h; ++i) {
-			for (int j = 0; j < _w; ++j) {
-				if (i == manager.getUser().getX() && j == manager.getUser().getY()) {
-					std::cout << "?";
-					continue;
-				}
-				// std::cout << manager.getCell(i, j).getTopography().symbol;
+		std::cout << "remain count: " << manager.getLimitCnt() - manager.getMoveCnt() << std::endl;
+		std::cout << "(x, y) = " << user.getX() << ' ' << user.getY() << std::endl;
+		std::cout << "inventory: " << item_name[user.getInventory()->getType()] << std::endl << std::endl;
+		for (int i = 0; i < manager.getHeight(); ++i)
+		{
+			for (int j = 0; j < manager.getWidth(); ++j)
+			{
+				//std::cout << manager.getCell(i, j).getTopography()->getType() << ' ';
+				std::cout << topo_name[manager.getCell(i, j).getTopography()->getType()] << ' ';
+			}
+			std::cout << std::endl;
+		}
+		std::cout << std::endl;
+		for (int i = 0; i < manager.getHeight(); ++i)
+		{
+			for (int j = 0; j < manager.getWidth(); ++j)
+			{
+				std::cout << item_name[manager.getCell(i, j).getItem()->getType()] << ' ';
 			}
 			std::cout << std::endl;
 		}
 
-		switch (getchar()) {
-		case 'w':
+		/*
+		*	이동 WASD
+		*	쓰기 Space
+		*	줍기 Q
+		*	놓기 E
+		*/
+		char ch = getchar();
+		switch (ch)
+		{
 		case 'W':
-			manager.getUser().move(Enum::UP);
+		case 'w':
+			user.move(Enum::UP);
 			break;
-		case 'a':
 		case 'A':
-			manager.getUser().move(Enum::LEFT);
+		case 'a':
+			user.move(Enum::LEFT);
 			break;
-		case 's':
 		case 'S':
-			manager.getUser().move(Enum::DOWN);
+		case 's':
+			user.move(Enum::DOWN);
 			break;
-		case 'd':
 		case 'D':
-			manager.getUser().move(Enum::RIGHT);
+		case 'd':
+			user.move(Enum::RIGHT);
+			break;
+		case ' ':
+			user.useItem();
+			break;
+		case 'Q':
+		case 'q':
+			user.gainItem();
+			break;
+		case 'E':
+		case 'e':
+			user.putItem();
 			break;
 		}
 	}
+	std::cout << "Clear!!!" << std::endl;
 
 	// 해제
 	for(int i = 0; i < item_num; ++i)
@@ -63,8 +90,4 @@ int main(void) {
 		delete topo_list[i];
 	}
 	return 0;
-}
-
-void print() {
-
 }
