@@ -43,7 +43,7 @@ skTest_Scene::skTest_Scene()
 		//// BFChangeScene
 	// 1. 버튼 기능 설정
 	BFChangeScene* changingBF;
-	changingBF = new BFChangeScene(new MainScene());
+	changingBF = new BFChangeScene(new BaseScene());
 
 	// 2. 버튼 설정
 	Button* changingButton;
@@ -58,8 +58,7 @@ skTest_Scene::skTest_Scene()
 
 skTest_Scene::~skTest_Scene()
 {
-	SAFE_DELETE(Sun);
-	SAFE_DELETE(spr);
+	Scene::~Scene();
 }
 
 void skTest_Scene::Render()
@@ -67,7 +66,6 @@ void skTest_Scene::Render()
 	for (auto& object : this->objectList)
 		object->Render();
 
-	// button->Render();
 }
 
 void skTest_Scene::Update(float dTime)

@@ -6,6 +6,7 @@
 #include "BFAdDelSprite.h"
 #include "BFChangeScene.h"
 #include "MainScene.h"
+#include "BaseScene.h"
 
 class skTest_Scene :
     public Scene

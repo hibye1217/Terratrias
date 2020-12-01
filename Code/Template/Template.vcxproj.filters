@@ -129,6 +129,9 @@
     <ClCompile Include="BFAdDelSprite.cpp">
       <Filter>소스 파일\InGameObject</Filter>
     </ClCompile>
+    <ClCompile Include="SubScene.cpp">
+      <Filter>소스 파일\Stage</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -187,6 +190,9 @@
     </ClInclude>
     <ClInclude Include="BFAdDelSprite.h">
       <Filter>헤더 파일\InGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SubScene.h">
+      <Filter>헤더 파일\Stage</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
