@@ -1,0 +1,16 @@
+6 7 17 1
+6 5
+
+Space	Wall	Space	Wall	Space	Space	Space
+Space	Wall	Space	Wall	Space	Wall	Space
+Space	Wall	Space	Wall	Space	Wall	Space
+Space	Wall	Space	Wall	Space	Wall	Space
+Space	Wall	Space	Wall	Space	Wall	Space
+Hole 1	Wall	Space	Space	Space	Wall	Space
+
+None	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	None
+Key 1	None	None	None	None	None	Jump
+None	None	None	None	None	None	None
