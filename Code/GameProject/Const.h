@@ -57,11 +57,5 @@ class Item;
 class Topography;
 
 extern Manager manager;
-
 extern Item* item_list[item_num];
 extern Topography* topo_list[topo_num];
-
-// extern None NONE;
-// // Jump JUMP;
-
-// extern Space SPACE;
