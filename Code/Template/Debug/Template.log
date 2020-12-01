@@ -1,2 +1,2 @@
-﻿  stdafx.cpp
-C:\Users\Sunrin\Documents\GitHub\Terratrias\Code\Template\stdafx.h(27,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'd3dx9.h': No such file or directory
+﻿  BaseScene.cpp
+  Template.vcxproj -> D:\0 100\2_공부\2_10_Github\Terratrias\Code\Debug\Template.exe

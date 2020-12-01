@@ -86,25 +86,25 @@ bool SoundManager::LoadWaveFile(const char* path, const char* soundName) {
 	if (count != 1) {
 		return false;
 	}
-
+	printf("1");
 	// Check that the chunk ID is the RIFF format.
 	if ((waveFileHeader.chunkId[0] != 'R') || (waveFileHeader.chunkId[1] != 'I') ||
 		(waveFileHeader.chunkId[2] != 'F') || (waveFileHeader.chunkId[3] != 'F')) {
 		return false;
 	}
-
+	printf("2");
 	// Check that the file format is the WAVE format.
 	if ((waveFileHeader.format[0] != 'W') || (waveFileHeader.format[1] != 'A') ||
 		(waveFileHeader.format[2] != 'V') || (waveFileHeader.format[3] != 'E')) {
 		return false;
 	}
-
+	printf("3");
 	// Check that the sub chunk ID is the fmt format.
 	if ((waveFileHeader.subChunkId[0] != 'f') || (waveFileHeader.subChunkId[1] != 'm') ||
 		(waveFileHeader.subChunkId[2] != 't') || (waveFileHeader.subChunkId[3] != ' ')) {
 		return false;
 	}
-
+	printf("4");
 	// Set the wave format of secondary buffer that this wave file will be loaded onto.
 	WAVEFORMATEX waveFormat;
 	waveFormat.wFormatTag = waveFileHeader.audioFormat;
@@ -114,7 +114,7 @@ bool SoundManager::LoadWaveFile(const char* path, const char* soundName) {
 	waveFormat.nBlockAlign = (waveFormat.wBitsPerSample / 8) * waveFormat.nChannels;
 	waveFormat.nAvgBytesPerSec = waveFormat.nSamplesPerSec * waveFormat.nBlockAlign;
 	waveFormat.cbSize = 0;
-
+	printf("5");
 	// Set the buffer description of the secondary sound buffer that the wave file will be loaded onto.
 	DSBUFFERDESC bufferDesc;
 	bufferDesc.dwSize = sizeof(DSBUFFERDESC);
@@ -123,24 +123,24 @@ bool SoundManager::LoadWaveFile(const char* path, const char* soundName) {
 	bufferDesc.dwReserved = 0;
 	bufferDesc.lpwfxFormat = &waveFormat;
 	bufferDesc.guid3DAlgorithm = GUID_NULL;
-
+	printf("6");
 	// Create a temporary sound buffer with the specific buffer settings.
 	IDirectSoundBuffer* tempBuffer = nullptr;
 	if (FAILED(directSound->CreateSoundBuffer(&bufferDesc, &tempBuffer, NULL))) {
 		return false;
 	}
-
+	printf("7");
 	IDirectSoundBuffer8* tmpBuffer = nullptr;
 	// Test the buffer format against the direct sound 8 interface and create the secondary buffer.
 	if (FAILED(tempBuffer->QueryInterface(IID_IDirectSoundBuffer8, (void**)&*&tmpBuffer))) {
 		return false;
 	}
-
+	printf("8");
 	soundMap[soundName] = tmpBuffer;
 	// Release the temporary buffer.
 	tempBuffer->Release();
 	tempBuffer = 0;
-
+	printf("9");
 	// Move to the beginning of the wave data which starts at the end of the data chunk header.
 	fseek(filePtr, sizeof(WaveHeaderType), SEEK_SET);
 
@@ -149,36 +149,35 @@ bool SoundManager::LoadWaveFile(const char* path, const char* soundName) {
 	if (!waveData) {
 		return false;
 	}
-
+	printf("a");
 	// Read in the wave file data into the newly created buffer.
 	count = fread(waveData, 1, waveFileHeader.dataSize, filePtr);
 	if (count != waveFileHeader.dataSize) {
 		return false;
 	}
-
+	printf("b");
 	// Close the file once done reading.
 	error = fclose(filePtr);
 	if (error != 0) {
 		return false;
 	}
-
+	printf("c");
 	// Lock the secondary buffer to write wave data into it.
 	unsigned char* bufferPtr = nullptr;
 	unsigned long bufferSize = 0;
 	if (FAILED(soundMap[soundName]->Lock(0, waveFileHeader.dataSize, (void**)&bufferPtr, (DWORD*)&bufferSize, NULL, 0, 0))) {
 		return false;
 	}
-
+	printf("d");
 	// Copy the wave data into the buffer.
 	memcpy(bufferPtr, waveData, waveFileHeader.dataSize);
-
+	printf("e");
 	// Unlock the secondary buffer after the data has been written to it.
 	if (FAILED(soundMap[soundName]->Unlock((void*)bufferPtr, bufferSize, NULL, 0))) {
 		return false;
 	}
-
+	printf("f");
 	SAFE_DELETE_ARRAY(waveData);
-
 	return true;
 }
 

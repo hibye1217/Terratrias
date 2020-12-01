@@ -3,11 +3,13 @@
 #include "Object.h"
 
 class Scene {
-private:
+protected:
 	std::list<Object*> objectList;
 	std::list<Object*> uiList;
 
 public:
+	std::list<Object*> buttonList;
+
 	Scene();
 	~Scene();
 

@@ -12,6 +12,9 @@ Scene::~Scene() {
 	for (auto& ui : uiList) {
 		SAFE_DELETE(ui);
 	}
+	for (auto& button : buttonList) {
+		SAFE_DELETE(button);
+	}
 }
 
 void Scene::Render() {
@@ -19,6 +22,9 @@ void Scene::Render() {
 }
 
 void Scene::Update(float dTime) {
+	if (sceneManager->getOldSceneExist())
+		sceneManager->deleteOldThings();
+
 	for (auto& object : objectList) {
 		object->Update(dTime);
 	}

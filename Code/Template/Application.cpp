@@ -27,6 +27,12 @@ void Application::InitD3D(HWND hWnd) {
 	ZeroMemory(&d3dpp, sizeof(d3dpp));
 
 	d3dpp.Windowed = true;
+	if (BORDERLESS) {
+		d3dpp.hDeviceWindow = hWnd;
+		d3dpp.BackBufferFormat = D3DFMT_X8R8G8B8;
+		d3dpp.BackBufferWidth = SCREEN_WIDTH;
+		d3dpp.BackBufferHeight = SCREEN_HEIGHT;
+	}
 	d3dpp.SwapEffect = D3DSWAPEFFECT_DISCARD;
 
 	pd3d->CreateDevice(D3DADAPTER_DEFAULT,
@@ -56,10 +62,10 @@ void Application::InitWindow(HINSTANCE hInstance) {
 }
 
 void Application::InitManager() {
-	sceneManager = new SceneManager();
 	textureManager = new TextureManager();
 	inputManager = new InputManager();
 	soundManager = new SoundManager();
+	sceneManager = new SceneManager();
 }
 
 void Application::InitDeltaTime() {
@@ -79,7 +85,13 @@ LRESULT CALLBACK Application::WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, L
 
 HWND Application::FloatWindow(HINSTANCE hInstance,
 	int cmdShow) {
-	hWnd = CreateWindow(PROGRAM_NAME, PROGRAM_NAME,
+	if(BORDERLESS)
+		hWnd = CreateWindow(PROGRAM_NAME, PROGRAM_NAME,
+		WS_EX_TOPMOST | WS_POPUP, CW_USEDEFAULT, CW_USEDEFAULT,
+		SCREEN_WIDTH, SCREEN_HEIGHT,
+		NULL, (HMENU)NULL, hInstance, NULL);
+	else
+		hWnd = CreateWindow(PROGRAM_NAME, PROGRAM_NAME,
 		WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT,
 		SCREEN_WIDTH, SCREEN_HEIGHT,
 		NULL, (HMENU)NULL, hInstance, NULL);
@@ -89,7 +101,9 @@ HWND Application::FloatWindow(HINSTANCE hInstance,
 
 int Application::DoMainLoop(Scene* firstScene) {
 
-	sceneManager->ChangeScene(firstScene);
+	sceneManager->setPreparedScene(firstScene);
+	sceneManager->ChangeScene();
+	//sceneManager->ChangeScene(firstScene);
 
 	MSG Message = { 0, };
 
@@ -111,6 +125,8 @@ int Application::DoMainLoop(Scene* firstScene) {
 
 		inputManager->UpdateKeyState();
 		sceneManager->Update(getDeltaTime());
+		if (sceneManager->getReservedChangeScene())
+			sceneManager->FadeChangeScene();
 	}
 	
 	DeleteManager();

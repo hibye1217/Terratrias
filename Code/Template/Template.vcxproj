@@ -157,6 +157,11 @@
   <ItemGroup>
     <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="BaseScene.cpp" />
+    <ClCompile Include="BFAdDelSprite.cpp" />
+    <ClCompile Include="BFChangeScene.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ButtonFunction.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="InputManager.cpp" />
@@ -174,11 +179,17 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SubScene.cpp" />
     <ClCompile Include="TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h" />
     <ClInclude Include="Application.h" />
+    <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="BFAdDelSprite.h" />
+    <ClInclude Include="BFChangeScene.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="ButtonFunction.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="Font.h" />
     <ClInclude Include="InputManager.h" />
@@ -190,6 +201,7 @@
     <ClInclude Include="SoundManager.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SubScene.h" />
     <ClInclude Include="TextureManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
