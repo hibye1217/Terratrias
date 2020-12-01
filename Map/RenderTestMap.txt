@@ -1,8 +1,0 @@
-2 9 10000 5
-0 0
-
-Space	Wall	Ice	Glue	Hole 1	Hole 2	Hole 3	Hole 4	Hole 5
-Space	Space	Space	Space	Space	Space	Space	Space	Space
-
-None	None	None	None	None	None	None	None	None
-None	Jump	Boost	Bomb	Key 1	Key 5	Key 2	Key 4	Key 3
