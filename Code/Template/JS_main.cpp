@@ -20,7 +20,7 @@ Topography* topo_list[topo_num] = { new Hole(), new Space(), new Wall(), new Glu
 int main(void) {
 	std::cout << "Hello" << std::endl;
 
-	manager.initialize("stage3.txt");
+	manager.initialize("stage1.txt");
 	getchar();
 
 	User& user = manager.getUser();

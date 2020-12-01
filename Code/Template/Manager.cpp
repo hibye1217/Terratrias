@@ -6,9 +6,6 @@
 #include "Manager.h"
 #include "Const.h"
 
-
-
-
 Manager::Manager() {}
 
 Manager::~Manager() {}

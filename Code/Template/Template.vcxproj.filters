@@ -291,4 +291,9 @@
       <Filter>헤더 파일\Class</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="stage1.txt">
+      <Filter>리소스 파일</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

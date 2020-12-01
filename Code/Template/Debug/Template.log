@@ -1,1 +1,8 @@
-﻿  Template.vcxproj -> D:\0 100\2_공부\2_10_Github\Terratrias\Code\Debug\Template.exe
+﻿  Manager.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(112,19): error C2079: 'in'은(는) 정의되지 않은 class 'std::basic_ifstream<char,std::char_traits<char>>'을(를) 사용합니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(114,39): warning C4552: '>>': 식의 결과가 사용되지 않습니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(122,17): warning C4552: '>>': 식의 결과가 사용되지 않습니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(131,16): error C2677: 이항 '>>': 'std::string' 형식을 사용하는 전역 연산자가 없거나 허용되는 변환이 없습니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(135,20): warning C4552: '>>': 식의 결과가 사용되지 않습니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(157,16): error C2677: 이항 '>>': 'std::string' 형식을 사용하는 전역 연산자가 없거나 허용되는 변환이 없습니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(162,20): warning C4552: '>>': 식의 결과가 사용되지 않습니다.
