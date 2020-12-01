@@ -1,5 +1,5 @@
 18 3 10000 2
-0 0
+0 1
 
 Space	Space	Space
 Space	Wall	Space
@@ -24,7 +24,7 @@ Jump	None	None
 Jump	None	None
 Jump	None	None
 Jump	None	None
-Jump	Key 1 Jump
+Jump	Key 1	Jump
 None	None	None
 None	None	None
 None	Boost	None
@@ -37,4 +37,4 @@ None	Boost	None
 None	None	None
 None	None	None
 None	Bomb	Key 2
-Bomb  Boost Jump
+Bomb	Boost	Jump
