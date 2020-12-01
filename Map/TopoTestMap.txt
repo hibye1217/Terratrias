@@ -1,4 +1,4 @@
-12 3 10000 5
+18 3 10000 5
 0 1
 
 Space	Space	Space
@@ -9,7 +9,7 @@ Ice	Space	Glue
 Ice	Ice	Ice
 Ice	Wall	Space
 Ice	Ice	Space
-Ice	Gule	Wall
+Ice	Glue	Wall
 Ice	Space	Space
 Ice	Wall	Glue
 Glue	Space	Space
@@ -20,6 +20,12 @@ Wall	Space	Hole 2
 Hole 4	Space	Wall
 Hole 3	Space	Space
 
+None	None	None
+None	None	None
+None	None	None
+None	None	None
+None	None	None
+None	None	None
 None	None	None
 None	None	None
 None	None	None
