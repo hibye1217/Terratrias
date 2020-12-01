@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+#include "stdafx.h"
 #include "Const.h"
 #include "Manager.h"
 #include "Space.h"

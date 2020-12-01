@@ -1,4 +1,5 @@
 #pragma once
+#include "stdafx.h"
 #include "Glue.h"
 #include "Manager.h"
 

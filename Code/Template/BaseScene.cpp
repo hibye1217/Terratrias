@@ -32,8 +32,12 @@ void BaseScene::Update(float dTime) {
 		else 
 			sceneManager->ChangeButtonList(subScene);
 		isSubSceneOn = !isSubSceneOn;
-
 	}
+
+
+	/// 상하좌우
+	/// 아이템사용
+
 
 	for (auto& object : objectList) 
 			object->Update(dTime);

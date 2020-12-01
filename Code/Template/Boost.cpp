@@ -1,5 +1,6 @@
 #pragma once
 #include <cstdio>
+#include "stdafx.h"
 #include "Boost.h"
 
 Boost::Boost() : Item(Enum::BOOST), direction(-1) {}

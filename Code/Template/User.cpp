@@ -1,4 +1,5 @@
 #pragma once
+#include "stdafx.h"
 #include "User.h"
 #include "Manager.h"
 

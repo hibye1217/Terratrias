@@ -1,4 +1,5 @@
 #pragma once
+#include "stdafx.h"
 #include "Hole.h"
 
 Hole::Hole() : Hole(-1) {}

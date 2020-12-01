@@ -1,4 +1,5 @@
 #pragma once
+#include "stdafx.h"
 #include "Key.h"
 
 Key::Key() : Key(-1) {}

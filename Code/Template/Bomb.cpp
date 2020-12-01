@@ -1,4 +1,5 @@
 #pragma once
+#include "stdafx.h"
 #include "Bomb.h"
 
 Bomb::Bomb() : Item(Enum::BOMB) {}

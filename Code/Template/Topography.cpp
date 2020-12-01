@@ -1,4 +1,5 @@
 #pragma once
+#include "stdafx.h"
 #include "Topography.h"
 
 Topography::Topography() : Topography(Enum::SPACE) {}

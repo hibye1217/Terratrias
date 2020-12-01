@@ -2,8 +2,12 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "stdafx.h"
 #include "Manager.h"
 #include "Const.h"
+
+
+
 
 Manager::Manager() {}
 
