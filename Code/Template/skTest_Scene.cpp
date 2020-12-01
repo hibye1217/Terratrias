@@ -16,7 +16,7 @@ skTest_Scene::skTest_Scene()
 
 	Button* button;
 	button = new Button("Resources/UnitSquare.png");
-	sceneManager->AppendButtonList(button);
+	buttonList.push_back(button);
 	button->setPos(0, 0);	// ÁÂÃø»ó´Ü ÁÂÇ¥
 	button->setDpos(100, 100);
 	button->bfList.push_back(new ButtonFunction());
@@ -37,7 +37,7 @@ skTest_Scene::skTest_Scene()
 	addingButton->setDpos(100, 100);
 
 	// 4. ¿¬°á
-	sceneManager->AppendButtonList(addingButton);
+	buttonList.push_back(addingButton);
 	addingButton->bfList.push_back(addingBF);
 
 		//// BFChangeScene
@@ -52,7 +52,8 @@ skTest_Scene::skTest_Scene()
 	changingButton->setDpos(100, 100);
 
 	// 3. ¿¬°á
-	sceneManager->AppendButtonList(changingButton);
+	buttonList.push_back(changingButton);
+	changingButton->bfList.push_back(changingBF);
 }
 
 skTest_Scene::~skTest_Scene()

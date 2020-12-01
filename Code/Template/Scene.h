@@ -8,6 +8,8 @@ protected:
 	std::list<Object*> uiList;
 
 public:
+	std::list<Object*> buttonList;
+
 	Scene();
 	~Scene();
 

@@ -18,14 +18,14 @@ SceneManager::SceneManager() {
 
 SceneManager::~SceneManager() {
 	SAFE_DELETE(currentScene);
-	for (auto& button : buttonList)
+	for (auto& button : currentButtonList)
 		SAFE_DELETE(button);
 }
 
 void SceneManager::Render() {
 	currentScene->Render();
 
-	for (auto& button : buttonList)
+	for (auto& button : currentButtonList)
 		button->Render();
 
 	for (int i = 1; i <= count; i++) {
@@ -36,13 +36,13 @@ void SceneManager::Render() {
 }
 
 void SceneManager::Update(float dTime) {
+
 	if (inputManager->GetKeyState(VK_LBUTTON) == KEY_DOWN)
-		for (auto& button : buttonList)
+		for (auto& button : currentButtonList)
 			button->Check(inputManager->GetMousePos());
-	for (auto& button : buttonList)
+	for (auto& button : currentButtonList)
 		button->hoveringCheck(inputManager->GetMousePos());
 	//
-
 	currentScene->Update(dTime);
 	timer += dTime;
 }
@@ -50,18 +50,15 @@ void SceneManager::Update(float dTime) {
 void SceneManager::ChangeScene() {
 	oldScene = currentScene;
 	oldSceneExist = true;
-	ChangeButtonList();
+	ChangeButtonList(preparedScene);
 	currentScene = preparedScene;
 	reservedChangeScene = false;
 }
 void SceneManager::FadeChangeScene() {
 	FadeIn();
-	oldScene = currentScene;
-	oldSceneExist = true;
-	ChangeButtonList();
-	currentScene = preparedScene;
+	ChangeScene();
 	FadeOut();
-	reservedChangeScene = false;
+	
 }
 
 void SceneManager::FadeIn() {
@@ -106,25 +103,15 @@ void SceneManager::FadeOut() {
 	}
 }
 
-void SceneManager::AppendButtonList(Button* button)
+void SceneManager::ChangeButtonList(Scene* myScene)
 {
-	preparedButtonList.push_back(button);
-}
-
-void SceneManager::ChangeButtonList()
-{
-	for (auto& button : buttonList)
-		oldButtonList.push_back(button);
-	buttonList.clear();
-	for (auto& button : preparedButtonList)
-		buttonList.push_back(button);
-	preparedButtonList.clear();
+	currentButtonList.clear();
+	for (auto& button : myScene->buttonList)
+		currentButtonList.push_back((Button*)button);
 }
 
 void SceneManager::deleteOldThings()
 {
-	for (auto& button : oldButtonList)
-		SAFE_DELETE(button);
 	SAFE_DELETE(oldScene);
 }
 

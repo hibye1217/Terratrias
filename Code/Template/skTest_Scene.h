@@ -14,8 +14,6 @@ public:
 	Sprite* spr;
 	Sprite* Sun;
 
-	std::list<Button*> buttonList;
-
 	skTest_Scene();
 	~skTest_Scene();
 

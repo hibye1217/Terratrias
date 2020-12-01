@@ -12,9 +12,7 @@ private:
 	Scene* oldScene;
 	Scene* currentScene;
 	Scene* preparedScene;
-	std::list<Button*> oldButtonList;
-	std::list<Button*> buttonList;
-	std::list<Button*> preparedButtonList;
+	std::list<Button*> currentButtonList;
 	
 	const int count = 30;
 	const float changeRate = 1.0 / 30;
@@ -39,11 +37,10 @@ public:
 	void FadeIn();
 	void FadeOut();
 
-	void AppendButtonList(Button*);
-	void ChangeButtonList();
+	void ChangeButtonList(Scene*);
 
 	void deleteOldThings();
-	void setPreparedScene(Scene* scene);
+	void setPreparedScene(Scene*);
 
 	bool getOldSceneExist();
 	bool getReservedChangeScene();

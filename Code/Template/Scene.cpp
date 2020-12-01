@@ -12,6 +12,9 @@ Scene::~Scene() {
 	for (auto& ui : uiList) {
 		SAFE_DELETE(ui);
 	}
+	for (auto& button : buttonList) {
+		SAFE_DELETE(button);
+	}
 }
 
 void Scene::Render() {
@@ -22,6 +25,9 @@ void Scene::Update(float dTime) {
 	if (sceneManager->getOldSceneExist())
 		sceneManager->deleteOldThings();
 
+	// 만약 esc가 작동되었다면, 이하 루프문은 돌지 않기로 해야지
+	//							= 씬을 업데이트 하지 않기로
+	
 	for (auto& object : objectList) {
 		object->Update(dTime);
 	}
