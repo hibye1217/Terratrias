@@ -1,0 +1,22 @@
+9 6 10 3
+0 8
+
+Space	Space	Space	Space	Space	Hole 1
+Space	Wall	Wall	Wall	Wall	Ice
+Space	Wall	Hole 2	Hole 3	Wall	Ice
+Space	Wall	Space	Wall	Wall	Ice
+Wall	Wall	Space	Space	Wall	Ice
+Space	Wall	Wall	Space	Wall	Space
+Space	Space	Space	Space	Wall	Space
+Wall	Wall	Wall	Wall	Wall	Space
+Space	Space	Space	Space	Space	Space
+
+Boost	None	None	None	None	Boost
+None	None	None	None	None	None
+None	None	Key 3	Key 2	None	None
+Jump	None	None	None	None	None
+None	None	None	None	None	None
+None	None	None	None	None	Key 1
+None	None	None	None	None	None
+None	None	None	None	None	None
+Boost	None	None	None	None	Boost
