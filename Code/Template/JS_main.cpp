@@ -21,7 +21,6 @@ int main(void) {
 	std::cout << "Hello" << std::endl;
 
 	manager.initialize("stage1.txt");
-	getchar();
 
 	User& user = manager.getUser();
 	while (manager.getMoveCnt() <= manager.getLimitCnt() && manager.getKeyCnt() > 0) {

@@ -28,7 +28,7 @@ void Key::useItem()
     delete cell.getTopography();
     cell.setTopography(topo_list[Enum::SPACE]);
 
-    manager.setMoveCnt(manager.getMoveCnt() + 1);
+    //manager.setMoveCnt(manager.getMoveCnt() + 1);
     manager.setKeyCnt(manager.getKeyCnt() - 1);
 }
 

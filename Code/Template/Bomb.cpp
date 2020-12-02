@@ -38,7 +38,7 @@ void Bomb::useItem()
 	}
 
 	user.setInventory(item_list[Enum::NONE]);
-	manager.setMoveCnt(manager.getMoveCnt() + 1);
+	//manager.setMoveCnt(manager.getMoveCnt() + 1);
 }
 
 bool Bomb::canUseItem()

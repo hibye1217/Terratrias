@@ -1,8 +1,9 @@
 ﻿  Manager.cpp
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(112,19): error C2079: 'in'은(는) 정의되지 않은 class 'std::basic_ifstream<char,std::char_traits<char>>'을(를) 사용합니다.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(114,39): warning C4552: '>>': 식의 결과가 사용되지 않습니다.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(122,17): warning C4552: '>>': 식의 결과가 사용되지 않습니다.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(131,16): error C2677: 이항 '>>': 'std::string' 형식을 사용하는 전역 연산자가 없거나 허용되는 변환이 없습니다.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(135,20): warning C4552: '>>': 식의 결과가 사용되지 않습니다.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(157,16): error C2677: 이항 '>>': 'std::string' 형식을 사용하는 전역 연산자가 없거나 허용되는 변환이 없습니다.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(162,20): warning C4552: '>>': 식의 결과가 사용되지 않습니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(114,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(119,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(129,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(141,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(148,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(174,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(181,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  Template.vcxproj -> C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Debug\Template.exe

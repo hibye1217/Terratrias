@@ -31,6 +31,7 @@ void Jump::useItem()
 		direction = Enum::RIGHT;
 		break;
 	}
+
 	if (!canUseItem())
 	{
 		return;

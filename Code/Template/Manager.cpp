@@ -2,11 +2,13 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <cstdio>
+#include <cstdlib>
 #include "stdafx.h"
 #include "Manager.h"
 #include "Const.h"
 
-Manager::Manager() {}
+Manager::Manager() : height(0), width(0), limitCnt(0), moveCnt(0), keyCnt(0) {}
 
 Manager::~Manager() {}
 
@@ -109,9 +111,12 @@ void Manager::initialize(std::string filename)
     moveCnt = 0;
     user.setInventory(item_list[Enum::NONE]);
 
-    std::ifstream in;
-    in.open(filename);
-    in >> height >> width >> limitCnt >> keyCnt;
+    FILE* in = fopen(filename.c_str(), "r");
+    //std::ifstream in(filename);
+    //in.open(filename, std::ios::in);
+    //in >> height >> width >> limitCnt >> keyCnt;
+    //std::cin >> height >> width >> limitCnt >> keyCnt;
+    fscanf(in, "%d%d%d%d", &height, &width, &limitCnt, &keyCnt);
     map.resize(height);
     for(auto& v : map)
     {
@@ -119,7 +124,9 @@ void Manager::initialize(std::string filename)
     }
 
     int userX, userY;
-    in >> userX >> userY;
+    //in >> userX >> userY;
+    //std::cin >> userX >> userY;
+    fscanf(in, "%d%d", &userX, &userY);
     user.setX(userX);
     user.setY(userY);
 
@@ -127,12 +134,18 @@ void Manager::initialize(std::string filename)
     {
         for(int j = 0; j < width; ++j)
         {
-            std::string topo;
-            in >> topo;
-            if(topo == "Hole")
+            //std::string topo;
+            //in >> topo;
+            //std::cin >> topo;
+            char topo[16];
+            fscanf(in, "%s", topo);
+            //if(topo == "Hole")
+            if (!strcmp(topo, "Hole"))
             {
                 int id;
-                in >> id;
+                //in >> id;
+                //std::cin >> id;
+                fscanf(in, "%d", &id);
                 map[i][j].setTopography(new Hole(id));
             }
             else
@@ -153,13 +166,19 @@ void Manager::initialize(std::string filename)
     {
         for(int j = 0; j < width; ++j)
         {
-            std::string item;
-            in >> item;
+            //std::string item;
+            //in >> item;
+            //std::cin >> item;
             //std::cout << item << ' ';
-            if(item == "Key")
+            char item[16];
+            fscanf(in, "%s", item);
+            //if(item == "Key")
+            if(!strcmp(item, "Key"))
             {
                 int id;
-                in >> id;
+                //in >> id;
+                //std::cin >> id;
+                fscanf(in, "%d", &id);
                 map[i][j].setItem(new Key(id));
             }
             else
@@ -178,7 +197,8 @@ void Manager::initialize(std::string filename)
         //std::cout << std::endl;
     }
 
-    in.close();
+    //in.close();
+    fclose(in);
 }
 
 void Manager::finalize()

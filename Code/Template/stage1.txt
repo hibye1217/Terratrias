@@ -3,12 +3,12 @@
 
 Space Space Space Space
 Wall  Wall  Wall  Space
-Hole1 Wall  Space Space
+Hole 1 Wall  Space Space
 Space Wall  Wall  Space
 Space Space Space Space
 
 None  None  None  None
 None  None  None  None
-None  None  Key1  None
+None  None  Key 1  None
 None  None  None  None
 None  None  None  None
