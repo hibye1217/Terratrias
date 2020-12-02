@@ -3,7 +3,8 @@
 #include "Const.h"
 #include "Sprite.h"
 
-class Topography : public Sprite
+class Topography
+//	: public Sprite	// 1
 {
 public:
 	int type;

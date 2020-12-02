@@ -140,6 +140,8 @@ void Manager::initialize(std::string filename)
     user.setX(userX);
     user.setY(userY);
 
+   // User.setPos(userX, userY);    // 1
+
     for(int i = 0; i < height; ++i)
     {
         for(int j = 0; j < width; ++j)
@@ -157,7 +159,7 @@ void Manager::initialize(std::string filename)
                 //std::cin >> id;
                 fscanf(in, "%d", &id);
                 map[i][j].setTopography(new Hole(id));
-                map[i][j].getTopography()->setPos(SCREEN_WIDTH - i_hat * (width - j), SCREEN_HEIGHT - j_hat * (height - i));
+                //map[i][j].getTopography()->setPos(SCREEN_WIDTH - i_hat * (width - j), SCREEN_HEIGHT - j_hat * (height - i));  // 2
             }
             else
             {
@@ -191,7 +193,7 @@ void Manager::initialize(std::string filename)
                 //std::cin >> id;
                 fscanf(in, "%d", &id);
                 map[i][j].setItem(new Key(id));
-                map[i][j].getItem()->setPos(SCREEN_WIDTH - i_hat * (width - j), SCREEN_HEIGHT - j_hat * (height - i));
+                //map[i][j].getItem()->setPos(SCREEN_WIDTH - i_hat * (width - j), SCREEN_HEIGHT - j_hat * (height - i));    // 3
             }
             else
             {

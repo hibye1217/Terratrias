@@ -26,13 +26,15 @@ void BaseScene::Update(float dTime) {
 		sceneManager->deleteOldThings();
 	
 	// esc 가 눌렸다면
-	if (isSubSceneOn)
-		if (inputManager->GetKeyState(27) == KEY_DOWN)
+	if (inputManager->GetKeyState(27) == KEY_DOWN) {
+		if (isSubSceneOn) {
 			sceneManager->ChangeButtonList(this);
+		}
 		else {
 			sceneManager->ChangeButtonList(subScene);
-			isSubSceneOn = !isSubSceneOn;
 		}
+		isSubSceneOn = !isSubSceneOn;
+	}
 
 
 	/// 상하좌우

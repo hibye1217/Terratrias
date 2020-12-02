@@ -3,7 +3,8 @@
 #include "Const.h"
 #include "Sprite.h"
 
-class Item : public Sprite
+class Item
+//	: public Sprite		// 1
 {
 private:
 	int type;

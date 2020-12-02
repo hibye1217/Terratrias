@@ -10,7 +10,7 @@ StageScene::StageScene(int n) : user(manager.getUser())
 	stageName = "stage" + std::to_string(n);
 	stageName += ".txt";
 
-	manager.initialize(stageName.c_str());
+	manager.initialize(stageName);
 
 
 
@@ -34,12 +34,12 @@ void StageScene::Render()
 {
 	for (int i = 0; i < manager.getHeight(); ++i) {
 		for (int j = 0; j < manager.getWidth(); ++j) {
-			manager.getCell(i, j).getTopography()->Render();
-			manager.getCell(i, j).getItem()->Render();
+			//manager.getCell(i, j).getTopography()->Render();	// 1
+			//manager.getCell(i, j).getItem()->Render();		// 2
 		}
 	}
 
-	manager.getUser().Render();
+	//manager.getUser().Render();								// 3
 
 	// 이상하지만, manager.map[][]에 있는 셀에 있는 Item과 Hole은 addObject하지 않을거임
 	// Manager에서 초기화를 진행하는데, 거기서 Scene의 addObejct를 할 수가 없음
@@ -47,6 +47,22 @@ void StageScene::Render()
 	for (auto& object : this->objectList)
 		object->Render();
 
+	// User.h
+		// 1
+	// User.cpp
+		// 1, 2
+	// Item.h
+		// 1
+	// Item.cpp
+		// 1, 2
+	// Topography.h
+		// 1
+	// Topograhpy.cpp
+		// 1, 2
+	// manager.cpp
+		// 1, 2, 3
+	// StageScene.cpp
+		// 1, 2, 3
 
 	// 얘 위에 다 있어야해
 	BaseScene::Render();

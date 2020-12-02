@@ -13,11 +13,11 @@
 #include "Boost.h"
 #include "Bomb.h"
 
-Manager manager;
-Item* item_list[item_num] = { new Key(), new None(), new Jump(), new Boost(), new Bomb(), };
-Topography* topo_list[topo_num] = { new Hole(), new Space(), new Wall(), new Glue(), };
+//Manager manager;
+//Item* item_list[item_num] = { new Key(), new None(), new Jump(), new Boost(), new Bomb(), };
+//Topography* topo_list[topo_num] = { new Hole(), new Space(), new Wall(), new Glue(), };
 
-int main(void) {
+int run(void) {
 	std::cout << "Hello" << std::endl;
 
 	manager.initialize("stage1.txt");

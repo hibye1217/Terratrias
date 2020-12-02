@@ -3,7 +3,9 @@
 #include "User.h"
 #include "Manager.h"
 
-User::User() : Sprite("Resources/User.png") {}
+User::User()
+//    : Sprite("Resources/User.png")    // 1
+{}
 
 User::~User() {}
 
@@ -84,7 +86,7 @@ void User::move(int direction)
     x = nx;
     y = ny;
 
-    setPos(nx, ny);
+    //setPos(nx, ny);       // 2
     // 유저에 추가한거
     
 

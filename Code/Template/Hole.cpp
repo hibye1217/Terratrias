@@ -4,7 +4,7 @@
 
 Hole::Hole() : Hole(-1) {}
 
-Hole::Hole(int id) : Topography(Enum::HOLE, "Resources/Hole" + std::to_string(id) + ".png"), id(id) {
+Hole::Hole(int id) : Topography(Enum::HOLE, ("Resources/Hole" + std::to_string(id) + ".png")), id(id) {
 
 }
 
