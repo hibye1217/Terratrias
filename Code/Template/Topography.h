@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "Const.h"
+#include "Sprite.h"
 
 class Topography : public Sprite
 {
@@ -9,6 +10,7 @@ public:
 public:
 	Topography();
 	Topography(int type);
+	Topography(int type, std::string path);
 	virtual ~Topography();
 	int getType();
 	virtual bool canGo() = 0;

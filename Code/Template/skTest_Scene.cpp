@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "skTest_Scene.h"
+#include "StageScene.h"
 
 
 skTest_Scene::skTest_Scene()
@@ -7,7 +8,6 @@ skTest_Scene::skTest_Scene()
 	spr = new Sprite("Resources/Danmaku_1.png");
 	AddObject(spr);
 	spr->setPos(200, 200);
-	
 	
 	// 어캐 쓰는지 모르는 soundManager임
 	// soundManager->LoadWaveFile("Resources/test.wav", "test");
@@ -43,7 +43,7 @@ skTest_Scene::skTest_Scene()
 		//// BFChangeScene
 	// 1. 버튼 기능 설정
 	BFChangeScene* changingBF;
-	changingBF = new BFChangeScene(new BaseScene());
+	changingBF = new BFChangeScene(new StageScene(1));
 
 	// 2. 버튼 설정
 	Button* changingButton;

@@ -3,7 +3,7 @@
 #include "User.h"
 #include "Manager.h"
 
-User::User() {}
+User::User() : Sprite("Resources/User.png") {}
 
 User::~User() {}
 
@@ -83,6 +83,10 @@ void User::move(int direction)
     
     x = nx;
     y = ny;
+
+    setPos(nx, ny);
+    // 유저에 추가한거
+    
 
     manager.setMoveCnt(manager.getMoveCnt() + 1);
 }

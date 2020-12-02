@@ -6,7 +6,7 @@ class StageScene :
     public BaseScene
 {
 private:
-
+    User& user;
 public:
 
     StageScene(int n);

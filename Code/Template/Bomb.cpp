@@ -2,7 +2,9 @@
 #include "stdafx.h"
 #include "Bomb.h"
 
-Bomb::Bomb() : Item(Enum::BOMB) {}
+Bomb::Bomb() : Item(Enum::BOMB, "Resources/Bomb.png") {
+	
+}
 
 Bomb::~Bomb() {}
 

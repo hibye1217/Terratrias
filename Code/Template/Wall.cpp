@@ -2,7 +2,7 @@
 #include "stdafx.h"
 #include "Wall.h"
 
-Wall::Wall() : Topography(Enum::WALL) {}
+Wall::Wall() : Topography(Enum::WALL, "Resources/Wall.png") {}
 
 Wall::~Wall() {}
 

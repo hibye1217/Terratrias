@@ -2,7 +2,7 @@
 #include "Item.h"
 #include "Const.h"
 
-class User
+class User : public Sprite
 {
 private:
 	int x, y;
