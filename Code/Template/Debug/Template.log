@@ -1,9 +1,1 @@
-﻿  Manager.cpp
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(114,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(119,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(129,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(141,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(148,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(174,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(181,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  Template.vcxproj -> C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Debug\Template.exe
+﻿  Template.vcxproj -> D:\0 100\2_공부\2_10_Github\Terratrias\Code\Debug\Template.exe

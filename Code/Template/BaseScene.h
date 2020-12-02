@@ -4,7 +4,7 @@
 class BaseScene :
     public Scene
 {
-private:
+protected:
     bool isSubSceneOn;
 public:
     SubScene *subScene;

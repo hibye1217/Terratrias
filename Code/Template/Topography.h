@@ -2,7 +2,7 @@
 #include <string>
 #include "Const.h"
 
-class Topography
+class Topography : public Sprite
 {
 public:
 	int type;

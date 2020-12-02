@@ -21,7 +21,19 @@
 #define SAFE_DELETE(p) {if(p) {delete (p); (p) = nullptr;}}
 #define SAFE_DELETE_ARRAY(p) {if(p){delete [](p); (p) = nullptr;}}
 
+// 사용자설정
 
+#include "Const.h"
+#include "Manager.h"
+#include "Space.h"
+#include "Hole.h"
+#include "Wall.h"
+#include "None.h"
+#include "Glue.h"
+#include "Key.h"
+#include "Jump.h"
+#include "Boost.h"
+#include "Bomb.h"
 
 // DirectX Header
 #include <d3d9.h>
@@ -64,12 +76,6 @@
 
 #endif // BORDERLESS
 
-#define I_HAT J_HAT
-#define J_HAT min( (SCREEN_HEIGHT - (SCREEN_HEIGHT%20)) / 20, 50 )
-
-#define MARGIN_OF_LEFT SCREEN_WIDTH - I_HAT * 20
-#define MARGIN_OF_TOP SCREEN_HEIGHT - J_HAT * 20
-
 // Constant
 
 
@@ -83,3 +89,13 @@ extern SceneManager* sceneManager;
 extern TextureManager* textureManager;
 extern InputManager* inputManager;
 extern SoundManager* soundManager;
+
+
+extern Manager manager;
+extern Item* item_list[item_num];
+extern Topography* topo_list[topo_num];
+
+extern int i_hat;
+extern int j_hat;
+extern int margin_bafor;
+extern int margin_side;

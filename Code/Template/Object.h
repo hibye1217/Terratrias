@@ -3,6 +3,8 @@
 #include <d3dx9.h>
 #include <list>
 
+#include "stdafx.h"
+
 class Object {
 protected:
 	Object* parent;

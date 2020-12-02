@@ -183,6 +183,9 @@
     <ClCompile Include="JS_main.cpp">
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
+    <ClCompile Include="StageScene.cpp">
+      <Filter>소스 파일\Stage</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -289,6 +292,9 @@
     </ClInclude>
     <ClInclude Include="Wall.h">
       <Filter>헤더 파일\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="StageScene.h">
+      <Filter>헤더 파일\Stage</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

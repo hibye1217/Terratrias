@@ -12,6 +12,7 @@ TextureManager* textureManager;
 InputManager* inputManager;
 SoundManager* soundManager;
 
+
 Application::Application() {
 	QueryPerformanceCounter(&beforeInterval);
 	QueryPerformanceCounter(&currentInterval);

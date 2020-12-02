@@ -2,7 +2,7 @@
 #include <string>
 #include "Const.h"
 
-class Item
+class Item : public Sprite
 {
 private:
 	int type;

@@ -10,7 +10,7 @@ BaseScene::BaseScene()
 BaseScene::~BaseScene()
 {
 	SAFE_DELETE(subScene);
-	Scene::~Scene();
+
 }
 
 void BaseScene::Render()
@@ -26,13 +26,13 @@ void BaseScene::Update(float dTime) {
 		sceneManager->deleteOldThings();
 	
 	// esc 가 눌렸다면
-	if (inputManager->GetKeyState(27) == KEY_DOWN) {
-		if (isSubSceneOn) 
+	if (isSubSceneOn)
+		if (inputManager->GetKeyState(27) == KEY_DOWN)
 			sceneManager->ChangeButtonList(this);
-		else 
+		else {
 			sceneManager->ChangeButtonList(subScene);
-		isSubSceneOn = !isSubSceneOn;
-	}
+			isSubSceneOn = !isSubSceneOn;
+		}
 
 
 	/// 상하좌우
