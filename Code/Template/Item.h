@@ -4,7 +4,7 @@
 #include "Sprite.h"
 
 class Item
-//	: public Sprite		// 1
+	: public Sprite		// 1
 {
 private:
 	int type;

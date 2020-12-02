@@ -8,6 +8,7 @@ class User
 private:
 	int x, y;
 	Item* pInventory;
+	Sprite* sprite;
 public:
 	User();
 	~User();
@@ -18,6 +19,8 @@ public:
 	void setY(int y);
 	Item* getInventory();
 	void setInventory(Item* item);
+	void setSprite(Sprite*);
+	Sprite* getSprite();
 
 	void useItem();
 	void gainItem();

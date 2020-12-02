@@ -18,8 +18,8 @@
 #include "bomb.h"
 
 Manager manager;
-Item* item_list[item_num] = { new Key(), new None(), new Jump(), new Boost(), new Bomb(), };
-Topography* topo_list[topo_num] = { new Hole(), new Space(), new Wall(), new Glue(), };
+Item* item_list[item_num];
+Topography* topo_list[topo_num];
 
 int i_hat;
 int j_hat;
@@ -43,6 +43,18 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 	app.InitDeltaTime();
 	app.InitManager();
 
+	item_list[Enum::KEY] = new Key();
+	item_list[Enum::NONE] = new None();
+	item_list[Enum::JUMP] = new Jump();
+	item_list[Enum::BOOST] = new Boost();
+	item_list[Enum::BOMB] = new Bomb();
+	
+	topo_list[Enum::HOLE] = new Hole();
+	topo_list[Enum::SPACE] = new Space();
+	topo_list[Enum::WALL] = new Wall();
+	topo_list[Enum::GLUE] = new Glue();
+
+	manager.getUser().setSprite(new Sprite("Resources/User.png"));
 
 	//return app.DoMainLoop(new MainScene());
 	skTest_Scene * skTelekom = new skTest_Scene();

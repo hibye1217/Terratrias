@@ -34,12 +34,12 @@ void StageScene::Render()
 {
 	for (int i = 0; i < manager.getHeight(); ++i) {
 		for (int j = 0; j < manager.getWidth(); ++j) {
-			//manager.getCell(i, j).getTopography()->Render();	// 1
-			//manager.getCell(i, j).getItem()->Render();		// 2
+			manager.getCell(i, j).getTopography()->Render();	// 1
+			manager.getCell(i, j).getItem()->Render();		// 2
 		}
 	}
 
-	//manager.getUser().Render();								// 3
+	manager.getUser().getSprite()->Render();								// 3
 
 	// 이상하지만, manager.map[][]에 있는 셀에 있는 Item과 Hole은 addObject하지 않을거임
 	// Manager에서 초기화를 진행하는데, 거기서 Scene의 addObejct를 할 수가 없음

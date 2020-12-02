@@ -137,6 +137,13 @@ int Application::DoMainLoop(Scene* firstScene) {
 }
 
 void Application::DeleteManager() {
+	for (int i = 0; i < item_num; i++) {
+		delete item_list[i];
+	}
+	for (int i = 0; i < topo_num; i++) {
+		delete topo_list[i];
+	}
+
 	SAFE_DELETE(sceneManager);
 	SAFE_DELETE(textureManager);
 	SAFE_DELETE(inputManager);

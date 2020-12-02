@@ -43,7 +43,7 @@ skTest_Scene::skTest_Scene()
 		//// BFChangeScene
 	// 1. 버튼 기능 설정
 	BFChangeScene* changingBF;
-	changingBF = new BFChangeScene(new BaseScene());
+	changingBF = new BFChangeScene(new StageScene(1));
 
 	// 2. 버튼 설정
 	Button* changingButton;

@@ -4,7 +4,7 @@
 #include "Sprite.h"
 
 class Topography
-//	: public Sprite	// 1
+	: public Sprite	// 1
 {
 public:
 	int type;

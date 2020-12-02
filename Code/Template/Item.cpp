@@ -6,13 +6,13 @@ Item::Item() : Item(Enum::NONE) {
 }
 
 Item::Item(int type) : type(type)
-//, Sprite("Resources/None.png") // 1
+, Sprite("Resources/None.png") // 1
 {
 
 }
 
 Item::Item(int type, std::string path) : type(type)
-//, Sprite(path.c_str())    // 2
+, Sprite(path.c_str())    // 2
 {
 }
 

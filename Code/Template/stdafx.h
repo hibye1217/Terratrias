@@ -23,17 +23,17 @@
 
 // 사용자설정
 
-//#include "Const.h"
+#include "Const.h"
 #include "Manager.h"
-//#include "Space.h"
-//#include "Hole.h"
-//#include "Wall.h"
-//#include "None.h"
-//#include "Glue.h"
-//#include "Key.h"
-//#include "Jump.h"
-//#include "Boost.h"
-//#include "Bomb.h"
+#include "Space.h"
+#include "Hole.h"
+#include "Wall.h"
+#include "None.h"
+#include "Glue.h"
+#include "Key.h"
+#include "Jump.h"
+#include "Boost.h"
+#include "Bomb.h"
 
 // DirectX Header
 #include <d3d9.h>

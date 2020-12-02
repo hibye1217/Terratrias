@@ -5,9 +5,13 @@
 
 User::User()
 //    : Sprite("Resources/User.png")    // 1
-{}
+{
+    sprite = nullptr;
+}
 
-User::~User() {}
+User::~User() {
+    delete sprite;
+}
 
 int User::getX() 
 {
@@ -37,6 +41,16 @@ Item* User::getInventory()
 void User::setInventory(Item* inventory) 
 {
     pInventory = inventory;
+}
+
+void User::setSprite(Sprite* mySprite)
+{
+    sprite = mySprite;
+}
+
+Sprite* User::getSprite()
+{
+    return sprite;
 }
 
 void User::useItem() 
@@ -86,7 +100,7 @@ void User::move(int direction)
     x = nx;
     y = ny;
 
-    //setPos(nx, ny);       // 2
+    sprite->setPos(nx, ny);       // 2
     // 유저에 추가한거
     
 

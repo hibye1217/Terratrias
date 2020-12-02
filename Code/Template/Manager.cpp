@@ -129,6 +129,9 @@ void Manager::initialize(std::string filename)
     i_hat = margin_1 < margin_2 ? margin_1 : margin_2;
     j_hat = i_hat;
 
+    margin_1 = (SCREEN_HEIGHT - (height * j_hat)) / 2;
+    margin_2 = (SCREEN_WIDTH - (width * i_hat)) / 2;
+
     // Item과 Topography setPos 하기
     // StageScene Render 손보기
 
@@ -140,7 +143,7 @@ void Manager::initialize(std::string filename)
     user.setX(userX);
     user.setY(userY);
 
-   // User.setPos(userX, userY);    // 1
+    user.getSprite()->setPos(margin_2 + (userX * width), margin_1 + (userY * height));    // 1
 
     for(int i = 0; i < height; ++i)
     {
@@ -159,7 +162,7 @@ void Manager::initialize(std::string filename)
                 //std::cin >> id;
                 fscanf(in, "%d", &id);
                 map[i][j].setTopography(new Hole(id));
-                //map[i][j].getTopography()->setPos(SCREEN_WIDTH - i_hat * (width - j), SCREEN_HEIGHT - j_hat * (height - i));  // 2
+                map[i][j].getTopography()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));  // 2
             }
             else
             {
@@ -193,7 +196,7 @@ void Manager::initialize(std::string filename)
                 //std::cin >> id;
                 fscanf(in, "%d", &id);
                 map[i][j].setItem(new Key(id));
-                //map[i][j].getItem()->setPos(SCREEN_WIDTH - i_hat * (width - j), SCREEN_HEIGHT - j_hat * (height - i));    // 3
+                map[i][j].getItem()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));    // 3
             }
             else
             {
