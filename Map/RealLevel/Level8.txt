@@ -1,0 +1,34 @@
+15 11 21 1
+0 9
+
+Ice	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Ice
+Ice	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall
+Ice	Ice	Ice	Wall	Ice	Ice	Ice	Wall	Ice	Ice	Ice
+Wall	Wall	Ice	Wall	Ice	Wall	Ice	Wall	Ice	Wall	Ice
+Space	Glue	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Ice
+Ice	Wall	Ice	Wall	Ice	Wall	Ice	Wall	Ice	Wall	Wall
+Ice	Wall	Ice	Ice	Ice	Wall	Ice	Ice	Ice	Wall	Wall
+Ice	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall
+Ice	Wall	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Hole 1
+Ice	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall
+Ice	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Space	Glue	Space
+Ice	Wall	Wall	Wall	Wall	Wall	Space	Glue	Space	Wall	Wall
+Ice	Wall	Wall	Wall	Space	Glue	Space	Wall	Wall	Wall	Wall
+Ice	Wall	Space	Glue	Space	Wall	Wall	Wall	Wall	Wall	Wall
+Space	Glue	Space	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall
+
+None	None	None	None	None	None	None	None	None	None	Jump
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	Key 1
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	Jump
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None
