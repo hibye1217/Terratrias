@@ -29,6 +29,15 @@ StageScene::~StageScene()
 
 void StageScene::Render()
 {
+	for (int i = 0; i < manager.getHeight(); ++i) {
+		for (int j = 0; j < manager.getWidth(); ++j) {
+			//map[i][j].setItem(new Jump());
+			//map[i][j].setTopography(new Space());
+			manager.getCell(i, j).setItem(new Jump());
+			manager.getCell(i, j).setTopography(new Space());
+		}
+	}
+
 	int margin_1 = user.getMargin1();
 	int margin_2 = user.getMargin2();
 	//user.getSprite()->setPos(margin_2 + (user.getY() * i_hat), margin_1 + (user.getY() * j_hat));

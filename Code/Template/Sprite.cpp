@@ -1,3 +1,4 @@
+// Sprite.cpp
 #include "stdafx.h"
 #include "Sprite.h"
 
@@ -20,11 +21,8 @@ Sprite::Sprite(const char* path) {
 	color = D3DCOLOR_ARGB(255, 255, 255, 255);
 
 	texname = path;
-
-
-	//
-
-	//
+	
+	std::cout << texname << std::endl;
 }
 
 Sprite::~Sprite() {
