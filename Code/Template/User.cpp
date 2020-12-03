@@ -93,12 +93,12 @@ void User::move(int direction)
     int nx = x + dx[direction];
     int ny = y + dy[direction];
 
-    if (!manager.isValidPoint(nx, ny))
+    if (!manager.isValidPoint(ny, nx))
     {
         return;
     }
 
-    if (!manager.getCell(nx, ny).canGo())
+    if (!manager.getCell(ny, nx).canGo())
     {
         return;
     }

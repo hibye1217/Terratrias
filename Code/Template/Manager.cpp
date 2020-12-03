@@ -154,7 +154,7 @@ void Manager::initialize(std::string filename)
     user.setX(userX);
     user.setY(userY);
 
-    user.getSprite()->setPos(margin_2 + (userX * width), margin_1 + (userY * height));    // 1
+    user.getSprite()->setPos(margin_2 + (userX * i_hat), margin_1 + (userY * j_hat));    // 1
     user.getSprite()->setScale(scaleRatio, scaleRatio);
 
     for(int i = 0; i < height; ++i)
