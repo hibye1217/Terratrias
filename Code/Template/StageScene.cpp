@@ -13,9 +13,6 @@ StageScene::StageScene(int n) : user(manager.getUser())
 	manager.initialize(stageName);
 
 
-
-
-
 	// 이제 마진 정해졌으니 그만큼 넣으면 됨.
 	// 이제 Item이랑 topography가 Sprite를 상속받음
 	// 그니까 초기화할때 sprite 쓸거 정하고, 그냥 보여주면 됨
@@ -39,9 +36,11 @@ void StageScene::Render()
 		for (int j = 0; j < manager.getWidth(); ++j) {
 			Topography* a = manager.getCell(i, j).getTopography();
 			manager.getCell(i,j).getTopography()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));
+			manager.getCell(i,j).getTopography()->getSprite()->setScale(manager.getScaleRatio(), manager.getScaleRatio());
 			a->Render();	// 1
 			Item* b = manager.getCell(i, j).getItem();
 			manager.getCell(i, j).getItem()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));
+			manager.getCell(i, j).getItem()->getSprite()->setScale(manager.getScaleRatio(), manager.getScaleRatio());
 			b->Render();		// 2
 		}
 	}
@@ -86,7 +85,6 @@ void StageScene::Update(float dTime)
 	}
 	else {
 		// 준서가 루프 짤 부분
-
 		if (inputManager->GetKeyState('W') == KEY_DOWN || inputManager->GetKeyState('w') == KEY_DOWN)
 		{
 			user.move(Enum::UP);
@@ -115,11 +113,6 @@ void StageScene::Update(float dTime)
 		{
 			user.putItem();
 		}
-
-		// print
-
-		
 	}
-
 }
 
