@@ -43,6 +43,10 @@ void StageScene::Render()
 
 	int margin_1 = user.getMargin1();
 	int margin_2 = user.getMargin2();
+
+	user.getSprite()->setPos(margin_2 + (user.getY() * i_hat), margin_1 + (user.getX() * j_hat));    // 1
+	user.getSprite()->setScale(manager.getScaleRatio(), manager.getScaleRatio());
+
 	//user.getSprite()->setPos(margin_2 + (user.getY() * i_hat), margin_1 + (user.getY() * j_hat));
 	for (int i = 0; i < manager.getHeight(); ++i) {
 		for (int j = 0; j < manager.getWidth(); ++j) {

@@ -11,7 +11,7 @@ BFStage::~BFStage()
 
 void BFStage::Do()
 {
-	if (manager.getCell(0, 0).getTopography()) {
+	if (manager.getKeyCnt() != -1) {
 		manager.finalize();
 	}
 	sceneManager->setPreparedScene(new StageScene(n));

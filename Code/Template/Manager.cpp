@@ -8,7 +8,7 @@
 #include "Manager.h"
 #include "Const.h"
 
-Manager::Manager() : height(0), width(0), limitCnt(0), moveCnt(0), keyCnt(0), scaleRatio(0), lastDir(-1), moved(false) {}
+Manager::Manager() : height(0), width(0), limitCnt(0), moveCnt(0), keyCnt(-1), scaleRatio(0), lastDir(-1), moved(false) {}
 
 Manager::~Manager() {}
 
@@ -176,7 +176,7 @@ void Manager::initialize(std::string filename)
     int userX, userY;
     //in >> userX >> userY;
     //std::cin >> userX >> userY;
-    fscanf(in, "%d%d", &userX, &userY);
+    fscanf(in, "%d%d", &userY, &userX); // Swap 한 거임. 다시 하지 마세요
     user.setX(userX);
     user.setY(userY);
 
@@ -308,4 +308,5 @@ void Manager::finalize()
         //}
     }
     map.clear();
+    keyCnt = -1;
 }
