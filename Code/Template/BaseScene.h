@@ -1,6 +1,8 @@
 #pragma once
 #include "Scene.h"
-#include "SubScene.h"
+
+class SubScene;
+
 class BaseScene :
     public Scene
 {

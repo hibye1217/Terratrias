@@ -1,4 +1,5 @@
 #include "stdafx.h"
+#include "SubScene.h"
 #include "BaseScene.h"
 #include "BFResume.h"
 

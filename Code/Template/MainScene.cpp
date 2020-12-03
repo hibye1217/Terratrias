@@ -124,39 +124,39 @@ MainScene::MainScene() {
 
 	Button2->setPos(2*w + 100,h);
 	Button2->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button2);
 
 	Button3->setPos(3*w+200,h);
 	Button3->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button3);
 
 	Button4->setPos(4*w+300,h);
 	Button4->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button4);
 
 	Button5->setPos(5*w+400,h);
 	Button5->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button5);
 
 	Button6->setPos(6*w+500,h);
 	Button6->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button6);
 
 	Button7->setPos(7*w+600,h);
 	Button7->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button7);
 
 	Button8->setPos(8*w+700,h);
 	Button8->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button8);
 
 	Button9->setPos(9*w+800,h);
 	Button9->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button9);
 
 	Button10->setPos(10*w+900,h);
 	Button10->setDpos(100, 100);
-	buttonList.push_back(Button1);
+	buttonList.push_back(Button10);
 
 }
 
