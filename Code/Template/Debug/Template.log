@@ -1,3 +1,19 @@
-﻿  main.cpp
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\main.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+﻿  SaveSelectScene.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\SaveSelectScene.cpp(9,17): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\SaveSelectScene.cpp(24): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
   Template.vcxproj -> D:\0 100\2_공부\2_10_Github\Terratrias\Code\Debug\Template.exe

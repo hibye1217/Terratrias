@@ -5,8 +5,8 @@
 SaveSelectScene::SaveSelectScene()
 {
 
-	int makeScale = (int)(SCREEN_HEIGHT / 4) / 590;
-	int leftMargin = (SCREEN_WIDTH - (1476 * makeScale));
+	float makeScale = ((float)SCREEN_HEIGHT / 6.0f) / (float)590;
+	int leftMargin = (SCREEN_WIDTH - (1476 * makeScale)) / 2;
 
 	BFSaveSelect* BFSS1 = new BFSaveSelect(1);
 	BFSaveSelect* BFSS2 = new BFSaveSelect(2);
@@ -21,13 +21,17 @@ SaveSelectScene::SaveSelectScene()
 	Button *SButton2 = new Button("Resources/Button/SaveFile.png");
 	Button *SButton3 = new Button("Resources/Button/SaveFile.png");
 
-	SButton1->setPos(leftMargin, (int)(147.5 * makeScale));
-	SButton2->setPos(leftMargin, (int)(295 * makeScale));
-	SButton3->setPos(leftMargin, (int)(442.5 * makeScale));
+	SButton1->setPos(leftMargin, (int)( SCREEN_HEIGHT * makeScale / 2));
+	SButton2->setPos(leftMargin, (int)(1.5 * SCREEN_HEIGHT * makeScale));
+	SButton3->setPos(leftMargin, (int)(2.5 * SCREEN_HEIGHT * makeScale));
 
 	SButton1->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
 	SButton2->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
 	SButton3->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
+
+	SButton1->setScale(makeScale, makeScale);
+	SButton2->setScale(makeScale, makeScale);
+	SButton3->setScale(makeScale, makeScale);
 
 	buttonList.push_back(SButton1);
 	buttonList.push_back(SButton2);

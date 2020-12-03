@@ -32,7 +32,7 @@ skTest_Scene::skTest_Scene()
 
 	// 3. 버튼 설정
 	Button* addingButton;
-	addingButton = new Button("Resources/UnitSquare.png");
+	addingButton = new Button("Resources/Button/SaveFile.png");
 	addingButton->setPos(0, 100);
 	addingButton->setDpos(100, 100);
 
