@@ -28,8 +28,8 @@ int j_hat;
 int margin_bafor;
 int margin_side;
 int save[12][2]; 
-//	0ÀÌ ÇÃ·¹ÀÌ¾î, 1ÀÌ ÃÖ¼±
-// 0,0 ÀÌ ¸î½ºÅ×ÀÌÁö±îÁö ÇØºÃ´ÂÁö
+//	0ì´ í”Œë ˆì´ì–´, 1ì´ ìµœì„ 
+// 0,0 ì´ ëª‡ìŠ¤í…Œì´ì§€ê¹Œì§€ í•´ë´¤ëŠ”ì§€
 
 
 INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdShow) {
@@ -49,13 +49,13 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 	app.InitManager();
 
 
-	item_list[Enum::KEY] = new Key();
+	item_list[Enum::KEY] = new Key(1);
 	item_list[Enum::NONE] = new None();
 	item_list[Enum::JUMP] = new Jump();
 	item_list[Enum::BOOST] = new Boost();
 	item_list[Enum::BOMB] = new Bomb();
 	
-	topo_list[Enum::HOLE] = new Hole();
+	topo_list[Enum::HOLE] = new Hole(1);
 	topo_list[Enum::SPACE] = new Space();
 	topo_list[Enum::WALL] = new Wall();
 	topo_list[Enum::GLUE] = new Glue();
