@@ -2,7 +2,10 @@
 #include "stdafx.h"
 #include "Space.h"
 
-Space::Space() : Topography(Enum::SPACE, "Resources/Space.png") {}
+Space::Space()
+	: Topography(Enum::SPACE, "Resources/Sprite/Big/Space.png") {
+
+}
 
 Space::~Space() {}
 

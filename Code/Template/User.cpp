@@ -33,6 +33,12 @@ void User::setY(int y)
     this->y = y;
 }
 
+void User::setMargins(int x, int y)
+{
+    margin_x = x;
+    margin_y = y;
+}
+
 Item* User::getInventory() 
 {
     return pInventory;
@@ -100,7 +106,7 @@ void User::move(int direction)
     x = nx;
     y = ny;
 
-    sprite->setPos(nx, ny);       // 2
+    sprite->setPos(margin_x + (nx * i_hat), margin_y + (ny * j_hat));       // 2
     // 유저에 추가한거
     
 

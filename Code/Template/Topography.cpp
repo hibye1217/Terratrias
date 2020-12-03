@@ -5,7 +5,7 @@
 Topography::Topography() : Topography(Enum::SPACE) {}
 
 Topography::Topography(int type) : type(type)
-, Sprite("Resources/Space.png")    // 1
+, Sprite("Resources/Sprite/Big/Space.png")    // 1
 {}
 
 Topography::Topography(int type, std::string path) : type(type)

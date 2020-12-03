@@ -1,0 +1,18 @@
+7 7 25 2
+6 4
+
+Space	Wall	Wall	Ice	Ice	Ice	Ice
+Space	Hole 1	Hole 2	Ice	Wall	Wall	Ice
+Space	Wall	Wall	Ice	Wall	Wall	Ice
+Space	Wall	Wall	Ice	Wall	Wall	Ice
+Space	Ice	Ice	Ice	Ice	Ice	Ice
+Space	Wall	Wall	Wall	Wall	Wall	Wall
+Space	Ice	Ice	Ice	Ice	Ice	Space
+
+None	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	None
+None	None	None	None	None	None	Jump
+None	None	None	None	None	None	None
+None	None	None	Key 1	None	None	Key 2

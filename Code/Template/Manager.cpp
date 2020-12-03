@@ -8,7 +8,7 @@
 #include "Manager.h"
 #include "Const.h"
 
-Manager::Manager() : height(0), width(0), limitCnt(0), moveCnt(0), keyCnt(0) {}
+Manager::Manager() : height(0), width(0), limitCnt(0), moveCnt(0), keyCnt(0), scaleRatio(0) {}
 
 Manager::~Manager() {}
 
@@ -83,6 +83,13 @@ void Manager::setKeyCnt(int keyCnt)
     this->keyCnt = keyCnt;
 }
 
+void Manager::setScaleRatio(float Ratio)
+{
+    scaleRatio = Ratio;
+    return;
+}
+
+
 
 void Manager::initialize(std::string filename) 
 {
@@ -123,11 +130,13 @@ void Manager::initialize(std::string filename)
         v.resize(width);
     }
 
-    int margin_1 = min((SCREEN_HEIGHT - (SCREEN_HEIGHT % height)) / height, 50);
-    int margin_2 = min((SCREEN_WIDTH - (SCREEN_WIDTH % width)) / width, 50);
+    int margin_1 = min((SCREEN_HEIGHT - (SCREEN_HEIGHT % height)) / height, 150);
+    int margin_2 = min((SCREEN_WIDTH - (SCREEN_WIDTH % width)) / width, 150);
 
     i_hat = margin_1 < margin_2 ? margin_1 : margin_2;
     j_hat = i_hat;
+
+    
 
     margin_1 = (SCREEN_HEIGHT - (height * j_hat)) / 2;
     margin_2 = (SCREEN_WIDTH - (width * i_hat)) / 2;
@@ -135,6 +144,8 @@ void Manager::initialize(std::string filename)
     // Item과 Topography setPos 하기
     // StageScene Render 손보기
 
+    user.setMargins(margin_2, margin_1);
+    setScaleRatio((float) i_hat / (float) 2953);
 
     int userX, userY;
     //in >> userX >> userY;
@@ -144,6 +155,7 @@ void Manager::initialize(std::string filename)
     user.setY(userY);
 
     user.getSprite()->setPos(margin_2 + (userX * width), margin_1 + (userY * height));    // 1
+    user.getSprite()->setScale(scaleRatio, scaleRatio);
 
     for(int i = 0; i < height; ++i)
     {
@@ -163,6 +175,7 @@ void Manager::initialize(std::string filename)
                 fscanf(in, "%d", &id);
                 map[i][j].setTopography(new Hole(id));
                 map[i][j].getTopography()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));  // 2
+                map[i][j].getTopography()->setScale(scaleRatio, scaleRatio);
             }
             else
             {
@@ -170,7 +183,21 @@ void Manager::initialize(std::string filename)
                 {
                     if(topo == topo_name[k])
                     {
-                        map[i][j].setTopography(topo_list[k]);
+                        if (k == Enum::SPACE) {
+                            map[i][j].setTopography(new Space());
+                        }
+                        else if (k == Enum::WALL) {
+                            map[i][j].setTopography(new Wall());
+                        }
+                        else if (k == Enum::GLUE) {
+                            map[i][j].setTopography(new Glue());
+                        }
+                        //else {
+                        //    map[i][j].setTopography(new Ice());
+                        //}
+
+                        map[i][j].getTopography()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));  // 2
+                        map[i][j].getTopography()->setScale(scaleRatio, scaleRatio);
                         break;
                     }
                 }
@@ -197,6 +224,7 @@ void Manager::initialize(std::string filename)
                 fscanf(in, "%d", &id);
                 map[i][j].setItem(new Key(id));
                 map[i][j].getItem()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));    // 3
+                map[i][j].getItem()->setScale(scaleRatio, scaleRatio);
             }
             else
             {
@@ -205,7 +233,20 @@ void Manager::initialize(std::string filename)
                     if(item == item_name[k])
                     {
                         //std::cout << k << ' ';
-                        map[i][j].setItem(item_list[k]);
+                        if (k == Enum::NONE) {
+                            map[i][j].setItem(new None());
+                        }
+                        else if (k == Enum::JUMP) {
+                            map[i][j].setItem(new Jump());
+                        }
+                        else if (k == Enum::BOOST) {
+                            map[i][j].setItem(new Boost());
+                        }
+                        else if (k == Enum::BOMB) {
+                            map[i][j].setItem(new Bomb());
+                        }
+                        map[i][j].getItem()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));    // 3
+                        map[i][j].getItem()->setScale(scaleRatio, scaleRatio);
                         break;
                     }
                 }
@@ -223,6 +264,10 @@ void Manager::finalize()
    for(auto& v : map)
    {
        v.clear();
+       // 하나씩 딜리트해야할거같은데
+       //for (auto& b : v) {
+       //    SAFE_DELETE(b);
+       //}
    }
    map.clear();
 }

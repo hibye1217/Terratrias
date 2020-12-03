@@ -4,7 +4,7 @@
 
 Key::Key() : Key(-1) {}
 
-Key::Key(int id) : Item(Enum::KEY, "Resources/Key" + std::to_string(id) + ".png"), id(id) {}
+Key::Key(int id) : Item(Enum::KEY, "Resources/Sprite/Big/Key" + std::to_string(id) + ".png"), id(id) {}
 
 Key::~Key() {}
 

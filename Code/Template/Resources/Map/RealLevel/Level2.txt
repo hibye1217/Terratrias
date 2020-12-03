@@ -1,0 +1,10 @@
+3 3 15 2
+0 1
+
+Space	Space	Hole 1
+Space	Wall	Wall
+Space	Space	Hole 2
+
+None	None	Key 2
+None	None	None
+None	None	Key 1

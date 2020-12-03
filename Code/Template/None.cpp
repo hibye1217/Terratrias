@@ -2,7 +2,7 @@
 #include "stdafx.h"
 #include "None.h"
 
-None::None() : Item(Enum::NONE, "Resources/None.png") {}
+None::None() : Item(Enum::NONE, "Resources/Sprite/Big/None.png") {}
 
 None::~None() {}
 

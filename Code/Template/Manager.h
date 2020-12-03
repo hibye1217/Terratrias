@@ -13,6 +13,7 @@ private:
 	int height, width;
 	int moveCnt, limitCnt, keyCnt;
 	User user;
+	float scaleRatio;
 public:
 	Manager();
 	~Manager();
@@ -34,6 +35,7 @@ public:
 	void setLimitCnt(int limitCnt);
 	int getKeyCnt();
 	void setKeyCnt(int keyCnt);
+	void setScaleRatio(float);
 	void initialize(std::string filename);
 	void finalize();
 };

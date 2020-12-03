@@ -7,6 +7,7 @@ class User
 {
 private:
 	int x, y;
+	int margin_x, margin_y;
 	Item* pInventory;
 	Sprite* sprite;
 public:
@@ -17,6 +18,7 @@ public:
 	void setX(int x);
 	int getY();
 	void setY(int y);
+	void setMargins(int x, int y);
 	Item* getInventory();
 	void setInventory(Item* item);
 	void setSprite(Sprite*);

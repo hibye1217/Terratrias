@@ -3,7 +3,7 @@
 #include <cstdio>
 #include "Jump.h"
 
-Jump::Jump() : Item(Enum::JUMP, "Resources/Jump.png"), direction(-1) {}
+Jump::Jump() : Item(Enum::JUMP, "Resources/Sprite/Big/Jump.png"), direction(-1) {}
 
 Jump::~Jump() {}
 

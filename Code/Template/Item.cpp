@@ -6,7 +6,7 @@ Item::Item() : Item(Enum::NONE) {
 }
 
 Item::Item(int type) : type(type)
-, Sprite("Resources/None.png") // 1
+, Sprite("Resources/Sprite/Big/None.png") // 1
 {
 
 }

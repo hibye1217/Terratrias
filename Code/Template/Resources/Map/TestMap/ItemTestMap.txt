@@ -1,0 +1,40 @@
+18 3 10000 2
+0 0
+
+Space	Space	Space
+Space	Wall	Space
+Space	Glue	Space
+Space	Ice	Space
+Space	Hole 1	Space
+Space	Wall	Wall
+Space	Wall	Wall
+Space	Space	Space
+Space	Space	Space
+Space	Space	Space
+Space	Space	Space
+Space	Space	Space
+Space	Space	Space
+Space	Space	Space
+Space	Glue	Ice
+Space	Wall	Glue
+Space	Space	Ice
+Space	Space	Hole 2
+
+Jump	None	None
+Jump	None	None
+Jump	None	None
+Jump	None	None
+Jump	None	Jump
+None	None	None
+None	None	None
+None	Boost	None
+None	Boost	None
+None	Boost	None
+None	Boost	None
+None	Boost	None
+None	Boost	None
+None	Boost	None
+None	None	None
+None	None	None
+None	Bomb	None
+None	None	None

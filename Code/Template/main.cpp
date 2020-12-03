@@ -43,6 +43,7 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 	app.InitDeltaTime();
 	app.InitManager();
 
+
 	item_list[Enum::KEY] = new Key();
 	item_list[Enum::NONE] = new None();
 	item_list[Enum::JUMP] = new Jump();
@@ -54,7 +55,7 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 	topo_list[Enum::WALL] = new Wall();
 	topo_list[Enum::GLUE] = new Glue();
 
-	manager.getUser().setSprite(new Sprite("Resources/User.png"));
+	manager.getUser().setSprite(new Sprite("Resources/Sprite/Big/UserStart.png"));
 
 	//return app.DoMainLoop(new MainScene());
 	skTest_Scene * skTelekom = new skTest_Scene();

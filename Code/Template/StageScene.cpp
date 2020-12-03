@@ -80,6 +80,35 @@ void StageScene::Update(float dTime)
 	else {
 		// 준서가 루프 짤 부분
 
-
+		if (inputManager->GetKeyState('W') == KEY_DOWN || inputManager->GetKeyState('w') == KEY_DOWN)
+		{
+			user.move(Enum::UP);
+		}
+		else if (inputManager->GetKeyState('A') == KEY_DOWN || inputManager->GetKeyState('a') == KEY_DOWN)
+		{
+			user.move(Enum::LEFT);
+		}
+		else if (inputManager->GetKeyState('S') == KEY_DOWN || inputManager->GetKeyState('s') == KEY_DOWN)
+		{
+			user.move(Enum::DOWN);
+		}
+		else if (inputManager->GetKeyState('D') == KEY_DOWN || inputManager->GetKeyState('d') == KEY_DOWN)
+		{
+			user.move(Enum::RIGHT);
+		}
+		else if (inputManager->GetKeyState(' ') == KEY_DOWN)
+		{
+			user.useItem();
+		}
+		else if (inputManager->GetKeyState('Q') == KEY_DOWN || inputManager->GetKeyState('q') == KEY_DOWN)
+		{
+			user.gainItem();
+		}
+		else if (inputManager->GetKeyState('E') == KEY_DOWN || inputManager->GetKeyState('e') == KEY_DOWN)
+		{
+			user.putItem();
+		}
 	}
+
 }
+
