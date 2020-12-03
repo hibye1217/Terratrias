@@ -19,5 +19,7 @@ bool Glue::canGo()
 
 void onArrived()
 {
+	manager.setLastDir(-1);
+	manager.setMoved(false);
 	manager.setMoveCnt(manager.getMoveCnt() + 1);
 }

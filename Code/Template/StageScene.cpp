@@ -32,14 +32,14 @@ StageScene::~StageScene()
 
 void StageScene::Render()
 {
-	for (int i = 0; i < manager.getHeight(); ++i) {
-		for (int j = 0; j < manager.getWidth(); ++j) {
-			//map[i][j].setItem(new Jump());
-			//map[i][j].setTopography(new Space());
-			manager.getCell(i, j).setItem(new Jump());
-			manager.getCell(i, j).setTopography(new Space());
-		}
-	}
+	//for (int i = 0; i < manager.getHeight(); ++i) {
+	//	for (int j = 0; j < manager.getWidth(); ++j) {
+	//		//map[i][j].setItem(new Jump());
+	//		//map[i][j].setTopography(new Space());
+	//		manager.getCell(i, j).setItem(new Jump());
+	//		manager.getCell(i, j).setTopography(new Space());
+	//	}
+	//}
 
 	int margin_1 = user.getMargin1();
 	int margin_2 = user.getMargin2();
@@ -97,6 +97,8 @@ void StageScene::Update(float dTime)
 	}
 	else {
 		// 준서가 루프 짤 부분
+		manager.setLastDir(-1);
+		manager.setMoved(false);
 		if (inputManager->GetKeyState('W') == KEY_DOWN || inputManager->GetKeyState('w') == KEY_DOWN)
 		{
 			user.move(Enum::UP);
@@ -124,6 +126,11 @@ void StageScene::Update(float dTime)
 		else if (inputManager->GetKeyState('E') == KEY_DOWN || inputManager->GetKeyState('e') == KEY_DOWN)
 		{
 			user.putItem();
+		}
+		while (manager.getMoved())
+		{
+			manager.setMoved(false);
+			manager.getCell(user.getX(), user.getY()).getTopography()->onArrived();
 		}
 	}
 }

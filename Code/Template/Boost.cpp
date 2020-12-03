@@ -51,11 +51,13 @@ void Boost::useItem()
 		{
 			user.setX(nx);
 			user.setY(ny);
+			manager.setLastDir(direction);
+			manager.setMoved(true);
 		}
-		//if (manager.getCell(nx, ny).getTopography()->getType() == Enum::GLUE)
-		//{
-		//	break;
-		//}
+		if (manager.getCell(nx, ny).getTopography()->getType() == Enum::GLUE)
+		{
+			break;
+		}
 	}
 	
 	delete user.getInventory();

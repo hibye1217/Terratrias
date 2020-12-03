@@ -180,6 +180,7 @@
     <ClCompile Include="Hole.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="Ice.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Item.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
@@ -250,6 +251,7 @@
     <ClInclude Include="Font.h" />
     <ClInclude Include="Glue.h" />
     <ClInclude Include="Hole.h" />
+    <ClInclude Include="Ice.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Jump.h" />

@@ -119,6 +119,8 @@ void User::move(int direction)
     
     x = nx;
     y = ny;
+    manager.setLastDir(direction);
+    manager.setMoved(true);
 
     sprite->setPos(margin_x + (y * i_hat), margin_y + (x * j_hat));       // 2
     // 유저에 추가한거

@@ -14,6 +14,8 @@ private:
 	int moveCnt, limitCnt, keyCnt;
 	User user;
 	float scaleRatio;
+	int lastDir;
+	bool moved;
 public:
 	Manager();
 	~Manager();
@@ -37,6 +39,10 @@ public:
 	void setKeyCnt(int keyCnt);
 	void setScaleRatio(float);
 	float getScaleRatio();
+	void setLastDir(int dir);
+	int getLastDir();
+	void setMoved(bool moved);
+	bool getMoved();
 	void initialize(std::string filename);
 	void finalize();
 };

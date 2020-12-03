@@ -38,4 +38,8 @@ void Topography::Render()
     sprite->Render();
 }
 
-void Topography::onArrived() {}
+void Topography::onArrived()
+{
+    manager.setLastDir(-1);
+    manager.setMoved(false);
+}

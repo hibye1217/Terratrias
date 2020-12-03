@@ -1,12 +1,14 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 ﻿  stdafx.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\SceneManager.h(18,35): warning C4305: '초기화 중': 'double'에서 'const float'(으)로 잘립니다.
   Animation.cpp
   Application.cpp
+  BaseScene.cpp
   BFAdDelSprite.cpp
   BFChangeScene.cpp
-  BaseScene.cpp
+  BFSaveSelect.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\BFSaveSelect.cpp(31,13): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\BFSaveSelect.cpp(32,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\BFSaveSelect.cpp(36,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   Button.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Button.cpp(36,17): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Button.cpp(37,17): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
@@ -15,6 +17,7 @@ C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Button.cpp(37,17): warni
   Font.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Font.cpp(49,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Font.cpp(50,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Ice.cpp
   InputManager.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\InputManager.cpp(42,27): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\InputManager.cpp(42,22): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
@@ -28,48 +31,87 @@ C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.cpp(64,30): warni
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.cpp(65,31): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.cpp(66,29): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.cpp(67,32): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Scene.cpp
-  SceneManager.cpp
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\SceneManager.h(18,35): warning C4305: '초기화 중': 'double'에서 'const float'(으)로 잘립니다.
+  SaveSelectScene.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-=======
-﻿  StartScene.cpp
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
->>>>>>> Stashed changes
-=======
-﻿  StartScene.cpp
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
->>>>>>> Stashed changes
           with
           [
               PX=int
           ]
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\SceneManager.cpp(12): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
-=======
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\StartScene.cpp(9): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
->>>>>>> Stashed changes
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\SaveSelectScene.cpp(24): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
           with
           [
               PX=int,
               PY=int
           ]
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PY=int
           ]
-<<<<<<< Updated upstream
+  Scene.cpp
+  SceneManager.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\SceneManager.h(18,35): warning C4305: '초기화 중': 'double'에서 'const float'(으)로 잘립니다.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\SceneManager.cpp(12): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  skTest_Scene.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\skTest_Scene.cpp(10): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
   SoundManager.cpp
   Sprite.cpp
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
   StageScene.cpp
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PX=int
           ]
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\StageScene.cpp(47): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\StageScene.cpp(50): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  StartScene.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\StartScene.cpp(9): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
           with
           [
               PX=int,
@@ -98,27 +140,6 @@ C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(56,11): warning
               PY=int
           ]
   TextureManager.cpp
-  skTest_Scene.cpp
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-          with
-          [
-              PX=int
-          ]
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\skTest_Scene.cpp(10): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
-=======
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\StartScene.cpp(9): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
->>>>>>> Stashed changes
-          with
-          [
-              PX=int,
-              PY=int
-          ]
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-          with
-          [
-              PY=int
-          ]
-<<<<<<< Updated upstream
   코드를 생성하고 있습니다...
   Bomb.cpp
   Boost.cpp
@@ -131,19 +152,19 @@ C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\JS_main.cpp(1,1): warnin
   Jump.cpp
   Key.cpp
   Manager.cpp
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(127,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(132,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(159,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(174,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(181,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(223,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(230,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(147,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(152,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(179,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(194,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(201,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(243,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(250,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
 C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PX=int
           ]
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(163): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Manager.cpp(183): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
           with
           [
               PX=int,
@@ -163,7 +184,7 @@ C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning
           [
               PX=int
           ]
-C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\User.cpp(123): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\User.cpp(125): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
           with
           [
               PX=int,
@@ -176,11 +197,8 @@ C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\Object.h(56,11): warning
           ]
   Wall.cpp
   main.cpp
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Template\main.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
   코드를 생성하고 있습니다...
-  Template.vcxproj -> C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Debug\Template.exe
-=======
-  Template.vcxproj -> D:\0 100\2_공부\2_10_Github\Terratrias\Code\Debug\Template.exe
->>>>>>> Stashed changes
-=======
-  Template.vcxproj -> D:\0 100\2_공부\2_10_Github\Terratrias\Code\Debug\Template.exe
->>>>>>> Stashed changes
+Glue.obj : error LNK2005: "void __cdecl onArrived(void)" (?onArrived@@YAXXZ)이(가) Ice.obj에 이미 정의되어 있습니다.
+SaveSelectScene.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __thiscall SaveSelectScene::Update(float)" (?Update@SaveSelectScene@@UAEXM@Z)
+C:\Users\ASUS\Documents\GitHub\Terratrias\Code\Debug\Template.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.

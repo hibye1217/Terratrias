@@ -30,6 +30,7 @@ namespace Enum
         HOLE,
         SPACE,
         WALL,
+        ICE,
         GLUE,
     };
 }
@@ -52,12 +53,13 @@ const std::string item_file_path[item_num] = {
     "Resources/Sprite/Big/Bomb.png",
 };
 
-const int topo_num = 4;
+const int topo_num = 5;
 
 const std::string topo_name[topo_num] = {
     "Hole",
     "Space",
     "Wall",
+    "Ice",
     "Glue",
 };
 
@@ -65,6 +67,7 @@ const std::string topo_file_path[topo_num] = {
     "Resources/Sprite/Big/Hole1.png",
     "Resources/Sprite/Big/Space.png",
     "Resources/Sprite/Big/Wall.png",
+    "Resources/Sprite/Big/Ice.png",
     "Resources/Sprite/Big/Glue.png",
 };
 

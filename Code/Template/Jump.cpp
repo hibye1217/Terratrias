@@ -50,6 +50,8 @@ void Jump::useItem()
 	
 	user.setX(nnx);
 	user.setY(nny);
+	manager.setLastDir(-1);
+	manager.setMoved(true);
 
 	delete user.getInventory();
 	user.setInventory(new None());

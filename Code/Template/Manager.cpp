@@ -8,7 +8,7 @@
 #include "Manager.h"
 #include "Const.h"
 
-Manager::Manager() : height(0), width(0), limitCnt(0), moveCnt(0), keyCnt(0), scaleRatio(0) {}
+Manager::Manager() : height(0), width(0), limitCnt(0), moveCnt(0), keyCnt(0), scaleRatio(0), lastDir(-1), moved(false) {}
 
 Manager::~Manager() {}
 
@@ -53,22 +53,22 @@ bool Manager::isValidPoint(int x, int y)
     return (0 <= x && x < height) && (0 <= y && y < width);
 }
 
-int Manager::getMoveCnt() 
+int Manager::getMoveCnt()
 {
     return moveCnt;
 }
 
-void Manager::setMoveCnt(int moveCnt) 
+void Manager::setMoveCnt(int moveCnt)
 {
     this->moveCnt = moveCnt;
 }
 
-int Manager::getLimitCnt() 
+int Manager::getLimitCnt()
 {
     return limitCnt;
 }
 
-void Manager::setLimitCnt(int limitCnt) 
+void Manager::setLimitCnt(int limitCnt)
 {
     this->limitCnt = limitCnt;
 }
@@ -94,9 +94,29 @@ float Manager::getScaleRatio()
     return scaleRatio;
 }
 
+void Manager::setLastDir(int dir)
+{
+    lastDir = dir;
+}
+
+int Manager::getLastDir()
+{
+    return lastDir;
+}
+
+void Manager::setMoved(bool moved)
+{
+    this->moved = moved;
+}
+
+bool Manager::getMoved()
+{
+    return moved;
+}
 
 
-void Manager::initialize(std::string filename) 
+
+void Manager::initialize(std::string filename)
 {
     // file io
     /*
@@ -131,7 +151,7 @@ void Manager::initialize(std::string filename)
     //std::cin >> height >> width >> limitCnt >> keyCnt;
     fscanf(in, "%d%d%d%d", &height, &width, &limitCnt, &keyCnt);
     map.resize(height);
-    for(auto& v : map)
+    for (auto& v : map)
     {
         v.resize(width);
     }
@@ -142,7 +162,7 @@ void Manager::initialize(std::string filename)
     i_hat = margin_1 < margin_2 ? margin_1 : margin_2;
     j_hat = i_hat;
 
-    
+
 
     margin_1 = (SCREEN_HEIGHT - (height * j_hat)) / 2;
     margin_2 = (SCREEN_WIDTH - (width * i_hat)) / 2;
@@ -151,7 +171,7 @@ void Manager::initialize(std::string filename)
     // StageScene Render 손보기
 
     user.setMargins(margin_2, margin_1);
-    setScaleRatio((float) i_hat / (float) 2953);
+    setScaleRatio((float)i_hat / (float)2953);
 
     int userX, userY;
     //in >> userX >> userY;
@@ -163,9 +183,9 @@ void Manager::initialize(std::string filename)
     user.getSprite()->setPos(margin_2 + (userY * i_hat), margin_1 + (userX * j_hat));    // 1
     user.getSprite()->setScale(scaleRatio, scaleRatio);
 
-    for(int i = 0; i < height; ++i)
+    for (int i = 0; i < height; ++i)
     {
-        for(int j = 0; j < width; ++j)
+        for (int j = 0; j < width; ++j)
         {
             //std::string topo;
             //in >> topo;
@@ -185,9 +205,9 @@ void Manager::initialize(std::string filename)
             }
             else
             {
-                for(int k = 1; k < topo_num; ++k)
+                for (int k = 1; k < topo_num; ++k)
                 {
-                    if(!strcmp(topo, topo_name[k].c_str()))
+                    if (!strcmp(topo, topo_name[k].c_str()))
                     {
                         if (k == Enum::SPACE) {
                             map[i][j].setTopography(new Space());
@@ -211,9 +231,9 @@ void Manager::initialize(std::string filename)
         }
     }
 
-    for(int i = 0; i < height; ++i)
+    for (int i = 0; i < height; ++i)
     {
-        for(int j = 0; j < width; ++j)
+        for (int j = 0; j < width; ++j)
         {
             //std::string item;
             //in >> item;
@@ -222,7 +242,7 @@ void Manager::initialize(std::string filename)
             char item[16];
             fscanf(in, "%s", item);
             //if(item == "Key")
-            if(!strcmp(item, "Key"))
+            if (!strcmp(item, "Key"))
             {
                 int id;
                 //in >> id;
@@ -234,9 +254,9 @@ void Manager::initialize(std::string filename)
             }
             else
             {
-                for(int k = 1; k < item_num; ++k)
+                for (int k = 1; k < item_num; ++k)
                 {
-                    if(!strcmp(item, item_name[k].c_str()))
+                    if (!strcmp(item, item_name[k].c_str()))
                     {
                         //std::cout << k << ' ';
                         if (k == Enum::NONE) {
@@ -267,19 +287,19 @@ void Manager::initialize(std::string filename)
 
 void Manager::finalize()
 {
-   for(auto& v : map)
-   {
-       //for (auto& cell : v)
-       //{
-       //    delete cell.getItem();
-       //    delete cell.getTopography();
-       //}
-       // Cell 소멸자에서 delete 해줌
-       v.clear();
-       // 하나씩 딜리트해야할거같은데
-       //for (auto& b : v) {
-       //    SAFE_DELETE(b);
-       //}
-   }
-   map.clear();
+    for (auto& v : map)
+    {
+        //for (auto& cell : v)
+        //{
+        //    delete cell.getItem();
+        //    delete cell.getTopography();
+        //}
+        // Cell 소멸자에서 delete 해줌
+        v.clear();
+        // 하나씩 딜리트해야할거같은데
+        //for (auto& b : v) {
+        //    SAFE_DELETE(b);
+        //}
+    }
+    map.clear();
 }
