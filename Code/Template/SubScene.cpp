@@ -22,16 +22,17 @@ SubScene::SubScene(int i) {
 	changingButton = new Button("Resources/Button/RestartButton.png");
 	buttonList.push_back(changingButton);
 	changingButton->setPos(100, 100);	// ÁÂÃø»ó´Ü ÁÂÇ¥
-	changingButton->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));;
+	changingButton->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
 	
-	BFFinalize* BFFA;
-	BFFA = new BFFinalize();
-	BFChangeScene* changingBF;
-	changingBF = new BFChangeScene(new StageScene(i));
+	//BFFinalize* BFFA;
+	//BFFA = new BFFinalize();
+	//BFChangeScene* changingBF;
+	//changingBF = new BFChangeScene(new StageScene(i));
+	BFStage* BF = new BFStage(i);
 
 	buttonList.push_back(changingButton);
-	changingButton->bfList.push_back(changingBF);
-	changingButton->bfList.push_back(BFFA);
+	changingButton->bfList.push_back(BF);
+	//changingButton->bfList.push_back(BFFA);
 
 
 
@@ -44,7 +45,7 @@ SubScene::SubScene(int i) {
 	Button* gotoMain;
 	gotoMain = new Button("Resources/Button/QuitButton.png");
 	gotoMain->setPos(100, 500);
-	changingButton->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));;
+	changingButton->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
 
 	// 3. ¿¬°á
 	buttonList.push_back(gotoMain);

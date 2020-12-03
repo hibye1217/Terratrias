@@ -163,6 +163,7 @@
     <ClCompile Include="BFFinalize.cpp" />
     <ClCompile Include="BFResume.cpp" />
     <ClCompile Include="BFSaveSelect.cpp" />
+    <ClCompile Include="BFStage.cpp" />
     <ClCompile Include="Bomb.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
@@ -246,6 +247,7 @@
     <ClInclude Include="BFFinalize.h" />
     <ClInclude Include="BFResume.h" />
     <ClInclude Include="BFSaveSelect.h" />
+    <ClInclude Include="BFStage.h" />
     <ClInclude Include="Bomb.h" />
     <ClInclude Include="Boost.h" />
     <ClInclude Include="Button.h" />
