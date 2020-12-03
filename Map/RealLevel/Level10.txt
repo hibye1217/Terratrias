@@ -1,0 +1,44 @@
+20 20 115 5
+19 19
+
+Space	Space	Space	Space	Space	Space	Space	Space	Ice	Wall	Wall	Space	Wall	Space	Wall	Space	Wall	Space	Space	Space
+Wall	Wall	Wall	Wall	Wall	Wall	Wall	Glue	Ice	Wall	Wall	Wall	Space	Space	Wall	Space	Wall	Space	Wall	Space
+Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Hole 5	Wall	Wall	Space	Wall	Space	Wall	Space	Wall	Space	Wall	Space
+Space	Wall	Wall	Glue	Glue	Glue	Wall	Glue	Wall	Wall	Wall	Hole 1	Wall	Wall	Wall	Space	Wall	Space	Wall	Space
+Space	Ice	Wall	Wall	Ice	Ice	Ice	Glue	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Space	Wall	Space	Wall	Space
+Space	Ice	Wall	Glue	Ice	Glue	Ice	Glue	Wall	Wall	Space	Space	Space	Wall	Wall	Glue	Wall	Ice	Wall	Space
+Space	Ice	Wall	Glue	Ice	Glue	Ice	Glue	Wall	Wall	Ice	Wall	Glue	Wall	Wall	Space	Wall	Ice	Wall	Space
+Space	Ice	Wall	Glue	Ice	Glue	Ice	Glue	Wall	Wall	Space	Space	Space	Wall	Wall	Space	Wall	Ice	Wall	Space
+Space	Ice	Wall	Glue	Ice	Ice	Ice	Wall	Wall	Wall	Wall	Space	Wall	Wall	Wall	Space	Wall	Ice	Wall	Space
+Space	Wall	Wall	Glue	Wall	Glue	Glue	Glue	Wall	Wall	Space	Space	Space	Wall	Wall	Glue	Wall	Ice	Wall	Space
+Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Space	Wall	Space	Wall	Wall	Space	Space	Space	Wall	Space
+Hole 3	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Space	Space	Space	Wall	Wall	Wall	Wall	Wall	Wall	Wall
+Ice	Wall	Wall	Ice	Ice	Ice	Ice	Ice	Wall	Wall	Wall	Space	Wall	Wall	Wall	Wall	Wall	Wall	Wall	Hole 2
+Ice	Ice	Wall	Ice	Wall	Ice	Wall	Ice	Wall	Wall	Space	Space	Space	Space	Wall	Wall	Glue	Ice	Ice	Glue
+Wall	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Wall	Wall	Glue	Wall	Wall	Glue	Wall	Wall	Glue	Glue	Glue	Glue
+Ice	Ice	Ice	Ice	Ice	Ice	Ice	Ice	Wall	Wall	Space	Space	Space	Space	Wall	Wall	Glue	Ice	Space	Glue
+Ice	Wall	Ice	Ice	Ice	Ice	Ice	Ice	Wall	Wall	Wall	Wall	Space	Wall	Wall	Wall	Glue	Ice	Ice	Glue
+Ice	Wall	Ice	Wall	Ice	Ice	Ice	Wall	Wall	Wall	Glue	Glue	Space	Space	Wall	Wall	Glue	Space	Ice	Space
+Ice	Wall	Ice	Ice	Ice	Wall	Ice	Ice	Wall	Wall	Glue	Wall	Wall	Space	Wall	Wall	Glue	Glue	Glue	Glue
+Ice	Ice	Wall	Ice	Ice	Ice	Ice	Ice	Wall	Hole 4	Space	Space	Space	Space	Wall	Wall	Glue	Glue	Glue	Space
+
+Key 5	None	None	None	None	None	None	None	None	None	None	Key 1	None	None	None	Jump	None	Boost	None	None
+None	None	None	None	None	None	None	None	Boost	None	None	None	Bomb	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	Bomb	None	None	None	Jump	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	Jump	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	Boost
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+Boost	None	None	None	None	None	None	None	None	None	None	Jump	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	Boost	None	None	None	Boost
+Jump	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	Jump
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	Key 2
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	Key 4	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None	None
+None	Key 3	None	None	None	None	None	None	None	Jump	None	None	None	None	None	None	None	None	None	None
