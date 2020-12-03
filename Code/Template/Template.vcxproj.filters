@@ -186,6 +186,9 @@
     <ClCompile Include="StageScene.cpp">
       <Filter>소스 파일\Stage</Filter>
     </ClCompile>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>소스 파일\Main</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -295,6 +298,9 @@
     </ClInclude>
     <ClInclude Include="StageScene.h">
       <Filter>헤더 파일\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>헤더 파일\Main</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
