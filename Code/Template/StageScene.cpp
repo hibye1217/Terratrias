@@ -38,10 +38,10 @@ void StageScene::Render()
 	for (int i = 0; i < manager.getHeight(); ++i) {
 		for (int j = 0; j < manager.getWidth(); ++j) {
 			Topography* a = manager.getCell(i, j).getTopography();
-			manager.getCell(i,j).getTopography()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));
+			manager.getCell(i,j).getTopography()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));
 			a->Render();	// 1
 			Item* b = manager.getCell(i, j).getItem();
-			manager.getCell(i, j).getItem()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));
+			manager.getCell(i, j).getItem()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));
 			b->Render();		// 2
 		}
 	}

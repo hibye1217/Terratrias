@@ -175,8 +175,8 @@ void Manager::initialize(std::string filename)
                 //std::cin >> id;
                 fscanf(in, "%d", &id);
                 map[i][j].setTopography(new Hole(id));
-                //map[i][j].getTopography()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));  // 2
-                map[i][j].getTopography()->setScale(scaleRatio, scaleRatio);
+                //map[i][j].getTopography()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));  // 2
+                map[i][j].getTopography()->getSprite()->setScale(scaleRatio, scaleRatio);
             }
             else
             {
@@ -197,8 +197,8 @@ void Manager::initialize(std::string filename)
                         //    map[i][j].setTopography(new Ice());
                         //}
 
-                        //map[i][j].getTopography()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));  // 2
-                        map[i][j].getTopography()->setScale(scaleRatio, scaleRatio);
+                        //map[i][j].getTopography()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));  // 2
+                        map[i][j].getTopography()->getSprite()->setScale(scaleRatio, scaleRatio);
                         break;
                     }
                 }
@@ -224,8 +224,8 @@ void Manager::initialize(std::string filename)
                 //std::cin >> id;
                 fscanf(in, "%d", &id);
                 map[i][j].setItem(new Key(id));
-                //map[i][j].getItem()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));    // 3
-                map[i][j].getItem()->setScale(scaleRatio, scaleRatio);
+                //map[i][j].getItem()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));    // 3
+                map[i][j].getItem()->getSprite()->setScale(scaleRatio, scaleRatio);
             }
             else
             {
@@ -246,8 +246,8 @@ void Manager::initialize(std::string filename)
                         else if (k == Enum::BOMB) {
                             map[i][j].setItem(new Bomb());
                         }
-                        //map[i][j].getItem()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));    // 3
-                        map[i][j].getItem()->setScale(scaleRatio, scaleRatio);
+                        //map[i][j].getItem()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));    // 3
+                        map[i][j].getItem()->getSprite()->setScale(scaleRatio, scaleRatio);
                         break;
                     }
                 }
