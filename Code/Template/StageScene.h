@@ -7,6 +7,7 @@ class StageScene :
 {
 private:
     User& user;
+
 public:
 
     StageScene(int n);

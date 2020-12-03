@@ -36,6 +36,7 @@ public:
 	int getKeyCnt();
 	void setKeyCnt(int keyCnt);
 	void setScaleRatio(float);
+	float getScaleRatio();
 	void initialize(std::string filename);
 	void finalize();
 };

@@ -16,30 +16,25 @@ void Boost::useItem()
 {
 	// 방향 선택
 	direction = -1;
-	if (inputManager->GetKeyState('W') == KEY_DOWN || inputManager->GetKeyState('w') == KEY_DOWN)
+	while (direction == -1)
 	{
-		direction = Enum::UP;
-	}
-	else if (inputManager->GetKeyState('A') == KEY_DOWN || inputManager->GetKeyState('a') == KEY_DOWN)
-	{
-		direction = Enum::LEFT;
-	}
-	else if (inputManager->GetKeyState('S') == KEY_DOWN || inputManager->GetKeyState('s') == KEY_DOWN)
-	{
-		direction = Enum::DOWN;
-	}
-	else if (inputManager->GetKeyState('D') == KEY_DOWN || inputManager->GetKeyState('d') == KEY_DOWN)
-	{
-		direction = Enum::RIGHT;
-	}
-	else
-	{
-		return;
-	}
-
-	if (!canUseItem())
-	{
-		return;
+		inputManager->UpdateKeyState();
+		if (inputManager->GetKeyState('W') == KEY_DOWN || inputManager->GetKeyState('w') == KEY_DOWN)
+		{
+			direction = Enum::UP;
+		}
+		else if (inputManager->GetKeyState('A') == KEY_DOWN || inputManager->GetKeyState('a') == KEY_DOWN)
+		{
+			direction = Enum::LEFT;
+		}
+		else if (inputManager->GetKeyState('S') == KEY_DOWN || inputManager->GetKeyState('s') == KEY_DOWN)
+		{
+			direction = Enum::DOWN;
+		}
+		else if (inputManager->GetKeyState('D') == KEY_DOWN || inputManager->GetKeyState('d') == KEY_DOWN)
+		{
+			direction = Enum::RIGHT;
+		}
 	}
 
 	User& user = manager.getUser();

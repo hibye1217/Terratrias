@@ -89,6 +89,11 @@ void Manager::setScaleRatio(float Ratio)
     return;
 }
 
+float Manager::getScaleRatio()
+{
+    return scaleRatio;
+}
+
 
 
 void Manager::initialize(std::string filename) 
