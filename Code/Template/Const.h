@@ -91,6 +91,50 @@ const std::string key_file_path[max_key_count + 1] = {
     "Resources/Sprite/Big/Key5.png",
 };
 
+const int stage_num = 10;
+
+const std::string stage_open_path[stage_num + 1] = {
+    "Resources/LevelButton/Level1Open.png",
+    "Resources/LevelButton/Level1Open.png",
+    "Resources/LevelButton/Level2Open.png",
+    "Resources/LevelButton/Level3Open.png",
+    "Resources/LevelButton/Level4Open.png",
+    "Resources/LevelButton/Level5Open.png",
+    "Resources/LevelButton/Level6Open.png",
+    "Resources/LevelButton/Level7Open.png",
+    "Resources/LevelButton/Level8Open.png",
+    "Resources/LevelButton/Level9Open.png",
+    "Resources/LevelButton/Level10Open.png",
+};
+
+const std::string stage_close_path[stage_num + 1] = {
+    "Resources/LevelButton/Level1Close.png",
+    "Resources/LevelButton/Level1Close.png",
+    "Resources/LevelButton/Level2Close.png",
+    "Resources/LevelButton/Level3Close.png",
+    "Resources/LevelButton/Level4Close.png",
+    "Resources/LevelButton/Level5Close.png",
+    "Resources/LevelButton/Level6Close.png",
+    "Resources/LevelButton/Level7Close.png",
+    "Resources/LevelButton/Level8Close.png",
+    "Resources/LevelButton/Level9Close.png",
+    "Resources/LevelButton/Level10Close.png",
+};
+
+const std::string stage_clear_path[stage_num + 1] = {
+    "Resources/LevelButton/Level1Clear.png",
+    "Resources/LevelButton/Level1Clear.png",
+    "Resources/LevelButton/Level2Clear.png",
+    "Resources/LevelButton/Level3Clear.png",
+    "Resources/LevelButton/Level4Clear.png",
+    "Resources/LevelButton/Level5Clear.png",
+    "Resources/LevelButton/Level6Clear.png",
+    "Resources/LevelButton/Level7Clear.png",
+    "Resources/LevelButton/Level8Clear.png",
+    "Resources/LevelButton/Level9Clear.png",
+    "Resources/LevelButton/Level10Clear.png",
+};
+
 class Manager;
 class Item;
 class Topography;

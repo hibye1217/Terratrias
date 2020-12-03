@@ -33,7 +33,7 @@ void BFSaveSelect::Do()
 		fscanf(in, "%d", &n);
 		save[0][0] = n;
 		std::cout << save[0][0] << n << std::endl;
-		for (int i = 0; i < n; i++) {
+		for (int i = 1; i <= n; i++) {
 			fscanf(in, "%d %d", &save[i][0], &save[i][1]);
 		}
 	}

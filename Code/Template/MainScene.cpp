@@ -11,9 +11,15 @@ MainScene::MainScene() {
 
 	int access = save[0][0] + 1;
 
-	std::cout << access << std::endl;
+	std::cout << "access" << ' ' << access << std::endl;
 
-	BFStage* BF1;
+	BFStage* BF[20];
+
+	for (int i = 1; i <= 10; i++) {
+		BF[i] = new BFStage(i);
+	}
+
+	/*BFStage* BF1;
 	BF1 = new BFStage(1);
 	BFStage* BF2;
 	BF2 = new BFStage(2);
@@ -32,11 +38,28 @@ MainScene::MainScene() {
 	BFStage* BF9;
 	BF9 = new BFStage(9);
 	BFStage* BF10;
-	BF10 = new BFStage(10);
+	BF10 = new BFStage(10);*/
 
 
 	// 2. 버튼 설정
-	Button* Button1;
+	Button* button[20];
+
+	for (int i = 1; i <= 10; i++) {
+		if (access >= i) {
+			if (save[i][0] <= save[i][1]) {
+				button[i] = new Button(stage_clear_path[i].c_str());
+			}
+			else {
+				button[i] = new Button(stage_open_path[i].c_str());
+			}
+			button[i]->bfList.push_back(BF[i]);
+		}
+		else {
+			button[i] = new Button(stage_close_path[i].c_str());
+		}
+	}
+
+	/*Button* Button1;
 	Button* Button2;
 	Button* Button3;
 	Button* Button4;
@@ -124,9 +147,15 @@ MainScene::MainScene() {
 	}
 	else {
 		Button10 = new Button("Resources/LevelButton/Level10Close.png");
+	}*/
+
+	for (int i = 1; i <= 10; i++) {
+		button[i]->setPos(i* w + (100) * (i - 1), h);
+		button[i]->setDpos(100, 100);
+		buttonList.push_back(button[i]);
 	}
 
-	Button1->setPos(w,h);
+	/*Button1->setPos(w,h);
 	Button1->setDpos(100, 100);
 	Button1->bfList.push_back(BF1);
 	buttonList.push_back(Button1);
@@ -165,7 +194,7 @@ MainScene::MainScene() {
 
 	Button10->setPos(10*w+900,h);
 	Button10->setDpos(100, 100);
-	buttonList.push_back(Button10);
+	buttonList.push_back(Button10);*/
 
 }
 
