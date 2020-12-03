@@ -204,6 +204,9 @@
     <ClCompile Include="ClearScene.cpp">
       <Filter>소스 파일\Main\MainScene</Filter>
     </ClCompile>
+    <ClCompile Include="BFFinalize.cpp">
+      <Filter>소스 파일\InGameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -331,6 +334,9 @@
     </ClInclude>
     <ClInclude Include="ClearScene.h">
       <Filter>헤더 파일\Main\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="BFFinalize.h">
+      <Filter>헤더 파일\InGameObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

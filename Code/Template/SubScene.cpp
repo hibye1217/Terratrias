@@ -3,6 +3,7 @@
 #include "StageScene.h"
 #include "SubScene.h"
 #include "MainScene.h"
+#include "BFFinalize.h"
 
 SubScene::SubScene(int i) {
 
@@ -23,15 +24,19 @@ SubScene::SubScene(int i) {
 	changingButton->setPos(100, 100);	// ÁÂÃø»ó´Ü ÁÂÇ¥
 	changingButton->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));;
 	
-
+	BFFinalize* BFFA;
+	BFFA = new BFFinalize();
 	BFChangeScene* changingBF;
 	changingBF = new BFChangeScene(new StageScene(i));
 
 	buttonList.push_back(changingButton);
 	changingButton->bfList.push_back(changingBF);
+	changingButton->bfList.push_back(BFFA);
 
 
 
+	BFFinalize* BFF;
+	BFF = new BFFinalize();
 	BFChangeScene* BFmain;
 	BFmain = new BFChangeScene(new MainScene());
 
@@ -44,6 +49,7 @@ SubScene::SubScene(int i) {
 	// 3. ¿¬°á
 	buttonList.push_back(gotoMain);
 	changingButton->bfList.push_back(BFmain);
+	changingButton->bfList.push_back(BFF);
 
 
 }

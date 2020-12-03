@@ -144,6 +144,7 @@ void StageScene::Update(float dTime)
 			for (int i = 1; i <= save[0][0]; i++) {
 				fprintf(in, "%d %d\n", save[i][0], save[i][1]);
 			}
+			manager.finalize();
 			// 클리어 씬을 키기
 		}
 	}
