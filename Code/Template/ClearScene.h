@@ -10,7 +10,7 @@ class ClearScene :
     public Scene
 {
 public:
-	ClearScene();
+	ClearScene(int n);
 	~ClearScene();
 
 	void Render();

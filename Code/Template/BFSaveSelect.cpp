@@ -32,13 +32,12 @@ void BFSaveSelect::Do()
 		FILE* in = fopen(filename, "r");
 		fscanf(in, "%d", &n);
 		save[0][0] = n;
-
+		std::cout << save[0][0] << n << std::endl;
 		for (int i = 0; i < n; i++) {
 			fscanf(in, "%d %d", &save[i][0], &save[i][1]);
 		}
 	}
 	
-
 	// 있으면 불러오면 됨
 	savefile = name;
 }

@@ -11,6 +11,8 @@ MainScene::MainScene() {
 
 	int access = save[0][0] + 1;
 
+	std::cout << access << std::endl;
+
 	BFStage* BF1;
 	BF1 = new BFStage(1);
 	BFStage* BF2;
@@ -44,72 +46,79 @@ MainScene::MainScene() {
 	Button* Button8;
 	Button* Button9;
 	Button* Button10;
-	if (access + 1 >= 1) {
+	if (access >= 1) {
 		Button1 = new Button("Resources/LevelButton/Level1Open.png");
 		Button1->bfList.push_back(BF1);
 	}
 	else {
-
 		Button1 = new Button("Resources/LevelButton/Level1Close.png");
 	}
-	if (access + 1 >= 2) {
+
+	if (access >= 2) {
 		Button2 = new Button("Resources/LevelButton/Level2Open.png");
 		Button2->bfList.push_back(BF2);
 	}
 	else {
 		Button2 = new Button("Resources/LevelButton/Level2Close.png");
-
 	}
-	if (access + 1 >= 3) {
+
+	if (access >= 3) {
 		Button3 = new Button("Resources/LevelButton/Level3Open.png");
 		Button3->bfList.push_back(BF3);
 	}
 	else {
 		Button3 = new Button("Resources/LevelButton/Level3Close.png");
 	}
-	if (access + 1 >= 4) {
+
+	if (access >= 4) {
 		Button4 = new Button("Resources/LevelButton/Level4Open.png");
 		Button4->bfList.push_back(BF4);
 	}
 	else {
 		Button4 = new Button("Resources/LevelButton/Level4Close.png");
 	}
-	if (access + 1 >= 5) {
+
+	if (access >= 5) {
 		Button5 = new Button("Resources/LevelButton/Level5Open.png");
 		Button5->bfList.push_back(BF5);
 	}
 	else {
 		Button5 = new Button("Resources/LevelButton/Level5Close.png");
 	}
-	if (access + 1 >= 6) {
+
+	if (access >= 6) {
 		Button6 = new Button("Resources/LevelButton/Level6Open.png");
 		Button6->bfList.push_back(BF6);
 	}
 	else {
 		Button6 = new Button("Resources/LevelButton/Level6Close.png");
 	}
-	if (access + 1 >= 7) {
+
+	if (access >= 7) {
 		Button7 = new Button("Resources/LevelButton/Level7Open.png");
 		Button7->bfList.push_back(BF7);
 	}
 	else {
 		Button7 = new Button("Resources/LevelButton/Level7Close.png");
 	}
-	if (access + 1 >= 8) {
+
+	if (access >= 8) {
 		Button8 = new Button("Resources/LevelButton/Level8Open.png");
 		Button8->bfList.push_back(BF8);
 	}
 	else {
 		Button8 = new Button("Resources/LevelButton/Level8Close.png");
 	}
-	if (access + 1 >= 9) {
+
+	if (access >= 9) {
 		Button9 = new Button("Resources/LevelButton/Level9Open.png");
 		Button9->bfList.push_back(BF9);
 	}
 	else {
 		Button9 = new Button("Resources/LevelButton/Level9Close.png");
 	}
-	if (access + 1 >= 10) {
+
+	if (access >= 10) {
 		Button10 = new Button("Resources/LevelButton/Level10Open.png");
 		Button10->bfList.push_back(BF10);
 	}

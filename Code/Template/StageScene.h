@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include "BaseScene.h"
+#include "ClearScene.h"
 
 class StageScene :
     public BaseScene

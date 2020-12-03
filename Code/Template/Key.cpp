@@ -37,6 +37,7 @@ void Key::useItem()
 
     //manager.setMoveCnt(manager.getMoveCnt() + 1);
     manager.setKeyCnt(manager.getKeyCnt() - 1);
+    std::cout << manager.getKeyCnt() << std::endl;
 }
 
 bool Key::canUseItem() {

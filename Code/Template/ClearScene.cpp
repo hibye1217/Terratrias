@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "ClearScene.h"
 
-ClearScene::ClearScene()
+ClearScene::ClearScene(int n)
 {
 
 	float makeScale = ((float)SCREEN_HEIGHT / 6.0f) / (float)590;
@@ -12,10 +12,11 @@ ClearScene::ClearScene()
 	//BFF1 = new BFFinalize();
 	//BFChangeScene* BFC1;
 	//BFC1 = new BFChangeScene(new StageScene(save[0][0]+1));
-	BFStage* BFn = new BFStage(save[0][0] + 1);
+	BFStage* BFn = new BFStage(n + 1);
 
 	next->setPos(100,100);
 	next->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
+	next->setScale(makeScale, makeScale);
 
 	buttonList.push_back(next);
 	next->bfList.push_back(BFn);
@@ -27,7 +28,7 @@ ClearScene::ClearScene()
 	//BFF2 = new BFFinalize();
 	//BFChangeScene* BFC2;
 	//BFC2 = new BFChangeScene(new StageScene(save[0][0]));
-	BFStage* BFr = new BFStage(save[0][0]);
+	BFStage* BFr = new BFStage(n);
 
 	restart->setPos(100, 400);
 	restart->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
@@ -35,6 +36,7 @@ ClearScene::ClearScene()
 	buttonList.push_back(restart);
 	//restart->bfList.push_back(BFF2);
 	restart->bfList.push_back(BFr);
+	restart->setScale(makeScale, makeScale);
 
 
 	Button* gotoMain = new Button("Resources//Button/QuitButton.png");
@@ -45,6 +47,7 @@ ClearScene::ClearScene()
 
 	gotoMain->setPos(100, 700);
 	gotoMain->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
+	gotoMain->setScale(makeScale, makeScale);
 
 	buttonList.push_back(gotoMain);
 	gotoMain->bfList.push_back(BFF3);

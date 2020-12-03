@@ -142,14 +142,18 @@ void StageScene::Update(float dTime)
 		if (manager.getKeyCnt() == 0) {
 			// 깼다는 것을 저장하고
 			save[stage][0] = manager.getMoveCnt();
+
+			if (save[0][0] < stage)
+				save[0][0] = stage;
+
 			// 세이브 파일에 저장하고
 			FILE* in = fopen(savefile.c_str(), "w");
 			fprintf(in, "%d\n", save[0][0]);
 			for (int i = 1; i <= save[0][0]; i++) {
 				fprintf(in, "%d %d\n", save[i][0], save[i][1]);
 			}
-			manager.finalize();
 			// 클리어 씬을 키기
+			sceneManager->setPreparedScene(new ClearScene(stage));
 		}
 	}
 }
