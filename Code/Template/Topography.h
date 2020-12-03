@@ -12,7 +12,7 @@ public:
 public:
 	Topography();
 	Topography(int type);
-	Topography(int type, std::string path);
+	Topography(int type, int id);
 	virtual ~Topography();
 	int getType();
 	void setSprite(Sprite*);

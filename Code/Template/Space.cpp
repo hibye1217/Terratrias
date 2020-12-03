@@ -3,7 +3,7 @@
 #include "Space.h"
 
 Space::Space()
-	: Topography(Enum::SPACE, "Resources/Sprite/Big/Space.png") {
+	: Topography(Enum::SPACE) {
 
 }
 

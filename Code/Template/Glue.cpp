@@ -3,7 +3,7 @@
 #include "Glue.h"
 #include "Manager.h"
 
-Glue::Glue() : Topography(Enum::GLUE, "Resources/Sprite/Big/Glue.png") {}
+Glue::Glue() : Topography(Enum::GLUE) {}
 
 Glue::~Glue() {}
 

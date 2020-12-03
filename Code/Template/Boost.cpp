@@ -3,7 +3,7 @@
 #include "stdafx.h"
 #include "Boost.h"
 
-Boost::Boost() : Item(Enum::BOOST, "Resources/Sprite/Big/Boost.png"), direction(-1) {}
+Boost::Boost() : Item(Enum::BOOST), direction(-1) {}
 
 Boost::~Boost() {}
 

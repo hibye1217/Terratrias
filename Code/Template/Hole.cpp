@@ -5,7 +5,7 @@
 Hole::Hole() : Hole(-1) {}
 
 Hole::Hole(int id)
-	: Topography(Enum::HOLE, ("Resources/Sprite/Big/Hole" + std::to_string(id) + ".png")), id(id) {
+	: id(id), Topography(Enum::HOLE, id) {
 
 }
 

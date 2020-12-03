@@ -2,7 +2,7 @@
 #include "stdafx.h"
 #include "Bomb.h"
 
-Bomb::Bomb() : Item(Enum::BOMB, "Resources/Sprite/Big/Bomb.png") {
+Bomb::Bomb() : Item(Enum::BOMB) {
 	
 }
 

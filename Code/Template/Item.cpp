@@ -6,15 +6,15 @@ Item::Item() : Item(Enum::NONE) {
 }
 
 Item::Item(int type) : type(type)
-//, Sprite("Resources/Sprite/Big/None.png") // 1
+//, Sprite("Resources/Sprite/Big/Space.png")    // 1
 {
-    sprite = nullptr;
+    sprite = new Sprite(item_file_path[type].c_str());
 }
 
-Item::Item(int type, std::string path) : type(type)
-//, Sprite(path.c_str())    // 2
+Item::Item(int type, int id) : type(type)
+//, Sprite(path.c_str())        // 2
 {
-    sprite = new Sprite(path.c_str());
+    sprite = new Sprite(key_file_path[id].c_str());
 }
 
 Item::~Item() {}

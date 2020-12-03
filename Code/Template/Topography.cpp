@@ -7,13 +7,13 @@ Topography::Topography() : Topography(Enum::SPACE) {}
 Topography::Topography(int type) : type(type)
 //, Sprite("Resources/Sprite/Big/Space.png")    // 1
 {
-    sprite = nullptr;
+    sprite = new Sprite(topo_file_path[type].c_str());
 }
 
-Topography::Topography(int type, std::string path) : type(type)
+Topography::Topography(int type, int id) : type(type)
 //, Sprite(path.c_str())        // 2
 {
-    sprite = new Sprite(path.c_str());
+    sprite = new Sprite(hole_file_path[id].c_str());
 }
 
 Topography::~Topography() {}

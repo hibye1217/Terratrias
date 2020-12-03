@@ -3,7 +3,7 @@
 #include "None.h"
 
 None::None() : 
-	Item(Enum::NONE, "Resources/Sprite/Big/None.png") {}
+	Item(Enum::NONE) {}
 
 None::~None() {}
 

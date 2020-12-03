@@ -16,7 +16,7 @@ namespace Enum
         LEFT,
     };
 
-    enum ItemList 
+    enum ItemList
     {
         KEY,
         NONE,
@@ -36,12 +36,20 @@ namespace Enum
 
 const int item_num = 5;
 
-const std::string item_name[item_num] {
+const std::string item_name[item_num]{
     "Key",
     "None",
     "Jump",
     "Boost",
     "Bomb",
+};
+
+const std::string item_file_path[item_num] = {
+    "Resources/Sprite/Big/Key1.png",
+    "Resources/Sprite/Big/None.png",
+    "Resources/Sprite/Big/Jump.png",
+    "Resources/Sprite/Big/Boost.png",
+    "Resources/Sprite/Big/Bomb.png",
 };
 
 const int topo_num = 4;
@@ -51,6 +59,33 @@ const std::string topo_name[topo_num] = {
     "Space",
     "Wall",
     "Glue",
+};
+
+const std::string topo_file_path[topo_num] = {
+    "Resources/Sprite/Big/Hole1.png",
+    "Resources/Sprite/Big/Space.png",
+    "Resources/Sprite/Big/Wall.png",
+    "Resources/Sprite/Big/Glue.png",
+};
+
+const int max_key_count = 5;
+
+const std::string hole_file_path[max_key_count + 1] = {
+    "Resources/Sprite/Big/Hole1.png",
+    "Resources/Sprite/Big/Hole1.png",
+    "Resources/Sprite/Big/Hole2.png",
+    "Resources/Sprite/Big/Hole3.png",
+    "Resources/Sprite/Big/Hole4.png",
+    "Resources/Sprite/Big/Hole5.png",
+};
+
+const std::string key_file_path[max_key_count + 1] = {
+    "Resources/Sprite/Big/Key1.png",
+    "Resources/Sprite/Big/Key1.png",
+    "Resources/Sprite/Big/Key2.png",
+    "Resources/Sprite/Big/Key3.png",
+    "Resources/Sprite/Big/Key4.png",
+    "Resources/Sprite/Big/Key5.png",
 };
 
 class Manager;

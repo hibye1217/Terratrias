@@ -12,7 +12,7 @@ private:
 public:
 	Item();
 	Item(int type);
-	Item(int type, std::string path);
+	Item(int type, int id);
 	virtual ~Item();
 	int getType();
 	void setSprite(Sprite*);
