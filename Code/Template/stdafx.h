@@ -35,6 +35,8 @@
 #include "Boost.h"
 #include "Bomb.h"
 
+#include <fstream>
+
 // DirectX Header
 #include <d3d9.h>
 #include <d3dx9.h>
@@ -95,6 +97,8 @@ extern Manager manager;
 extern Item* item_list[item_num];
 extern Topography* topo_list[topo_num];
 
+extern std::string savefile;
+extern int save[12][2];
 extern int i_hat;
 extern int j_hat;
 extern int margin_bafor;

@@ -7,12 +7,15 @@ StageScene::StageScene(int n) : user(manager.getUser())
 
 	std::string stageName;
 
-	stageName = "stage" + std::to_string(n);
+	stageName = "Resources/Map/RealLevel/Level" + std::to_string(n);
 	stageName += ".txt";
-
+	
 	manager.initialize(stageName);
 
-
+	save[n][1] = manager.getLimitCnt();
+	if (save[0][0] < n) {
+		save[0][0] = n;
+	}
 	// 이제 마진 정해졌으니 그만큼 넣으면 됨.
 	// 이제 Item이랑 topography가 Sprite를 상속받음
 	// 그니까 초기화할때 sprite 쓸거 정하고, 그냥 보여주면 됨

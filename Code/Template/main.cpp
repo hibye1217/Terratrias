@@ -4,6 +4,7 @@
 #include "MainScene.h"
 
 #include "skTest_Scene.h"
+#include "StartScene.h"
 #include "Object.h"
 
 #include "Const.h"
@@ -21,10 +22,14 @@ Manager manager;
 Item* item_list[item_num];
 Topography* topo_list[topo_num];
 
+std::string savefile;
 int i_hat;
 int j_hat;
 int margin_bafor;
 int margin_side;
+int save[12][2]; 
+//	0이 플레이어, 1이 최선
+// 0,0 이 몇스테이지까지 해봤는지
 
 
 INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdShow) {
@@ -60,5 +65,9 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 	//return app.DoMainLoop(new MainScene());
 	skTest_Scene * skTelekom = new skTest_Scene();
 
-	return app.DoMainLoop(skTelekom);
+	StartScene* sceneStartPoint = new StartScene();
+
+	sceneStartPoint->setNextScene(skTelekom);
+
+	return app.DoMainLoop(sceneStartPoint);
 }

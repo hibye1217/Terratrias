@@ -189,6 +189,12 @@
     <ClCompile Include="StartScene.cpp">
       <Filter>소스 파일\Main</Filter>
     </ClCompile>
+    <ClCompile Include="SaveSelectScene.cpp">
+      <Filter>소스 파일\Main\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="BFSaveSelect.cpp">
+      <Filter>소스 파일\InGameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -301,6 +307,12 @@
     </ClInclude>
     <ClInclude Include="StartScene.h">
       <Filter>헤더 파일\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveSelectScene.h">
+      <Filter>헤더 파일\Main\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="BFSaveSelect.h">
+      <Filter>헤더 파일\InGameObject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
