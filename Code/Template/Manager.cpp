@@ -116,7 +116,8 @@ void Manager::initialize(std::string filename)
         None  None  None  None
     */
     moveCnt = 0;
-    user.setInventory(item_list[Enum::NONE]);
+    user.setInventory(new None());
+    //user.setInventory(item_list[Enum::NONE]);
 
     FILE* in = fopen(filename.c_str(), "r");
     //std::ifstream in(filename);
@@ -154,7 +155,7 @@ void Manager::initialize(std::string filename)
     user.setX(userX);
     user.setY(userY);
 
-    user.getSprite()->setPos(margin_2 + (userX * i_hat), margin_1 + (userY * j_hat));    // 1
+    user.getSprite()->setPos(margin_2 + (userY * i_hat), margin_1 + (userX * j_hat));    // 1
     user.getSprite()->setScale(scaleRatio, scaleRatio);
 
     for(int i = 0; i < height; ++i)
@@ -263,11 +264,12 @@ void Manager::finalize()
 {
    for(auto& v : map)
    {
-       for (auto& cell : v)
-       {
-           delete cell.getItem();
-           delete cell.getTopography();
-       }
+       //for (auto& cell : v)
+       //{
+       //    delete cell.getItem();
+       //    delete cell.getTopography();
+       //}
+       // Cell 소멸자에서 delete 해줌
        v.clear();
        // 하나씩 딜리트해야할거같은데
        //for (auto& b : v) {

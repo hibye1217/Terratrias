@@ -97,12 +97,12 @@ void User::move(int direction)
     int nx = x + dx[direction];
     int ny = y + dy[direction];
 
-    if (!manager.isValidPoint(ny, nx))
+    if (!manager.isValidPoint(nx, ny))
     {
         return;
     }
 
-    if (!manager.getCell(ny, nx).canGo())
+    if (!manager.getCell(nx, ny).canGo())
     {
         return;
     }
@@ -110,7 +110,7 @@ void User::move(int direction)
     x = nx;
     y = ny;
 
-    sprite->setPos(margin_x + (nx * i_hat), margin_y + (ny * j_hat));       // 2
+    sprite->setPos(margin_x + (y * i_hat), margin_y + (x * j_hat));       // 2
     // 유저에 추가한거
     
 

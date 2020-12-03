@@ -110,6 +110,32 @@ void StageScene::Update(float dTime)
 		{
 			user.putItem();
 		}
+
+		// print
+		User& user = manager.getUser();
+		system("cls");
+		std::cout << "remain key: " << manager.getKeyCnt() << std::endl;
+		std::cout << "remain count: " << manager.getLimitCnt() - manager.getMoveCnt() << std::endl;
+		std::cout << "(x, y) = " << user.getX() << ' ' << user.getY() << std::endl;
+		std::cout << "inventory: " << item_name[user.getInventory()->getType()] << std::endl << std::endl;
+		for (int i = 0; i < manager.getHeight(); ++i)
+		{
+			for (int j = 0; j < manager.getWidth(); ++j)
+			{
+				//std::cout << manager.getCell(i, j).getTopography()->getType() << ' ';
+				std::cout << topo_name[manager.getCell(i, j).getTopography()->getType()] << ' ';
+			}
+			std::cout << std::endl;
+		}
+		std::cout << std::endl;
+		for (int i = 0; i < manager.getHeight(); ++i)
+		{
+			for (int j = 0; j < manager.getWidth(); ++j)
+			{
+				std::cout << item_name[manager.getCell(i, j).getItem()->getType()] << ' ';
+			}
+			std::cout << std::endl;
+		}
 	}
 
 }

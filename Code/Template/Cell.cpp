@@ -16,33 +16,8 @@ Cell::Cell(Item* item, Topography* topography)
 
 Cell::~Cell()
 {
-	bool valid = false;
-	for (int i = 0; i < item_num; ++i)
-	{
-		if (pItem == item_list[i])
-		{
-			valid = true;
-			break;
-		}
-	}
-	if (!valid)
-	{
-		delete pItem;
-	}
-	
-	valid = false;
-	for (int i = 0; i < topo_num; ++i)
-	{
-		if (pTopography == topo_list[i])
-		{
-			valid = true;
-			break;
-		}
-	}
-	if (!valid)
-	{
-		delete pTopography;
-	}
+	delete pItem;
+	delete pTopography;
 }
 
 Item* Cell::getItem(void)

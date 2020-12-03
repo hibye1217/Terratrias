@@ -2,10 +2,10 @@
 #include <string>
 #include "stdafx.h"
 
-const int dx[] = { 0, 1, 0, -1 };
-const int dy[] = { -1, 0, 1, 0 };
-const int dx8[] = { -1, -1, -1, 0, 1, 1, 1, 0 };        // 이거
-const int dy8[] = { -1, 0, 1, 1, 1, 0, -1, -1 };        // 이거 고쳐야함
+const int dx[] = { -1, 0, 1, 0 };
+const int dy[] = { 0, 1, 0, -1 };
+const int dx8[] = { -1, -1, -1, 0, 1, 1, 1, 0 };
+const int dy8[] = { -1, 0, 1, 1, 1, 0, -1, -1 };
 
 namespace Enum
 {
