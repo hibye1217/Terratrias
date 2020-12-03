@@ -72,8 +72,10 @@ void User::gainItem()
     {
         return;
     }
+    Item* tmp = getInventory();
     setInventory(item);
-    manager.getCell(x, y).setItem(item_list[Enum::NONE]);
+    manager.getCell(x, y).setItem(tmp);
+    //manager.getCell(x, y).setItem(item_list[Enum::NONE]);
 }
 
 void User::putItem() 
@@ -84,8 +86,10 @@ void User::putItem()
     {
         return;
     }
-    manager.getCell(x, y).setItem(getInventory());
-    setInventory(item_list[Enum::NONE]);
+    Item* tmp = getInventory();
+    setInventory(item);
+    manager.getCell(x, y).setItem(tmp);
+    //setInventory(item_list[Enum::NONE]);
 }
 
 void User::move(int direction) 

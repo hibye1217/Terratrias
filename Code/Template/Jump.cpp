@@ -11,25 +11,25 @@ void Jump::useItem()
 {
 	// 방향 선택
 	direction = -1;
-	char ch = getchar();
-	switch (ch)
+	if (inputManager->GetKeyState('W') == KEY_DOWN || inputManager->GetKeyState('w') == KEY_DOWN)
 	{
-	case 'W':
-	case 'w':
 		direction = Enum::UP;
-		break;
-	case 'A':
-	case 'a':
+	}
+	else if (inputManager->GetKeyState('A') == KEY_DOWN || inputManager->GetKeyState('a') == KEY_DOWN)
+	{
 		direction = Enum::LEFT;
-		break;
-	case 'S':
-	case 's':
+	}
+	else if (inputManager->GetKeyState('S') == KEY_DOWN || inputManager->GetKeyState('s') == KEY_DOWN)
+	{
 		direction = Enum::DOWN;
-		break;
-	case 'D':
-	case 'd':
+	}
+	else if (inputManager->GetKeyState('D') == KEY_DOWN || inputManager->GetKeyState('d') == KEY_DOWN)
+	{
 		direction = Enum::RIGHT;
-		break;
+	}
+	else
+	{
+		return;
 	}
 
 	if (!canUseItem())
@@ -46,7 +46,9 @@ void Jump::useItem()
 	user.setX(nnx);
 	user.setY(nny);
 
-	user.setInventory(item_list[Enum::NONE]);
+	delete user.getInventory();
+	user.setInventory(new None());
+	//user.setInventory(item_list[Enum::NONE]);
 	manager.setMoveCnt(manager.getMoveCnt() + 1);
 }
 

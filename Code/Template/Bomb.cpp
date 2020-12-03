@@ -27,7 +27,11 @@ void Bomb::useItem()
 			continue;
 		}
 		Cell& cell = manager.getCell(nx, ny);
-		if (cell.getItem()->getType() == Enum::KEY)
+		delete cell.getItem();
+		delete cell.getTopography();
+		cell.setItem(new None());
+		cell.setTopography(new Space());
+		/*if (cell.getItem()->getType() == Enum::KEY)
 		{
 			delete cell.getItem();
 		}
@@ -36,10 +40,12 @@ void Bomb::useItem()
 			delete cell.getTopography();
 		}
 		cell.setItem(item_list[Enum::NONE]);
-		cell.setTopography(topo_list[Enum::SPACE]);
+		cell.setTopography(topo_list[Enum::SPACE]);*/
 	}
 
-	user.setInventory(item_list[Enum::NONE]);
+	delete user.getInventory();
+	user.setInventory(new None()); 
+	//user.setInventory(item_list[Enum::NONE]);
 	//manager.setMoveCnt(manager.getMoveCnt() + 1);
 }
 

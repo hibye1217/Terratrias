@@ -181,7 +181,7 @@ void Manager::initialize(std::string filename)
             {
                 for(int k = 1; k < topo_num; ++k)
                 {
-                    if(topo == topo_name[k])
+                    if(!strcmp(topo, topo_name[k].c_str()))
                     {
                         if (k == Enum::SPACE) {
                             map[i][j].setTopography(new Space());
@@ -230,7 +230,7 @@ void Manager::initialize(std::string filename)
             {
                 for(int k = 1; k < item_num; ++k)
                 {
-                    if(item == item_name[k])
+                    if(!strcmp(item, item_name[k].c_str()))
                     {
                         //std::cout << k << ' ';
                         if (k == Enum::NONE) {
@@ -263,6 +263,11 @@ void Manager::finalize()
 {
    for(auto& v : map)
    {
+       for (auto& cell : v)
+       {
+           delete cell.getItem();
+           delete cell.getTopography();
+       }
        v.clear();
        // 하나씩 딜리트해야할거같은데
        //for (auto& b : v) {
