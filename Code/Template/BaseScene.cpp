@@ -2,9 +2,9 @@
 #include "BaseScene.h"
 #include "BFResume.h"
 
-BaseScene::BaseScene()
+BaseScene::BaseScene(int i)
 {
-	subScene = new SubScene(this);
+	subScene = new SubScene(i);
 	isSubSceneOn = false;
 
 	BFResume* BFr = new BFResume(this);

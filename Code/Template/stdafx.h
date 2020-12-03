@@ -34,6 +34,7 @@
 #include "Jump.h"
 #include "Boost.h"
 #include "Bomb.h"
+#include "Ice.h"
 
 #include <fstream>
 

@@ -1,4 +1,40 @@
-﻿  SaveSelectScene.cpp
+﻿  stdafx.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\SceneManager.h(18,25): warning C4305: '초기화 중': 'double'에서 'const float'(으)로 잘립니다.
+  Animation.cpp
+  Application.cpp
+  BFAdDelSprite.cpp
+  BFChangeScene.cpp
+  BFFinalize.cpp
+  BFResume.cpp
+  BFSaveSelect.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\BFSaveSelect.cpp(32,14): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\BFSaveSelect.cpp(33,3): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\BFSaveSelect.cpp(37,4): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  BaseScene.cpp
+  Button.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Button.cpp(36,17): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Button.cpp(37,17): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ButtonFunction.cpp
+  ClearScene.cpp
+  Console.cpp
+  Font.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Font.cpp(49,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Font.cpp(50,10): warning C4244: '=': 'int'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Ice.cpp
+  InputManager.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\InputManager.cpp(42,27): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\InputManager.cpp(42,22): warning C4244: '인수': 'LONG'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MainScene.cpp
+  Object.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.cpp(59,18): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.cpp(60,19): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.cpp(61,17): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.cpp(62,20): warning C4244: '+=': 'FLOAT'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.cpp(64,30): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.cpp(65,31): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.cpp(66,29): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.cpp(67,32): warning C4244: '+=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  SaveSelectScene.cpp
 D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\SaveSelectScene.cpp(9,17): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
 D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
@@ -16,4 +52,156 @@ D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning 
           [
               PY=int
           ]
+  Scene.cpp
+  SceneManager.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\SceneManager.h(18,25): warning C4305: '초기화 중': 'double'에서 'const float'(으)로 잘립니다.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\SceneManager.cpp(12): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  코드를 생성하고 있습니다...
+  컴파일하고 있습니다...
+  SoundManager.cpp
+  Sprite.cpp
+  StageScene.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\StageScene.cpp(142,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\StageScene.cpp(50): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  StartScene.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\StartScene.cpp(9): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  SubScene.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\SubScene.cpp(14): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  TextureManager.cpp
+  skTest_Scene.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\skTest_Scene.cpp(10): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  코드를 생성하고 있습니다...
+  Bomb.cpp
+  Boost.cpp
+  Cell.cpp
+  Glue.cpp
+  Hole.cpp
+  Item.cpp
+  JS_main.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\JS_main.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  Jump.cpp
+  Key.cpp
+  main.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\main.cpp(1,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+  Manager.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Manager.cpp(147,16): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Manager.cpp(152,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Manager.cpp(179,5): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Manager.cpp(194,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Manager.cpp(201,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Manager.cpp(246,13): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Manager.cpp(253,17): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Manager.cpp(183): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  None.cpp
+  Space.cpp
+  Topography.cpp
+  User.cpp
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PX=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\User.cpp(125): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+          with
+          [
+              PX=int,
+              PY=int
+          ]
+D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              PY=int
+          ]
+  Wall.cpp
+  코드를 생성하고 있습니다...
   Template.vcxproj -> D:\0 100\2_공부\2_10_Github\Terratrias\Code\Debug\Template.exe

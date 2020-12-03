@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "StageScene.h"
 
-StageScene::StageScene(int n) : user(manager.getUser()), stage(n)
+StageScene::StageScene(int n) : user(manager.getUser()), stage(n), BaseScene(n)
 {
 	// 파일 가져오고 게임 초기화 진행
 

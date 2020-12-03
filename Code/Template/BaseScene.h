@@ -9,7 +9,7 @@ protected:
 public:
     SubScene *subScene;
 
-    BaseScene();
+    BaseScene(int i);
     ~BaseScene();
 
     void Render();
