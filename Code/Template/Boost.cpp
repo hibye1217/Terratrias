@@ -54,7 +54,7 @@ void Boost::useItem()
 			manager.setLastDir(direction);
 			manager.setMoved(true);
 		}
-		if (manager.getCell(nx, ny).getTopography()->getType() == Enum::GLUE)
+		if (manager.isValidPoint(nx, ny) && manager.getCell(nx, ny).getTopography()->getType() == Enum::GLUE)
 		{
 			break;
 		}
