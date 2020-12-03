@@ -23,7 +23,7 @@ void Bomb::useItem()
 	User& user = manager.getUser();
 	int userX = user.getX();
 	int userY = user.getY();
-	for (int i = 0; i < 8; ++i)
+	for (int i = 0; i < 9; ++i)
 	{
 		int nx = userX + dx8[i];
 		int ny = userY + dy8[i];

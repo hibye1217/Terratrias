@@ -4,8 +4,8 @@
 
 const int dx[] = { -1, 0, 1, 0 };
 const int dy[] = { 0, 1, 0, -1 };
-const int dx8[] = { -1, -1, -1, 0, 1, 1, 1, 0 };
-const int dy8[] = { -1, 0, 1, 1, 1, 0, -1, -1 };
+const int dx8[] = { 0, -1, -1, -1, 0, 1, 1, 1, 0 };
+const int dy8[] = { 0, -1, 0, 1, 1, 1, 0, -1, -1 };
 
 namespace Enum
 {
