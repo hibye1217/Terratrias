@@ -17,6 +17,9 @@ class Manager{ // 게임에 필요한 것들. Scene (Stage) 가 대신할 수도
     vector< vector<Cell> > map;      // 2차원 맵
     int height, width;               // 맵의 높이, 너비
     int moveCount, limitCount;       // 움직인 횟수, 최소 이동 횟수
+    int keyCnt;						 // 맵에 있는 총 Key 개수
+    int lastDir;					 // 마지막 행동의 방향 (없으면 -1)
+    bool moved;						 // 마지막 행동이 user의 위치를 변화시켰는가?
     User user;                       // 유저
 
     bool isValidPoint(int x, int y); // 맵의 범위를 넘지 않는지 확인
@@ -33,13 +36,16 @@ class Cell{ // 칸
 ```
 ```cpp
 class Item{ // 아이템
+    int type;		   // 아이템 종류
     void useItem();    // 아이템 사용
     bool canUseItem(); // 아이템을 사용할 수 있는지 확인
 }
 ```
 ```cpp
 class Topography{
-    bool canGo(); // 유저가 이동할 수 있는 칸인지 확인
+    int type;	  		// 지형 종류
+    bool canGo(); 		// 유저가 이동할 수 있는 칸인지 확인
+	void onArrived();	// 이 지형에 도착했을 때의 상호작용
 }
 ```
 ```cpp
@@ -63,7 +69,7 @@ X번째 맵을 플레이하려면, X-1번째 맵까지 플레이한 적이 있�
 - get : 유저가 아이템을 들고 있지 않다면, 현재 칸의 아이템을 줍는다.
 - put : 현재 칸이 비어있다면, 유저가 아이템을 현재 칸에 놓는다.
 - use : 유저가 아이템을 사용할 수 있다면, 사용한다. 이 때 사용한 아이템은 사라진다.
-    - key : 현재 칸의 지형이 Hole 이고, 들고 있는 Key와 Hole의 ID가 동일하다면 사용할 수 있다. 사용 시 Hole은 Space가 되며, holeCount 가 1 감소한다.
+    - key : 현재 칸의 지형이 Hole 이고, 들고 있는 Key와 Hole의 ID가 동일하다면 사용할 수 있다. 사용 시 Hole은 Space가 되며, KeyCount 가 1 감소한다.
     - jump : 이동할 방향의 지형이 User | Wall | Space 형태라면 사용할 수 있다. 사용 시 유저가 Wall을 넘어 Space에 도착한다. 1회 이동한 것으로 간주한다.
 
 해당 맵을 클리어할 때 남은 점수가 전체 점수에 더해진다.   
@@ -156,4 +162,4 @@ User는 2차원 맵 (크기는 최대 20 x 20 정도) 에서 상하좌우로 이
 6. 향후 계획
     - 아이템과 지형을 더 추가한다.
     - 맵을 자동으로 생성하고, 생성한 맵의 클리어 가능 여부 및 필요한 최소 이동 횟수를 찾는 기능을 만든다.
-    - 위 기능을 이요하여 무한 모드나 타임어택 모드 등을 만든다.
+    - 위 기능을 이용하여 무한 모드나 타임어택 모드 등을 만든다.
