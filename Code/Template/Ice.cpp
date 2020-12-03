@@ -1,7 +1,6 @@
 #pragma once
 #include "stdafx.h"
 #include "Ice.h"
-#include "Manager.h"
 
 Ice::Ice() : Topography(Enum::ICE) {}
 
@@ -17,7 +16,7 @@ bool Ice::canGo()
 	return true;
 }
 
-void onArrived()
+void Ice::onArrived()
 {
 	if (manager.getLastDir() == -1)
 	{

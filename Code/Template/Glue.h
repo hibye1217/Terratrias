@@ -9,5 +9,6 @@ public:
     Glue();
     ~Glue();
     void Render();
+    void onArrived();
     bool canGo();
 };

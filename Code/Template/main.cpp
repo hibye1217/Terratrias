@@ -5,6 +5,7 @@
 
 #include "skTest_Scene.h"
 #include "StartScene.h"
+#include "SaveSelectScene.h"
 #include "Object.h"
 
 #include "Const.h"
@@ -63,11 +64,12 @@ INT WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR, INT cmdS
 	manager.getUser().setSprite(new Sprite("Resources/Sprite/Big/UserStart.png"));
 
 	//return app.DoMainLoop(new MainScene());
-	skTest_Scene * skTelekom = new skTest_Scene();
+	//skTest_Scene * skTelekom = new skTest_Scene();
+	SaveSelectScene* SSS = new SaveSelectScene();
 
 	StartScene* sceneStartPoint = new StartScene();
 
-	sceneStartPoint->setNextScene(skTelekom);
+	sceneStartPoint->setNextScene(SSS);
 
 	return app.DoMainLoop(sceneStartPoint);
 }

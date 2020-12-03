@@ -196,7 +196,7 @@
       <Filter>소스 파일\InGameObject</Filter>
     </ClCompile>
     <ClCompile Include="Ice.cpp">
-      <Filter>헤더 파일\Class</Filter>
+      <Filter>소스 파일\Class</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -318,7 +318,7 @@
       <Filter>헤더 파일\InGameObject</Filter>
     </ClInclude>
     <ClInclude Include="Ice.h">
-      <Filter>헤더 파일</Filter>
+      <Filter>헤더 파일\Class</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

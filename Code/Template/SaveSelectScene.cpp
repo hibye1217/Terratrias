@@ -52,3 +52,8 @@ void SaveSelectScene::Render()
 		ob->Render();
 	}
 }
+
+void SaveSelectScene::Update(float dTime)
+{
+	//Scene::Update(dTime);
+}

@@ -17,7 +17,7 @@ bool Glue::canGo()
 	return true;
 }
 
-void onArrived()
+void Glue::onArrived()
 {
 	manager.setLastDir(-1);
 	manager.setMoved(false);
