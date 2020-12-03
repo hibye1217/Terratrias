@@ -7,6 +7,11 @@ Jump::Jump() : Item(Enum::JUMP, "Resources/Sprite/Big/Jump.png"), direction(-1) 
 
 Jump::~Jump() {}
 
+void Jump::Render()
+{
+	Item::Render();
+}
+
 void Jump::useItem()
 {
 	// 방향 선택

@@ -9,6 +9,11 @@ Space::Space()
 
 Space::~Space() {}
 
+void Space::Render()
+{
+	Topography::Render();
+}
+
 bool Space::canGo()
 {
 	return true;

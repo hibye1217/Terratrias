@@ -7,6 +7,11 @@ Glue::Glue() : Topography(Enum::GLUE, "Resources/Sprite/Big/Glue.png") {}
 
 Glue::~Glue() {}
 
+void Glue::Render()
+{
+	Topography::Render();
+}
+
 bool Glue::canGo()
 {
 	return true;

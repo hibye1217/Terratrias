@@ -18,6 +18,13 @@ Sprite::Sprite(const char* path) {
 	rect = visibleRect;
 
 	color = D3DCOLOR_ARGB(255, 255, 255, 255);
+
+	texname = path;
+
+
+	//
+
+	//
 }
 
 Sprite::~Sprite() {

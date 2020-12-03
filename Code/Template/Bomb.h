@@ -9,6 +9,7 @@ class Bomb :
 public:
     Bomb();
     ~Bomb();
+    void Render();
     void useItem();
     bool canUseItem();
 };

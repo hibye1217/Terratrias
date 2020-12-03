@@ -8,6 +8,11 @@ Key::Key(int id) : Item(Enum::KEY, "Resources/Sprite/Big/Key" + std::to_string(i
 
 Key::~Key() {}
 
+void Key::Render()
+{
+    Item::Render();
+}
+
 int Key::getId()
 {
     return id;

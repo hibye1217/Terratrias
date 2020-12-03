@@ -22,3 +22,8 @@ int Item::getType()
 {
     return type;
 }
+
+void Item::Render()
+{
+    Sprite::Render();
+}

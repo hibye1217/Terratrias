@@ -7,6 +7,11 @@ Boost::Boost() : Item(Enum::BOOST, "Resources/Sprite/Big/Boost.png"), direction(
 
 Boost::~Boost() {}
 
+void Boost::Render()
+{
+	Item::Render();
+}
+
 void Boost::useItem()
 {
 	// 방향 선택

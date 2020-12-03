@@ -11,6 +11,7 @@ private:
 public:
     Jump();
     ~Jump();
+    void Render();
     void useItem();
     bool canUseItem();
 };

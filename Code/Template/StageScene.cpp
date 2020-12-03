@@ -32,11 +32,16 @@ StageScene::~StageScene()
 
 void StageScene::Render()
 {
+	int margin_1 = user.getMargin1();
+	int margin_2 = user.getMargin2();
+	//user.getSprite()->setPos(margin_2 + (user.getY() * i_hat), margin_1 + (user.getY() * j_hat));
 	for (int i = 0; i < manager.getHeight(); ++i) {
 		for (int j = 0; j < manager.getWidth(); ++j) {
 			Topography* a = manager.getCell(i, j).getTopography();
+			manager.getCell(i,j).getTopography()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));
 			a->Render();	// 1
 			Item* b = manager.getCell(i, j).getItem();
+			manager.getCell(i, j).getItem()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));
 			b->Render();		// 2
 		}
 	}
@@ -112,30 +117,8 @@ void StageScene::Update(float dTime)
 		}
 
 		// print
-		User& user = manager.getUser();
-		system("cls");
-		std::cout << "remain key: " << manager.getKeyCnt() << std::endl;
-		std::cout << "remain count: " << manager.getLimitCnt() - manager.getMoveCnt() << std::endl;
-		std::cout << "(x, y) = " << user.getX() << ' ' << user.getY() << std::endl;
-		std::cout << "inventory: " << item_name[user.getInventory()->getType()] << std::endl << std::endl;
-		for (int i = 0; i < manager.getHeight(); ++i)
-		{
-			for (int j = 0; j < manager.getWidth(); ++j)
-			{
-				//std::cout << manager.getCell(i, j).getTopography()->getType() << ' ';
-				std::cout << topo_name[manager.getCell(i, j).getTopography()->getType()] << ' ';
-			}
-			std::cout << std::endl;
-		}
-		std::cout << std::endl;
-		for (int i = 0; i < manager.getHeight(); ++i)
-		{
-			for (int j = 0; j < manager.getWidth(); ++j)
-			{
-				std::cout << item_name[manager.getCell(i, j).getItem()->getType()] << ' ';
-			}
-			std::cout << std::endl;
-		}
+
+		
 	}
 
 }

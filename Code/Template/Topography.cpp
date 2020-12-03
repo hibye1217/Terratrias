@@ -20,4 +20,9 @@ int Topography::getType()
     return type;
 }
 
+void Topography::Render()
+{
+    Sprite::Render();
+}
+
 void Topography::onArrived() {}

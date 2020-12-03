@@ -14,6 +14,7 @@ public:
 	Topography(int type, std::string path);
 	virtual ~Topography();
 	int getType();
+	void Render();
 	virtual bool canGo() = 0;
 	virtual void onArrived();
 	Topography& operator = (const Topography&) = default;

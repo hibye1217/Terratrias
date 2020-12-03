@@ -8,5 +8,6 @@ class Glue :
 public:
     Glue();
     ~Glue();
+    void Render();
     bool canGo();
 };

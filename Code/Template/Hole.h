@@ -11,6 +11,7 @@ public:
     Hole();
     Hole(int id);
     ~Hole();
+    void Render();
     int getId();
     bool canGo();
 };

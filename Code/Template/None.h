@@ -8,6 +8,7 @@ class None :
 public:
     None();
     ~None();
+    void Render();
     void useItem();
     bool canUseItem();
 };

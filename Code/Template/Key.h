@@ -13,6 +13,7 @@ public:
     Key();
     Key(int id);
     ~Key();
+    void Render();
     int getId();
     void useItem();
     bool canUseItem();

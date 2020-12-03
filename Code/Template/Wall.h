@@ -8,5 +8,6 @@ class Wall :
 public:
     Wall();
     ~Wall();
+    void Render();
     bool canGo();
 };

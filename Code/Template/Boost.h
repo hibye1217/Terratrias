@@ -11,6 +11,7 @@ private:
 public:
     Boost();
     ~Boost();
+    void Render();
     void useItem();
     bool canUseItem();
 };

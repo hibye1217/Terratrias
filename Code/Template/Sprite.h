@@ -12,6 +12,8 @@ private:
 	int height;
 
 public:
+	const char* texname;
+
 	Sprite(const char* path);
 	~Sprite();
 

@@ -6,6 +6,11 @@ Wall::Wall() : Topography(Enum::WALL, "Resources/Sprite/Big/Wall.png") {}
 
 Wall::~Wall() {}
 
+void Wall::Render()
+{
+	Topography::Render();
+}
+
 bool Wall::canGo()
 {
 	return false;

@@ -8,6 +8,11 @@ Bomb::Bomb() : Item(Enum::BOMB, "Resources/Sprite/Big/Bomb.png") {
 
 Bomb::~Bomb() {}
 
+void Bomb::Render()
+{
+	Item::Render();
+}
+
 void Bomb::useItem()
 {
 	if (!canUseItem())

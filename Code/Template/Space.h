@@ -8,5 +8,6 @@ class Space :
 public:
     Space();
     ~Space();
+    void Render();
     bool canGo();
 };

@@ -19,6 +19,8 @@ public:
 	int getY();
 	void setY(int y);
 	void setMargins(int x, int y);
+	int getMargin2();
+	int getMargin1();
 	Item* getInventory();
 	void setInventory(Item* item);
 	void setSprite(Sprite*);

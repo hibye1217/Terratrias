@@ -11,6 +11,11 @@ Hole::Hole(int id)
 
 Hole::~Hole() {}
 
+void Hole::Render()
+{
+	Topography::Render();
+}
+
 int Hole::getId() 
 {
     return id;
