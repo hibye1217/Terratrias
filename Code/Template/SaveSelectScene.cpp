@@ -20,7 +20,7 @@ SaveSelectScene::SaveSelectScene()
 	Button *SButton1 = new Button("Resources/Button/SaveFile.png");
 	Button *SButton2 = new Button("Resources/Button/SaveFile.png");
 	Button *SButton3 = new Button("Resources/Button/SaveFile.png");
-
+		
 	SButton1->setPos(leftMargin, (int)( SCREEN_HEIGHT * makeScale / 2));
 	SButton2->setPos(leftMargin, (int)(1.5 * SCREEN_HEIGHT * makeScale));
 	SButton3->setPos(leftMargin, (int)(2.5 * SCREEN_HEIGHT * makeScale));

@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "StageScene.h"
 
-StageScene::StageScene(int n) : user(manager.getUser())
+StageScene::StageScene(int n) : user(manager.getUser()), stage(n)
 {
 	// 파일 가져오고 게임 초기화 진행
 
@@ -131,6 +131,20 @@ void StageScene::Update(float dTime)
 		{
 			manager.setMoved(false);
 			manager.getCell(user.getX(), user.getY()).getTopography()->onArrived();
+		}
+
+
+
+		if (manager.getKeyCnt() == 0) {
+			// 깼다는 것을 저장하고
+			save[stage][0] = manager.getMoveCnt();
+			// 세이브 파일에 저장하고
+			FILE* in = fopen(savefile.c_str(), "w");
+			fprintf(in, "%d\n", save[0][0]);
+			for (int i = 1; i <= save[0][0]; i++) {
+				fprintf(in, "%d %d\n", save[i][0], save[i][1]);
+			}
+			// 클리어 씬을 키기
 		}
 	}
 }

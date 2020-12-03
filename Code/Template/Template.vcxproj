@@ -160,6 +160,7 @@
     <ClCompile Include="BaseScene.cpp" />
     <ClCompile Include="BFAdDelSprite.cpp" />
     <ClCompile Include="BFChangeScene.cpp" />
+    <ClCompile Include="BFResume.cpp" />
     <ClCompile Include="BFSaveSelect.cpp" />
     <ClCompile Include="Bomb.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
@@ -172,6 +173,7 @@
     <ClCompile Include="Cell.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="ClearScene.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Font.cpp" />
     <ClCompile Include="Glue.cpp">
@@ -240,12 +242,14 @@
     <ClInclude Include="BaseScene.h" />
     <ClInclude Include="BFAdDelSprite.h" />
     <ClInclude Include="BFChangeScene.h" />
+    <ClInclude Include="BFResume.h" />
     <ClInclude Include="BFSaveSelect.h" />
     <ClInclude Include="Bomb.h" />
     <ClInclude Include="Boost.h" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="ButtonFunction.h" />
     <ClInclude Include="Cell.h" />
+    <ClInclude Include="ClearScene.h" />
     <ClInclude Include="Console.h" />
     <ClInclude Include="Const.h" />
     <ClInclude Include="Font.h" />

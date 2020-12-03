@@ -198,6 +198,12 @@
     <ClCompile Include="Ice.cpp">
       <Filter>소스 파일\Class</Filter>
     </ClCompile>
+    <ClCompile Include="BFResume.cpp">
+      <Filter>소스 파일\InGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="ClearScene.cpp">
+      <Filter>소스 파일\Main\MainScene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -319,6 +325,12 @@
     </ClInclude>
     <ClInclude Include="Ice.h">
       <Filter>헤더 파일\Class</Filter>
+    </ClInclude>
+    <ClInclude Include="BFResume.h">
+      <Filter>헤더 파일\InGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearScene.h">
+      <Filter>헤더 파일\Main\MainScene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

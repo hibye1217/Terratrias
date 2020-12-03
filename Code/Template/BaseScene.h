@@ -13,6 +13,7 @@ public:
     ~BaseScene();
 
     void Render();
+    void setIsSubSceneOn();
     void Update(float dTime);
 
 };

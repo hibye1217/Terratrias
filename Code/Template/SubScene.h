@@ -5,9 +5,8 @@ class SubScene :
     public Scene
 {
 public:
-    SubScene();
+    SubScene(int i);
     ~SubScene();
-
     void Render();
 };
 

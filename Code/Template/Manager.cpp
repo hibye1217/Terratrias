@@ -209,18 +209,21 @@ void Manager::initialize(std::string filename)
                 {
                     if (!strcmp(topo, topo_name[k].c_str()))
                     {
-                        if (k == Enum::SPACE) {
+                        switch (k)
+                        {
+                        case Enum::SPACE:
                             map[i][j].setTopography(new Space());
-                        }
-                        else if (k == Enum::WALL) {
+                            break;
+                        case Enum::WALL:
                             map[i][j].setTopography(new Wall());
-                        }
-                        else if (k == Enum::GLUE) {
+                            break;
+                        case Enum::ICE:
+                            map[i][j].setTopography(new Ice());
+                            break;
+                        case Enum::GLUE:
                             map[i][j].setTopography(new Glue());
+                            break;
                         }
-                        //else {
-                        //    map[i][j].setTopography(new Ice());
-                        //}
 
                         //map[i][j].getTopography()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));  // 2
                         map[i][j].getTopography()->getSprite()->setScale(scaleRatio, scaleRatio);
@@ -258,19 +261,22 @@ void Manager::initialize(std::string filename)
                 {
                     if (!strcmp(item, item_name[k].c_str()))
                     {
-                        //std::cout << k << ' ';
-                        if (k == Enum::NONE) {
+                        switch (k)
+                        {
+                        case Enum::NONE:
                             map[i][j].setItem(new None());
-                        }
-                        else if (k == Enum::JUMP) {
+                            break;
+                        case Enum::JUMP:
                             map[i][j].setItem(new Jump());
-                        }
-                        else if (k == Enum::BOOST) {
+                            break;
+                        case Enum::BOOST:
                             map[i][j].setItem(new Boost());
-                        }
-                        else if (k == Enum::BOMB) {
+                            break;
+                        case Enum::BOMB:
                             map[i][j].setItem(new Bomb());
+                            break;
                         }
+                        //std::cout << k << ' ';
                         //map[i][j].getItem()->getSprite()->setPos(margin_2 + (i_hat * j), margin_1 + (j_hat * i));    // 3
                         map[i][j].getItem()->getSprite()->setScale(scaleRatio, scaleRatio);
                         break;
