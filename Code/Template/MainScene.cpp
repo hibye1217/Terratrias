@@ -14,10 +14,12 @@ MainScene::MainScene() {
 	// std::cout << "access" << ' ' << access << std::endl;
 
 	BFStage* BF[20];
+	BFExit* exit;
 
 	for (int i = 1; i <= 10; i++) {
 		BF[i] = new BFStage(i);
 	}
+	exit = new BFExit();
 
 	/*BFStage* BF1;
 	BF1 = new BFStage(1);
@@ -43,6 +45,7 @@ MainScene::MainScene() {
 
 	// 2. 버튼 설정
 	Button* button[20];
+	Button* exitButton;
 
 	for (int i = 1; i <= 10; i++) {
 		if (access >= i) {
@@ -58,6 +61,8 @@ MainScene::MainScene() {
 			button[i] = new Button(stage_close_path[i].c_str());
 		}
 	}
+	exitButton = new Button("Resources/Button/Exit.png");
+	exitButton->bfList.push_back(exit);
 
 	/*Button* Button1;
 	Button* Button2;
@@ -150,10 +155,13 @@ MainScene::MainScene() {
 	}*/
 
 	for (int i = 1; i <= 10; i++) {
-		button[i]->setPos(i* w + (100) * (i - 1), h);
+		button[i]->setPos(i * w + (100) * (i - 1), h);
 		button[i]->setDpos(100, 100);
 		buttonList.push_back(button[i]);
 	}
+	exitButton->setPos(11 * w + 1000, h);
+	exitButton->setDpos(100, 100);
+	buttonList.push_back(exitButton);
 
 	/*Button1->setPos(w,h);
 	Button1->setDpos(100, 100);
