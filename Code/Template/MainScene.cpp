@@ -11,7 +11,7 @@ MainScene::MainScene() {
 
 	int access = save[0][0] + 1;
 
-	std::cout << "access" << ' ' << access << std::endl;
+	// std::cout << "access" << ' ' << access << std::endl;
 
 	BFStage* BF[20];
 
@@ -46,7 +46,7 @@ MainScene::MainScene() {
 
 	for (int i = 1; i <= 10; i++) {
 		if (access >= i) {
-			if (save[i][0] <= save[i][1]) {
+			if (save[i][1] != 0 && save[i][0] <= save[i][1]) {
 				button[i] = new Button(stage_clear_path[i].c_str());
 			}
 			else {

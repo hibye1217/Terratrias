@@ -4,7 +4,7 @@
 //int LUL = 720;
 
 // Setting Program
-#define CONSOLE_ON true
+#define CONSOLE_ON false
 #define BG_COLOR D3DCOLOR_ARGB(255,255,255,255)
 #define PROGRAM_NAME TEXT("Terratrias")
 #define CONSOLE_NAME TEXT("Debug Console")

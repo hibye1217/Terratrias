@@ -22,7 +22,7 @@ Sprite::Sprite(const char* path) {
 
 	texname = path;
 	
-	std::cout << texname << std::endl;
+	//std::cout << texname << std::endl;
 }
 
 Sprite::~Sprite() {
