@@ -13,9 +13,7 @@ StageScene::StageScene(int n) : user(manager.getUser()), stage(n), BaseScene(n)
 	manager.initialize(stageName);
 
 	save[n][1] = manager.getLimitCnt();
-	if (save[0][0] < n) {
-		save[0][0] = n;
-	}
+	
 	// 이제 마진 정해졌으니 그만큼 넣으면 됨.
 	// 이제 Item이랑 topography가 Sprite를 상속받음
 	// 그니까 초기화할때 sprite 쓸거 정하고, 그냥 보여주면 됨
@@ -140,6 +138,9 @@ void StageScene::Update(float dTime)
 
 
 		if (manager.getKeyCnt() == 0) {
+			if (save[0][0] < stage) {
+				save[0][0] = stage;
+			}
 			// 깼다는 것을 저장하고
 			if (save[stage][0] == 0)
 				save[stage][0] = manager.getMoveCnt();
