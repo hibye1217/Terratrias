@@ -141,10 +141,14 @@ void StageScene::Update(float dTime)
 
 		if (manager.getKeyCnt() == 0) {
 			// 깼다는 것을 저장하고
-			save[stage][0] = manager.getMoveCnt();
-
-			if (save[0][0] < stage)
+			if (stage > save[0][0]) {
 				save[0][0] = stage;
+				save[stage][0] = manager.getMoveCnt();
+			}
+			else {
+				if (save[stage][0] > manager.getMoveCnt())
+					save[stage][0] = manager.getMoveCnt();
+			}
 
 			// 세이브 파일에 저장하고
 			FILE* in = fopen(savefile.c_str(), "w");
