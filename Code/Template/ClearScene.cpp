@@ -18,10 +18,16 @@ ClearScene::ClearScene(int n)
 	next->setDpos((int)(1476 * makeScale), (int)(590 * makeScale));
 	next->setScale(makeScale, makeScale);
 
-	buttonList.push_back(next);
-	next->bfList.push_back(BFn);
-	//next->bfList.push_back(BFC1);
+	if (n != 10) {
 
+		buttonList.push_back(next);
+		next->bfList.push_back(BFn);
+		//next->bfList.push_back(BFC1);
+	}
+	else {
+		next->~Button();
+		BFn->~BFStage();
+	}
 
 	Button* restart = new Button("Resources//Button/RestartButton.png");
 	//BFFinalize* BFF2;

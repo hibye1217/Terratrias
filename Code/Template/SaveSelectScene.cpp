@@ -12,9 +12,9 @@ SaveSelectScene::SaveSelectScene()
 	BFSaveSelect* BFSS2 = new BFSaveSelect(2);
 	BFSaveSelect* BFSS3 = new BFSaveSelect(3);
 
-	BFChangeScene* BFCS1 = new BFChangeScene(new MainScene());
-	BFChangeScene* BFCS2 = new BFChangeScene(new MainScene());
-	BFChangeScene* BFCS3 = new BFChangeScene(new MainScene());
+	//BFChangeScene* BFCS1 = new BFChangeScene(new MainScene());
+	//BFChangeScene* BFCS2 = new BFChangeScene(new MainScene());
+	//BFChangeScene* BFCS3 = new BFChangeScene(new MainScene());
 
 
 	Button *SButton1 = new Button("Resources/Button/SaveFile.png");
@@ -41,9 +41,9 @@ SaveSelectScene::SaveSelectScene()
 	SButton2->bfList.push_back(BFSS2);
 	SButton3->bfList.push_back(BFSS3);
 
-	SButton1->bfList.push_back(BFCS1);
-	SButton2->bfList.push_back(BFCS2);
-	SButton3->bfList.push_back(BFCS3);
+	//SButton1->bfList.push_back(BFCS1);
+	//SButton2->bfList.push_back(BFCS2);
+	//SButton3->bfList.push_back(BFCS3);
 }
 
 SaveSelectScene::~SaveSelectScene()

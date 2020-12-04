@@ -38,6 +38,7 @@ void BFSaveSelect::Do()
 		}
 	}
 	
+	sceneManager->setPreparedScene(new MainScene());
 	// 있으면 불러오면 됨
 	savefile = name;
 }

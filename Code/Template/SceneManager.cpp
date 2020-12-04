@@ -128,5 +128,6 @@ bool SceneManager::getOldSceneExist()
 
 bool SceneManager::getReservedChangeScene()
 {
+	oldSceneExist = false;
 	return reservedChangeScene;
 }

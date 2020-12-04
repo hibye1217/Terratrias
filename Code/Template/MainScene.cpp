@@ -207,5 +207,7 @@ void MainScene::Render() {
 }
 
 void MainScene::Update(float dTime) {
+	if(!sceneManager->getReservedChangeScene()) if (manager.getKeyCnt() != -1) manager.finalize();
 	Scene::Update(dTime);
+
 }

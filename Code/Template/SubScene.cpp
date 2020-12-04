@@ -18,27 +18,27 @@ SubScene::SubScene(int i) {
 
 	float makeScale = ((float)SCREEN_HEIGHT / 6.0f) / (float)590;
 
-	Button* changingButton;
-	changingButton = new Button("Resources/Button/RestartButton.png");
-	buttonList.push_back(changingButton);
-	changingButton->setPos(100, 100);	// ÁÂÃø»ó´Ü ÁÂÇ¥
-	changingButton->setDpos((int)(makeScale), (int)(makeScale));
-	changingButton->setScale(makeScale, makeScale);
+	//Button* changingButton;
+	//changingButton = new Button("Resources/Button/RestartButton.png");
+	//buttonList.push_back(changingButton);
+	//changingButton->setPos(100, 100);	// ÁÂÃø»ó´Ü ÁÂÇ¥
+	//changingButton->setDpos((int)(makeScale), (int)(makeScale));
+	//changingButton->setScale(makeScale, makeScale);
 	
 	//BFFinalize* BFFA;
 	//BFFA = new BFFinalize();
 	//BFChangeScene* changingBF;
 	//changingBF = new BFChangeScene(new StageScene(i));
-	BFStage* BF = new BFStage(i);
+	//BFStage* BF = new BFStage(i);
 
-	buttonList.push_back(changingButton);
-	changingButton->bfList.push_back(BF);
+	//buttonList.push_back(changingButton);
+	//changingButton->bfList.push_back(BF);
 	//changingButton->bfList.push_back(BFFA);
 
 
 
-	BFFinalize* BFF;
-	BFF = new BFFinalize();
+	//BFFinalize* BFF;
+	//BFF = new BFFinalize();
 	BFChangeScene* BFmain;
 	BFmain = new BFChangeScene(new MainScene());
 
@@ -52,7 +52,7 @@ SubScene::SubScene(int i) {
 	// 3. ¿¬°á
 	buttonList.push_back(gotoMain);
 	gotoMain->bfList.push_back(BFmain);
-	gotoMain->bfList.push_back(BFF);
+	//gotoMain->bfList.push_back(BFF);
 
 
 }
