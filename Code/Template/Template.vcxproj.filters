@@ -210,6 +210,9 @@
     <ClCompile Include="BFStage.cpp">
       <Filter>소스 파일\InGameObject</Filter>
     </ClCompile>
+    <ClCompile Include="BFExit.cpp">
+      <Filter>소스 파일\InGameObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -342,6 +345,9 @@
       <Filter>헤더 파일\InGameObject</Filter>
     </ClInclude>
     <ClInclude Include="BFStage.h">
+      <Filter>헤더 파일\InGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="BFExit.h">
       <Filter>헤더 파일\InGameObject</Filter>
     </ClInclude>
   </ItemGroup>

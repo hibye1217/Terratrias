@@ -160,6 +160,7 @@
     <ClCompile Include="BaseScene.cpp" />
     <ClCompile Include="BFAdDelSprite.cpp" />
     <ClCompile Include="BFChangeScene.cpp" />
+    <ClCompile Include="BFExit.cpp" />
     <ClCompile Include="BFFinalize.cpp" />
     <ClCompile Include="BFResume.cpp" />
     <ClCompile Include="BFSaveSelect.cpp" />
@@ -244,6 +245,7 @@
     <ClInclude Include="BaseScene.h" />
     <ClInclude Include="BFAdDelSprite.h" />
     <ClInclude Include="BFChangeScene.h" />
+    <ClInclude Include="BFExit.h" />
     <ClInclude Include="BFFinalize.h" />
     <ClInclude Include="BFResume.h" />
     <ClInclude Include="BFSaveSelect.h" />

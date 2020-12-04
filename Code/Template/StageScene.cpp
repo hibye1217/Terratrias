@@ -141,10 +141,8 @@ void StageScene::Update(float dTime)
 
 		if (manager.getKeyCnt() == 0) {
 			// 깼다는 것을 저장하고
-			if (stage > save[0][0]) {
-				save[0][0] = stage;
+			if (save[stage][0] == 0)
 				save[stage][0] = manager.getMoveCnt();
-			}
 			else {
 				if (save[stage][0] > manager.getMoveCnt())
 					save[stage][0] = manager.getMoveCnt();

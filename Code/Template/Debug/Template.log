@@ -1,20 +1,19 @@
 ﻿  StageScene.cpp
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\StageScene.cpp(154,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\StageScene.cpp(152,15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\Object.h(55,11): warning C4244: '=': 'PX'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PX=int
           ]
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\StageScene.cpp(47): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\StageScene.cpp(47): message : 컴파일되는 함수 템플릿 인스턴스화 'void Object::setPos<int,int>(PX,PY)'에 대한 참조를 확인하세요.
           with
           [
               PX=int,
               PY=int
           ]
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Template\Object.h(56,11): warning C4244: '=': 'PY'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
           with
           [
               PY=int
           ]
-MainScene.obj : error LNK2019: "public: __thiscall BFExit::BFExit(void)" (??0BFExit@@QAE@XZ)"public: __thiscall MainScene::MainScene(void)" (??0MainScene@@QAE@XZ) 함수에서 참조되는 확인할 수 없는 외부 기호
-D:\0 100\2_공부\2_10_Github\Terratrias\Code\Debug\Template.exe : fatal error LNK1120: 1개의 확인할 수 없는 외부 참조입니다.
+  Template.vcxproj -> C:\Users\user\OneDrive\Documents\GitHub\Terratrias\Code\Debug\Template.exe

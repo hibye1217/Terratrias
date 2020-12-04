@@ -1,42 +1,42 @@
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.pch
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\vc142.pdb
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\vc142.idb
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\sktest_scene.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\subscene.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\stagescene.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\saveselectscene.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\mainscene.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\clearscene.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\basescene.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bfstage.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\scene.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bfsaveselect.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\animation.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\scenemanager.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.pch
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\stdafx.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\scene.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\saveselectscene.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\object.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\mainscene.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\inputmanager.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\ice.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\font.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\console.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\clearscene.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\buttonfunction.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\button.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bfstage.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bfsaveselect.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bfresume.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bffinalize.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bfchangescene.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bfaddelsprite.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\basescene.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\application.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\animation.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\texturemanager.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\subscene.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\startscene.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\stagescene.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\sprite.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\soundmanager.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\main.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\sktest_scene.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\scenemanager.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\wall.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\user.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\topography.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\space.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\none.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\manager.obj
+d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\main.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\key.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\jump.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\js_main.obj
@@ -46,17 +46,62 @@ d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\glue.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\cell.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\boost.obj
 d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\bomb.obj
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\stagescene.obj.enc
-d:\0 100\2_공부\2_10_github\terratrias\code\debug\template.pdb
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\cl.command.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\cl.read.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\cl.write.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.3716-cvtres.read.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.3716-cvtres.write.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.3716-rc.read.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.3716-rc.write.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.3716.read.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.3716.write.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.command.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.read.1.tlog
-d:\0 100\2_공부\2_10_github\terratrias\code\template\debug\template.tlog\link.write.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.pch
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\vc142.pdb
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\vc142.idb
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\stdafx.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\scene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\saveselectscene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\object.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\mainscene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\inputmanager.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\ice.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\font.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\console.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\clearscene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\buttonfunction.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\button.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\bfstage.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\bfsaveselect.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\bfresume.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\bffinalize.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\bfchangescene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\bfaddelsprite.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\basescene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\application.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\animation.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\texturemanager.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\subscene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\startscene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\stagescene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\sprite.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\soundmanager.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\sktest_scene.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\scenemanager.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\wall.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\user.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\topography.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\space.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\none.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\manager.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\main.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\key.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\jump.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\js_main.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\item.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\hole.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\glue.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\cell.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\boost.obj
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\bomb.obj
+c:\users\user\onedrive\documents\github\terratrias\code\debug\template.pdb
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\cl.command.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\cl.read.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\cl.write.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\link-cvtres.read.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\link-cvtres.write.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\link-rc.read.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\link-rc.write.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\link.command.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\link.read.1.tlog
+c:\users\user\onedrive\documents\github\terratrias\code\template\debug\template.tlog\link.write.1.tlog
